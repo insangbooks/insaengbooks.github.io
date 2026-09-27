@@ -66,6 +66,9 @@ format:
         .section{padding:112px 0 0}
         .section h2{font-size:40px;font-weight:700;line-height:1.35}
         .intro .wrap{display:grid;grid-template-columns:1fr 2fr;gap:64px}
+        .intro .illus{margin-top:32px}
+        .intro .illus p{margin:0}
+        .intro .illus img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
         .intro .body{display:flex;flex-direction:column;gap:24px;font-size:18px;line-height:1.9;color:var(--text)}
         .sec-head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:40px}
 
@@ -150,6 +153,7 @@ format:
           .section{padding-top:56px}
           .section h2{font-size:28px}
           .intro .wrap,.author .wrap{grid-template-columns:1fr;gap:16px}
+          .intro .illus{margin:16px 0 8px}
           .intro .body,.author .info p{font-size:16px}
           .toc-grid,.inside .cols,.books{grid-template-columns:1fr}
           .toc-item .n{font-size:24px;width:36px}
@@ -217,6 +221,10 @@ format:
 [BOOK OVERVIEW]{.eyebrow}
 
 <h2>책 소개</h2>
+
+::: illus
+![](intro.jpg){fig-alt="보건실에서 선생님이 다리를 다친 아이를 살피고, 아이들이 줄을 서서 기다리는 모습"}
+:::
 :::
 
 ::: body

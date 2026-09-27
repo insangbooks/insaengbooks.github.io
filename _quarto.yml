@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Pluszone Education"
+  favicon: favicon.png
   search: false
   navbar:
     left:
