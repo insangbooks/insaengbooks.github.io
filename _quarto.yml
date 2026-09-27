@@ -1,11 +1,9 @@
 project:
   type: website
-  resources:
-    - CNAME
 
 website:
   title: "Pluszone Education"
-  favicon: favicon.png
+  search: false
   navbar:
     left:
       - text: "Home"
