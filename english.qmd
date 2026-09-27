@@ -202,9 +202,7 @@ A casebook of character education that makes both teachers and students happier.
 :::
 
 ::: buy
-[Buy at Kyobo Book Centre](https://product.kyobobook.co.kr/detail/S000208434189){.buy-btn .primary}
-[YES24](https://www.yes24.com/product/goods/121208076){.buy-btn}
-[Aladin](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=322075026){.buy-btn}
+[Buy on Amazon](https://a.co/d/0fYIymSr){.buy-btn .primary}
 :::
 :::
 

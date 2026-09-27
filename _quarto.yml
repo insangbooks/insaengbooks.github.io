@@ -5,6 +5,7 @@ project:
 
 website:
   title: "Pluszone Education"
+  favicon: favicon.png
   navbar:
     left:
       - text: "Home"
