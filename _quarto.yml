@@ -1,0 +1,15 @@
+project:
+  type: website
+
+website:
+  title: "Pluszone Education"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "English"
+        href: english.qmd
+
+format:
+  html:
+    lang: ko
