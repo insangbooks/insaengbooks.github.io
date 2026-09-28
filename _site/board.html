@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pluszone Education | A Teacher’s Guide to the Art of Character Education</title>
+<title>Pluszone Education | Board</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,17 +37,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -211,11 +211,27 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
   .site-footer .contact{align-items:flex-start}
   .site-footer .contact a{font-size:18px}
 }
-/* English page adjustments */
-.cover{aspect-ratio:574/812;background:#FBE3CC}
-.hero h1{font-size:56px;letter-spacing:-1px;line-height:1.15}
-.eyebrow{letter-spacing:2px}
-@media (max-width: 900px){ .hero h1{font-size:34px} }
+/* Shop page */
+.shop-head{padding:48px 0 8px}
+.shop-head h1{font-size:48px;font-weight:900;letter-spacing:-1px}
+.shop-head p{color:var(--muted);margin-top:12px}
+.editions{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+.edition{background:#fff;border:1px solid var(--line);border-radius:12px;padding:36px;display:grid;grid-template-columns:160px 1fr;gap:32px;align-items:start}
+.edition img{width:160px;height:auto;display:block;border-radius:2px 6px 6px 2px;box-shadow:0 14px 28px rgba(90,45,10,.2)}
+.edition .info{display:flex;flex-direction:column;gap:10px}
+.edition .ttl{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1.35;color:var(--ink)}
+.edition .sub{font-size:15px;color:var(--muted);line-height:1.7}
+.edition .stores{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.edition .stores .buy-btn{min-height:50px;padding:0 24px}
+@media (max-width: 900px){
+  .shop-head{padding-top:24px}
+  .shop-head h1{font-size:32px}
+  .editions{grid-template-columns:1fr;gap:20px;margin-top:24px}
+  .edition{grid-template-columns:96px 1fr;gap:20px;padding:24px 20px}
+  .edition img{width:96px}
+  .edition .ttl{font-size:19px}
+  .edition .stores .buy-btn{flex:1 1 100%}
+}
 </style>
 
 
@@ -232,7 +248,7 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
     <span class="navbar-title">Pluszone Education</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -242,7 +258,7 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./english.html" aria-current="page"> 
+    <a class="nav-link" href="./english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
@@ -250,7 +266,7 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 <span class="menu-text">Shop</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./board.html"> 
+    <a class="nav-link active" href="./board.html" aria-current="page"> 
 <span class="menu-text">Board</span></a>
   </li>  
 </ul>
@@ -269,146 +285,18 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 
 
 
-<!-- ============================================================
-  English page for 『인성 교육, 참! 잘하는 교사』
-  (A Teacher's Guide to the Art of Character Education)
-  Text is based on the English edition manuscript.
-  The top menu (Pluszone Education / Home / English) comes from the navbar in _quarto.yml.
-============================================================= -->
-<div id="top" class="hero">
-<div class="wrap">
-<div class="hero-text">
-<p><span class="eyebrow">From Insaeng Books · Education</span></p>
-<h1>
-A Teacher’s Guide to the Art of Character Education
-</h1>
-<p><span class="tagline">Higher Rapport</span></p>
-<div class="summary">
-<p>A casebook of character education that makes both teachers and students happier. Through real cases from Korean schools, two teachers show how to guide children from negative to positive behaviour, prevent bullying and verbal abuse before they start, and bring about lasting change in students’ character.</p>
-</div>
-<div class="meta">
-<p><span>By Kim Kyeong Hyi and Kim Hye-jin</span> <span>Insaeng Books</span> <span>July 6, 2023</span> <span>314 pages</span></p>
-</div>
-<div class="meta">
-<p><span>Original Korean title: 『인성 교육, 참! 잘하는 교사』</span></p>
-</div>
-</div>
-<div class="cover-stage">
-<div class="cover">
-<p><img src="booke.jpg" class="img-fluid" alt="Cover of A Teacher's Guide to the Art of Character Education by Kim Kyeong Hyi and Kim Hye-jin"></p>
-</div>
-</div>
-</div>
-</div>
-<div class="quote-band">
-<p>“For a Proper Understanding and Application of the Character Education Casebook”</p>
-</div>
-<section id="intro" class="intro">
-<div class="wrap">
-<div class="head">
-<p><span class="eyebrow">BOOK OVERVIEW</span></p>
-<h2>
-About the Book
-</h2>
-<div class="illus">
-<p><img src="intro.jpg" class="img-fluid" alt="In the school nurse's office, a teacher checks a child's injured leg while other children wait in line"></p>
-</div>
-</div>
-<div class="body">
-<p>With the Character Education Promotion Act, character education has become mandatory in Korean schools. Yet how to carry it out, and how to measure its results, remains unclear. Schools often fall back on eye-catching events that produce visible results but rarely lead to sustained growth in students’ character.</p>
-<p>The authors, a classroom teacher and a school health teacher, faced the same problem. This book gathers the cases they worked through in their own classrooms and offers practical, sustainable ways to respond: building Higher Rapport with students, diagnosing through questions, and setting clear value standards such as honesty, sincerity, diligence, consideration, forgiveness, love and positivity.</p>
-<p>Character education, the authors argue, is not the same as psychological counselling or communication technique. It starts when teachers change their own thoughts, words and actions, and it reaches beyond the classroom into the home and the workplace.</p>
-</div>
-</div>
+<!-- 게시판 페이지: 패들렛 임베드 -->
+<section class="wrap shop-head">
+  <span class="eyebrow">BOARD</span>
+  <h1>게시판</h1>
+  <p>책을 읽은 소감과 인성교육 이야기를 자유롭게 나눠 주세요.</p>
 </section>
-<section id="contents">
-<div class="wrap">
-<div class="sec-head">
-<h2>
-Contents
-</h2>
-<p><span class="eyebrow">CONTENTS</span></p>
-</div>
-<div class="toc-grid">
-<div class="toc-item">
-<p><span class="n">01</span> <span><span style="font-weight:700;font-size:20px;display:block;color:var(--ink)">Part 1. Character Education Methods</span> Higher Rapport · Diagnosing with Questions · Establishing the Correct Value Standards · Solidifying Value Standards</span></p>
-</div>
-<div class="toc-item">
-<p><span class="n">02</span> <span><span style="font-weight:700;font-size:20px;display:block;color:var(--ink)">Part 2. Three-Step Questioning in Character Education</span> Recognition, Clarification and Application of Value Standards, with a case example</span></p>
-</div>
-<div class="toc-item">
-<p><span class="n">03</span> <span><span style="font-weight:700;font-size:20px;display:block;color:var(--ink)">Part 3. Case Studies in Student Guidance</span> A child lacking affection · A child with ADHD · A child obsessed with a best friend · A child overly immersed in gaming · A child stressed by leadership roles · A child who cannot accept defeat</span></p>
-</div>
-<div class="toc-item">
-<p><span class="n">04</span> <span><span style="font-weight:700;font-size:20px;display:block;color:var(--ink)">Part 4. Cases of Teacher Consciousness Growth</span> A complaint from a parent · Someone you dislike · Offensive language towards a teacher · A heavy workload · Negative feedback · Unwanted tasks · Criticism despite good work · The impact of honesty</span></p>
-</div>
-<div class="toc-item">
-<p><span class="n">+</span> <span><span style="font-weight:700;font-size:20px;display:block;color:var(--ink)">Preface and Conclusion</span> For a proper understanding and application of the Character Education Casebook · It is necessary to view character education from a new perspective</span></p>
-</div>
-</div>
-</div>
-</section>
-<section>
-<div class="wrap">
-<div class="inside">
-<p><span class="eyebrow">Inside the Book</span></p>
-<div class="cols">
-<blockquote class="blockquote">
-<p>Character education differs from psychological counseling and occupies a distinct level beyond mere communication techniques.</p>
-<footer>
-Preface, p.&nbsp;8
-</footer>
-</blockquote>
-<blockquote class="blockquote">
-<p>Eventually, it dawned on me: ‘Ah, my students weren’t ignoring me. It was my perception that led me to feel ignored.’</p>
-<footer>
-Conclusion, p.&nbsp;317
-</footer>
-</blockquote>
-</div>
-</div>
-</div>
-</section>
-<section>
-<div class="wrap">
-<h2>
-Who This Book Is For
-</h2>
-<div class="readers">
-<div class="reader">
-<p><strong>Teachers</strong></p>
-<p><span>Teachers who want to guide children from negative to positive behaviour and prevent school violence before it starts</span></p>
-</div>
-<div class="reader">
-<p><strong>Future teachers</strong></p>
-<p><span>Aspiring teachers preparing to put character education into practice in their own classrooms</span></p>
-</div>
-<div class="reader">
-<p><strong>Parents</strong></p>
-<p><span>Parents who want to apply the same approach to raising their children at home</span></p>
-</div>
-<div class="reader">
-<p><strong>Schools</strong></p>
-<p><span>Schools looking for sustained character education rather than one-off events</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="author" class="author">
-<div class="wrap">
-<div class="head">
-<p><span class="eyebrow">AUTHORS</span></p>
-<h2>
-Kim Kyeong Hyi<br>Kim Hye-jin
-</h2>
-</div>
-<div class="info">
-<p>Two Korean teachers, one a classroom teacher and the other a school health teacher, share the character education cases they carried out in their own schools. Their approach grows out of more than twenty years in the classroom, and they share it through workshops, teacher-training sessions, camps and lectures for aspiring teachers.</p>
-</div>
-</div>
+
+<section class="wrap" style="margin-top:32px">
+  <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/s024010vfxa0906p857g" title="Pluszone Education 게시판 (Padlet)" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p></div>
 </section>
 <div id="contact" class="wrap contact-line">
-<p>Contact <a href="mailto:insaengbooks@gmail.com">insaengbooks@gmail.com</a></p>
+<p>문의 <a href="mailto:insaengbooks@gmail.com">insaengbooks@gmail.com</a></p>
 </div>
 
 
@@ -461,12 +349,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
