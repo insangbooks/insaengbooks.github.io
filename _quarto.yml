@@ -13,8 +13,6 @@ website:
         href: english.qmd
       - text: "Shop"
         href: shop.qmd
-      - text: "Board"
-        href: board.qmd
 
 format:
   html:
