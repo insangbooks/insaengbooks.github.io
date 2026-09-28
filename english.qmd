@@ -37,7 +37,7 @@ format:
         .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232B221D' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important}
 
         /* 히어로 */
-        .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding-top:96px;padding-bottom:96px;align-items:center}
+        .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding-top:40px;padding-bottom:96px;align-items:center}
         .hero-text{display:flex;flex-direction:column;gap:26px}
         .hero h1{font-size:68px;line-height:1.2;font-weight:900;letter-spacing:-2px}
         .hero .tagline{font-family:var(--serif);font-size:24px;line-height:1.6;color:var(--accent)}
@@ -48,8 +48,8 @@ format:
         .buy-btn.primary{background:var(--accent);color:#fff}
         .buy-btn.primary:hover{background:var(--accent-dark);color:#fff}
         .buy-btn:hover{color:var(--accent-dark)}
-        .cover-stage{position:relative;display:flex;justify-content:center;padding:40px 0}
-        .cover-stage::before{content:"";position:absolute;inset:80px 20px 0 60px;background:var(--sand);border-radius:4px}
+        .cover-stage{position:relative;display:flex;justify-content:center;padding:16px 0 40px}
+        .cover-stage::before{content:"";position:absolute;inset:56px 20px 0 60px;background:var(--sand);border-radius:4px}
         .cover{position:relative;width:380px;max-width:100%;aspect-ratio:380/540;background:#FBE3CC;color:var(--paper);border-radius:3px 8px 8px 3px;overflow:hidden;box-shadow:0 30px 60px rgba(90,45,10,.28);box-sizing:border-box;padding:56px 44px;display:flex;flex-direction:column;justify-content:space-between}
         .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;margin:0}
         .cover p,.cover figure{margin:0}
@@ -139,7 +139,7 @@ format:
         @media (max-width: 900px){
           body{font-size:16px}
           .wrap{padding:0 20px}
-          .hero .wrap{grid-template-columns:1fr;gap:32px;padding-top:40px;padding-bottom:56px}
+          .hero .wrap{grid-template-columns:1fr;gap:32px;padding-top:24px;padding-bottom:56px}
           .hero .cover-stage{order:-1;padding:0}
           .cover-stage::before{display:none}
           .cover{width:220px;padding:32px 24px}
@@ -205,9 +205,6 @@ A casebook of character education that makes both teachers and students happier.
 [Original Korean title: 『인성 교육, 참! 잘하는 교사』]{}
 :::
 
-::: buy
-[Buy on Amazon](https://a.co/d/0fYIymSr){.buy-btn .primary}
-:::
 :::
 
 ::: cover-stage
@@ -335,7 +332,7 @@ Character education, the authors argue, is not the same as psychological counsel
 ::: head
 [AUTHORS]{.eyebrow}
 
-<h2>Kim Kyeong Hyi · Kim Hye-jin</h2>
+<h2>Kim Kyeong Hyi<br>Kim Hye-jin</h2>
 :::
 
 ::: info

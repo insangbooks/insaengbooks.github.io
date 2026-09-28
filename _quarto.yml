@@ -3,7 +3,6 @@ project:
 
 website:
   title: "Pluszone Education"
-  favicon: favicon.png
   search: false
   navbar:
     left:
@@ -11,6 +10,8 @@ website:
         href: index.qmd
       - text: "English"
         href: english.qmd
+      - text: "Shop"
+        href: shop.qmd
 
 format:
   html:
