@@ -4,6 +4,10 @@ project:
 website:
   title: "Pluszone Education"
   favicon: favicon.png
+  site-url: https://edupluszone.com
+  open-graph:
+    site-name: "Pluszone Education"
+  twitter-card: true
   search: false
   navbar:
     left:
