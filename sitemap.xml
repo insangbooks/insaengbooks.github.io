@@ -1,23 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://edupluszone.com/shop.html</loc>
-    <lastmod>2026-10-04T00:38:31.503Z</lastmod>
+    <loc>https://edupluszone.com/tutor.html</loc>
+    <lastmod>2026-10-06T09:34:56.574Z</lastmod>
   </url>
   <url>
-    <loc>https://edupluszone.com/english.html</loc>
-    <lastmod>2026-10-04T00:38:32.951Z</lastmod>
+    <loc>https://edupluszone.com/roommate.html</loc>
+    <lastmod>2026-10-06T09:34:56.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/index.html</loc>
+    <lastmod>2026-10-06T09:34:56.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-tutor.html</loc>
+    <lastmod>2026-10-06T09:34:56.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-librarian.html</loc>
+    <lastmod>2026-10-06T09:44:41.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-book.html</loc>
+    <lastmod>2026-10-06T09:34:56.409Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/editor.html</loc>
+    <lastmod>2026-10-06T09:34:56.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/board.html</loc>
+    <lastmod>2026-10-06T09:34:56.344Z</lastmod>
   </url>
   <url>
     <loc>https://edupluszone.com/about.html</loc>
     <lastmod>2026-09-27T09:27:21.047Z</lastmod>
   </url>
   <url>
-    <loc>https://edupluszone.com/board.html</loc>
-    <lastmod>2026-09-28T10:18:47.700Z</lastmod>
+    <loc>https://edupluszone.com/advisor.html</loc>
+    <lastmod>2026-10-06T09:34:56.329Z</lastmod>
   </url>
   <url>
-    <loc>https://edupluszone.com/index.html</loc>
-    <lastmod>2026-10-04T00:38:34.796Z</lastmod>
+    <loc>https://edupluszone.com/book.html</loc>
+    <lastmod>2026-10-06T09:34:56.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-advisor.html</loc>
+    <lastmod>2026-10-06T09:34:56.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-editor.html</loc>
+    <lastmod>2026-10-06T09:34:56.426Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/en-roommate.html</loc>
+    <lastmod>2026-10-06T09:34:56.464Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/english.html</loc>
+    <lastmod>2026-10-06T09:34:56.494Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/librarian.html</loc>
+    <lastmod>2026-10-06T09:44:39.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/shop.html</loc>
+    <lastmod>2026-10-06T09:34:56.553Z</lastmod>
   </url>
 </urlset>
