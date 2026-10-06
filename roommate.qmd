@@ -1,0 +1,27 @@
+---
+pagetitle: "Pluszone Education | 룸메이트"
+description: "플러스 교육의 05번째 역할, 룸메이트. 동료와의 대화로 사고가 확장됩니다."
+image: og-home.jpg
+open-graph:
+  title: "룸메이트 | 플러스 교육"
+  locale: ko_KR
+twitter-card:
+  title: "룸메이트 | 플러스 교육"
+---
+
+```{=html}
+<section class="wrap role-hero">
+  <span class="eyebrow">ROLE 05</span>
+  <h1>룸메이트</h1>
+  <span class="en-nm">Roommate</span>
+  <p class="lead">동료와의 대화로 사고가 확장됩니다.</p>
+</section>
+<section class="wrap role-body">
+<div class="statement">동료와의 대화로 사고가 확장됩니다.</div><div class="ph" style="margin-top:28px"><b>[룸메이트 프로그램 진행 방식]</b><span>[모임 방식, 대화 주제 예시, 참여 후기 등이 들어갈 자리]</span></div>
+<nav class="role-nav" aria-label="역할 이동"><a class="prev" href="editor.html"><span>← 이전 역할</span><b>에디터</b></a><a class="next" href="index.html#roles"><span>처음으로 →</span><b>다섯 가지 역할</b></a></nav>
+</section>
+```
+
+::: {#contact .wrap .contact-line}
+문의 [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
+:::

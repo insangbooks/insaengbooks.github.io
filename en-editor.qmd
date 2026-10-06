@@ -1,0 +1,28 @@
+---
+pagetitle: "Pluszone Education | Editor"
+description: "Role 04 of the Plus Education program, the Editor. Gives you feedback on what you have actually tried."
+image: og-home-en.jpg
+open-graph:
+  title: "Editor | Plus Education"
+  locale: en_US
+twitter-card:
+  title: "Editor | Plus Education"
+lang: en
+---
+
+```{=html}
+<section class="wrap role-hero">
+  <span class="eyebrow">ROLE 04</span>
+  <h1>Editor</h1>
+  
+  <p class="lead">Gives you feedback on what you have actually tried.</p>
+</section>
+<section class="wrap role-body">
+<h2>Example: Formula 1</h2><div class="two-col"><div><p>In a Formula 1 race, instant real-time feedback decides who wins. The Editor looks at what you have actually tried and gives you feedback right away.</p><div class="statement" style="margin-top:24px">Excellence is built through feedback.</div></div><div class="ph video-ph"><b>[Video goes here]</b><span>Paste a YouTube (or other) embed code</span></div></div>
+<nav class="role-nav" aria-label="Roles"><a class="prev" href="en-tutor.html"><span>← Previous role</span><b>Tutor</b></a><a class="next" href="en-roommate.html"><span>Next role →</span><b>Roommate</b></a></nav>
+</section>
+```
+
+::: {#contact .wrap .contact-line}
+Contact [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
+:::

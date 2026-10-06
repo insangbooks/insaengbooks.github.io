@@ -1,0 +1,27 @@
+---
+pagetitle: "Pluszone Education | 조언자"
+description: "플러스 교육의 01번째 역할, 조언자. 좋은 조언자는 여러분을 깊이 이해하고 여러분만을 위한 길을 만들어 줍니다."
+image: og-home.jpg
+open-graph:
+  title: "조언자 | 플러스 교육"
+  locale: ko_KR
+twitter-card:
+  title: "조언자 | 플러스 교육"
+---
+
+```{=html}
+<section class="wrap role-hero">
+  <span class="eyebrow">ROLE 01</span>
+  <h1>조언자</h1>
+  <span class="en-nm">Advisor</span>
+  <p class="lead">좋은 조언자는 여러분을 깊이 이해하고 여러분만을 위한 길을 만들어 줍니다.</p>
+</section>
+<section class="wrap role-body">
+<h2>나만의 길을 만드는 다섯 가지</h2><ol class="steps"><li><span class="n">1</span><span class="t">도착점</span><span class="q">학습을 마쳤을 때 <span class="em">무엇을 알고, 무엇을 할 수 있기를</span> 바라나요?</span></li><li><span class="n">2</span><span class="t">현재 수준</span><span class="q">이 주제에 대해 지금 어디쯤 와 있나요? 기초 수준인가요, 중급인가요, 아니면 아무것도 모르나요?</span></li><li><span class="n">3</span><span class="t">학습 순서</span><span class="q">어떤 순서로 이 주제를 배워야 할까요? <span class="em">이것은 정말 중요합니다.</span></span></li><li><span class="n">4</span><span class="t">제외할 목록</span><span class="q">지금은 무엇을 배우지 않고 넘어가도 될까요?</span></li><li><span class="n">5</span><span class="t">단계별 성취 기준</span><span class="q">어떤 결과물을 보여 주어야 이 주제를 충분히 익혔으며 다음 단계로 넘어갈 준비가 되었다고 할 수 있을까요?</span></li></ol>
+<nav class="role-nav" aria-label="역할 이동"><a class="prev" href="index.html#roles"><span>← 처음으로</span><b>다섯 가지 역할</b></a><a class="next" href="librarian.html"><span>다음 역할 →</span><b>AI 사서</b></a></nav>
+</section>
+```
+
+::: {#contact .wrap .contact-line}
+문의 [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
+:::

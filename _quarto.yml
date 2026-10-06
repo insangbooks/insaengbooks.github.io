@@ -13,11 +13,34 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Program"
+        menu:
+          - text: "조언자"
+            href: advisor.qmd
+          - text: "AI 사서"
+            href: librarian.qmd
+          - text: "튜터"
+            href: tutor.qmd
+          - text: "에디터"
+            href: editor.qmd
+          - text: "룸메이트"
+            href: roommate.qmd
       - text: "English"
         href: english.qmd
+      - text: "Book"
+        href: book.qmd
       - text: "Shop"
         href: shop.qmd
 
 format:
   html:
     lang: ko
+    css: styles.css
+    page-layout: custom
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap">
