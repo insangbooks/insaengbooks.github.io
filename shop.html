@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
@@ -38,17 +38,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "일치 없음",
-    "search-matching-documents-text": "일치된 문서",
-    "search-copy-link-title": "검색 링크 복사",
-    "search-hide-matches-text": "추가 검색 결과 숨기기",
-    "search-more-match-text": "추가 검색결과",
-    "search-more-matches-text": "추가 검색결과",
-    "search-clear-button-title": "제거",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "취소",
-    "search-submit-button-title": "검색",
-    "search-label": "검색"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Pluszone Education</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -95,29 +95,29 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-program">    
         <li>
     <a class="dropdown-item" href="./advisor.html">
- <span class="dropdown-text">조언자</span></a>
+ <span class="dropdown-text">Advisor</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./librarian.html">
- <span class="dropdown-text">AI 사서</span></a>
+ <span class="dropdown-text">AI Librarian</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./tutor.html">
- <span class="dropdown-text">튜터</span></a>
+ <span class="dropdown-text">Tutor</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./editor.html">
- <span class="dropdown-text">에디터</span></a>
+ <span class="dropdown-text">Editor</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./roommate.html">
- <span class="dropdown-text">룸메이트</span></a>
+ <span class="dropdown-text">Roommate</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
-<span class="menu-text">English</span></a>
+    <a class="nav-link" href="./korean.html"> 
+<span class="menu-text">Korean</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./book.html"> 
@@ -146,13 +146,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- 도서 구매 페이지. 구매 링크는 모두 이 페이지에서 관리합니다. -->
 <section class="wrap shop-head">
   <span class="eyebrow">SHOP</span>
-  <h1>도서 구매</h1>
-  <p>한국어판은 국내 온라인 서점에서, 영문판은 아마존에서 구매하실 수 있습니다.</p>
+  <h1>Where to Buy</h1>
+  <p>The English edition is available on Amazon, and the Korean edition from Korean online bookstores.</p>
 </section>
 
 <section class="wrap">
   <div class="editions">
-    <article class="edition">
+    <article class="edition" lang="ko">
       <img src="book.jpg" alt="『인성 교육, 참! 잘하는 교사』 한국어판 표지">
       <div class="info">
         <span class="eyebrow">한국어판</span>
@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </section>
 <div id="contact" class="wrap contact-line">
-<p>문의 <a href="mailto:insaengbooks@gmail.com">insaengbooks@gmail.com</a></p>
+<p>Contact <a href="mailto:insaengbooks@gmail.com">insaengbooks@gmail.com</a></p>
 </div>
 
 
@@ -232,12 +232,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "복사완료!");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "복사완료!");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
