@@ -2,11 +2,11 @@ project:
   type: website
 
 website:
-  title: "PlusZone Education"
+  title: "PLUSZONE Education"
   favicon: favicon.png
   site-url: https://edupluszone.com
   open-graph:
-    site-name: "PlusZone Education"
+    site-name: "PLUSZONE Education"
   twitter-card: true
   search: false
   navbar:

@@ -1,5 +1,5 @@
 ---
-pagetitle: "플러스존 에듀케이션 | 소개"
+pagetitle: "소개"
 description: "34년, 22년의 교직 현장에서 답을 찾은 두 교사 김경희·김혜진과 플러스존 에듀케이션의 철학을 소개합니다."
 image: og-home.jpg
 open-graph:

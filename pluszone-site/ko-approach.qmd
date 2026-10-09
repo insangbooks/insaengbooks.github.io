@@ -1,5 +1,5 @@
 ---
-pagetitle: "플러스존 에듀케이션 | 교육 방법"
+pagetitle: "교육 방법"
 description: "하이어라포, 질문으로 진단하기, 가치기준 바로 세우기와 굳히기의 4단계 흐름과 3단계 질문법, 10가지 인류 보편적 가치."
 image: og-home.jpg
 open-graph:

@@ -1,5 +1,5 @@
 ---
-pagetitle: "Pluszone Education | A Teacher's Guide to the Art of Character Education"
+pagetitle: "A Teacher's Guide to the Art of Character Education"
 description: "Higher Rapport: real classroom cases from two Korean teachers on guiding students from negative to positive behaviour. By Kim Kyeong Hyi and Kim Hye-jin, Insaeng Books."
 image: og-image-en.jpg
 open-graph:
@@ -14,7 +14,7 @@ lang: en
   English page for 『인성 교육, 참! 잘하는 교사』
   (A Teacher's Guide to the Art of Character Education)
   Text is based on the English edition manuscript.
-  The top menu (Pluszone Education / Home / English) comes from the navbar in _quarto.yml.
+  The top menu (PLUSZONE Education / Home / English) comes from the navbar in _quarto.yml.
 ============================================================= -->
 
 ::: {#top .hero .en}

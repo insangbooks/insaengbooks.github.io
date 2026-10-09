@@ -1,5 +1,5 @@
 ---
-pagetitle: "Pluszone Education | Shop"
+pagetitle: "Shop"
 description: "『인성 교육, 참! 잘하는 교사』 한국어판(교보문고·예스24·알라딘)과 영문판 A Teacher's Guide to the Art of Character Education(아마존) 구매처 안내."
 image: og-image-en.jpg
 open-graph:

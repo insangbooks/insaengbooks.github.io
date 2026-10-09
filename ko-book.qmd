@@ -1,5 +1,5 @@
 ---
-pagetitle: "Pluszone Education | 인성 교육, 참! 잘하는 교사"
+pagetitle: "인성 교육, 참! 잘하는 교사"
 description: "교사와 학생이 모두 행복해지는 인성교육의 체험서. 학교에서 있었던 사례들을 통해 고민을 해결하고, 교사와 학생이 함께 성장하는 방법을 소개합니다. 김경희·김혜진 지음, 인생북스."
 image: og-image.jpg
 open-graph:
@@ -17,7 +17,7 @@ lang: ko
 <!-- ============================================================
   인생북스 홈페이지 — 「인성교육 참 잘하는 교사」
   대괄호 [ ] 로 표시된 곳을 실제 내용으로 바꿔 주세요.
-  상단 메뉴(Pluszone Education / Home / English)는 _quarto.yml 의 navbar 에서 만듭니다.
+  상단 메뉴(PLUSZONE Education / Home / English)는 _quarto.yml 의 navbar 에서 만듭니다.
 ============================================================= -->
 
 

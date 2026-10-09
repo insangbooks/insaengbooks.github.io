@@ -1,12 +1,12 @@
 ---
-pagetitle: "PlusZone Education | Stories"
+pagetitle: "Stories"
 description: "How questions and empathy changed classrooms: student stories, classroom cases and teachers’ reflections after training."
 image: og-home-en.jpg
 open-graph:
-  title: "How questions changed classrooms | PlusZone Education"
+  title: "How questions changed classrooms | PLUSZONE Education"
   locale: en_US
 twitter-card:
-  title: "How questions changed classrooms | PlusZone Education"
+  title: "How questions changed classrooms | PLUSZONE Education"
 lang: en
 ---
 

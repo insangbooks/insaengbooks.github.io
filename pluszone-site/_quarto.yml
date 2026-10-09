@@ -2,11 +2,11 @@ project:
   type: website
 
 website:
-  title: "PlusZone Education"
+  title: "PLUSZONE Education"
   favicon: favicon.png
   site-url: https://edupluszone.com
   open-graph:
-    site-name: "PlusZone Education"
+    site-name: "PLUSZONE Education"
   twitter-card: true
   search: false
   navbar:
@@ -19,14 +19,15 @@ website:
         href: approach.qmd
       - text: "Programs"
         href: programs.qmd
-      - text: "Korean"
-        href: korean.qmd
       - text: "Stories"
         href: stories.qmd
       - text: "Book"
         href: book.qmd
       - text: "Shop"
         href: shop.qmd
+    right:
+      - text: "Korean"
+        href: korean.qmd
 
 format:
   html:

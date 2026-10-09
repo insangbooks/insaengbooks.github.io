@@ -1,5 +1,5 @@
 ---
-pagetitle: "플러스존 에듀케이션 | 현장 사례"
+pagetitle: "현장 사례"
 description: "질문과 공감이 만든 교실의 변화: 학생들의 변화, 현장 실천 사례, 연수에 참여한 교사들의 후기."
 image: og-home.jpg
 open-graph:

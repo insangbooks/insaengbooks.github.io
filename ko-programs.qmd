@@ -1,5 +1,5 @@
 ---
-pagetitle: "플러스존 에듀케이션 | 프로그램"
+pagetitle: "프로그램"
 description: "교원 맞춤형 연수, 학급/학교 맞춤형 컨설팅, 대상별 맞춤 교육과정과 운영 형태, 연수 신청 절차를 안내합니다."
 image: og-home.jpg
 open-graph:

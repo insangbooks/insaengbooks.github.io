@@ -1,12 +1,12 @@
 ---
-pagetitle: "PlusZone Education | Approach"
+pagetitle: "Approach"
 description: "The four processes (Higher Rapport, diagnosing with questions, setting and solidifying value standards), the Three-Step Questioning Method and ten universal values."
 image: og-home-en.jpg
 open-graph:
-  title: "Instead of lecturing: the Three-Step Questioning Method | PlusZone Education"
+  title: "Instead of lecturing: the Three-Step Questioning Method | PLUSZONE Education"
   locale: en_US
 twitter-card:
-  title: "Instead of lecturing: the Three-Step Questioning Method | PlusZone Education"
+  title: "Instead of lecturing: the Three-Step Questioning Method | PLUSZONE Education"
 lang: en
 ---
 
