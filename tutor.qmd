@@ -1,27 +1,28 @@
 ---
-pagetitle: "Pluszone Education | 튜터"
-description: "플러스 교육의 03번째 역할, 튜터. 가르쳐 주면서 내가 무엇을 모르고 있는지 알게 도와줍니다."
-image: og-home.jpg
+pagetitle: "Pluszone Education | Tutor"
+description: "Role 03 of the Plus Education program, the Tutor. Teaches you, and helps you see what you don't yet know."
+image: og-home-en.jpg
 open-graph:
-  title: "튜터 | 플러스 교육"
-  locale: ko_KR
+  title: "Tutor | Plus Education"
+  locale: en_US
 twitter-card:
-  title: "튜터 | 플러스 교육"
+  title: "Tutor | Plus Education"
+lang: en
 ---
 
 ```{=html}
 <section class="wrap role-hero">
   <span class="eyebrow">ROLE 03</span>
-  <h1>튜터</h1>
-  <span class="en-nm">Tutor</span>
-  <p class="lead">가르쳐 주면서 내가 무엇을 모르고 있는지 알게 도와줍니다.</p>
+  <h1>Tutor</h1>
+  
+  <p class="lead">Teaches you, and helps you see what you don't yet know.</p>
 </section>
 <section class="wrap role-body">
-<div class="statement">가르쳐 주면서, 내가 무엇을 모르고 있는지 알게 도와줍니다.</div><div class="ph" style="margin-top:28px"><b>[튜터 프로그램 진행 방식]</b><span>[진행 순서, 예시 대화, 사진 등이 들어갈 자리]</span></div>
-<nav class="role-nav" aria-label="역할 이동"><a class="prev" href="librarian.html"><span>← 이전 역할</span><b>AI 사서</b></a><a class="next" href="editor.html"><span>다음 역할 →</span><b>에디터</b></a></nav>
+<div class="statement">By teaching you, the Tutor helps you discover what you don&#39;t yet know.</div><div class="ph" style="margin-top:28px"><b>[How tutoring works]</b><span>[Space for the process, sample dialogue, photos, etc.]</span></div>
+<nav class="role-nav" aria-label="Roles"><a class="prev" href="librarian.html"><span>← Previous role</span><b>AI Librarian</b></a><a class="next" href="editor.html"><span>Next role →</span><b>Editor</b></a></nav>
 </section>
 ```
 
 ::: {#contact .wrap .contact-line}
-문의 [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
+Contact [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
 :::

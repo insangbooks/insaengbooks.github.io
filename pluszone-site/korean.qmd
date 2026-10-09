@@ -1,0 +1,34 @@
+---
+pagetitle: "플러스존 에듀케이션 | 가치중심 인성교육 솔루션"
+description: "교사의 질문이 바뀌면 아이들의 가치기준이 바로 서고, 교실이 변합니다. 도서 『인성교육, 참! 잘하는 교사』 기반의 현장 맞춤형 가치중심 인성교육 솔루션, 플러스존 에듀케이션."
+image: og-home.jpg
+open-graph:
+  title: "플러스존 에듀케이션 | 교사의 질문이 바뀌면 교실이 변합니다"
+  locale: ko_KR
+twitter-card:
+  title: "플러스존 에듀케이션 | 교사의 질문이 바뀌면 교실이 변합니다"
+lang: ko
+---
+
+```{=html}
+<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html" aria-current="page">홈</a><a href="ko-about.html">소개</a><a href="ko-approach.html">교육 방법</a><a href="ko-programs.html">프로그램</a><a href="ko-stories.html">현장 사례</a><a href="ko-book.html">책 소개</a><a class="lang" href="index.html">English</a></div></nav>
+<section class="pz-hero compact"><div class="wrap"><div class="txt"><span class="eyebrow">PLUSZONE EDUCATION · 가치중심 인성교육 솔루션</span><h1>교사의 질문이 바뀌면<br>아이들의 가치기준이 바로 서고,<br><em>교실이 변합니다!</em></h1><p class="sub">도서 『인성교육, 참! 잘하는 교사』 기반의 현장 맞춤형 가치중심 인성교육 솔루션</p><div class="cta"><a class="buy-btn primary" href="ko-programs.html">프로그램 보기</a><a class="buy-btn" href="#contact">연수 문의</a></div></div><figure class="plus-graph"><svg viewBox="0 0 420 360" role="img" aria-label="의식의 성장 그래프: 플러스 영역과 마이너스 영역">
+<rect x="170" y="24" width="220" height="166" fill="#E3F2F2"/><rect x="170" y="190" width="220" height="146" fill="#F8E2DE"/>
+<line x1="20" y1="190" x2="400" y2="190" stroke="#5A6879" stroke-width="1.5"/><line x1="170" y1="14" x2="170" y2="346" stroke="#5A6879" stroke-width="1.5"/>
+<line x1="40" y1="320" x2="350" y2="10" stroke="#9C5550" stroke-width="2.5"/>
+<text x="402" y="206" font-size="14" fill="#5A6879" font-style="italic">x</text><text x="178" y="20" font-size="14" fill="#5A6879" font-style="italic">y</text>
+<text x="156" y="206" font-size="13" fill="#5A6879">O</text><text x="300" y="22" font-size="13" fill="#9C5550" font-style="italic">y = x</text>
+<text x="200" y="74" font-size="30" font-weight="800" fill="#1F3A5F">(+,+)</text>
+<text x="282" y="140" font-size="12" fill="#1F3A5F">Growth of Consciousness</text><text x="282" y="158" font-size="14" font-weight="700" fill="#1F3A5F">Plus(+) zone</text>
+<text x="286" y="182" font-size="13" font-weight="700" fill="#1F3A5F">Zero(0) zone</text>
+<text x="282" y="290" font-size="12" fill="#1F3A5F">Decline of Consciousness</text><text x="282" y="308" font-size="14" font-weight="700" fill="#1F3A5F">Minus(−) zone</text>
+</svg><figcaption>(+,+), 의식의 성장</figcaption></figure></div></section>
+<section class="wrap"><div class="topics"><a class="topic" href="ko-about.html"><span class="tn">01</span><span class="eyebrow">소개</span><b>현장에서 답을 찾은 두 교사</b><span class="ts">34년, 22년의 교직 현장이 플러스존 에듀케이션의 출발점이 되었습니다.</span><span class="ta" aria-hidden="true">→</span></a><a class="topic" href="ko-approach.html"><span class="tn">02</span><span class="eyebrow">교육 방법</span><b>훈계 대신, 따뜻한 질문</b><span class="ts">4가지 인성교육 Process, 3단계 질문법, 10가지 보편적 가치</span><span class="ta" aria-hidden="true">→</span></a><a class="topic" href="ko-programs.html"><span class="tn">03</span><span class="eyebrow">프로그램</span><b>기관 맞춤형 연수와 컨설팅</b><span class="ts">교원 연수, 학교 컨설팅, 8가지 대상별 커리큘럼</span><span class="ta" aria-hidden="true">→</span></a><a class="topic" href="ko-stories.html"><span class="tn">04</span><span class="eyebrow">현장 사례</span><b>질문이 바꾼 교실</b><span class="ts">학생들의 변화, 실천 사례, 연수 후기</span><span class="ta" aria-hidden="true">→</span></a><a class="topic" href="ko-book.html"><span class="tn">05</span><span class="eyebrow">책</span><b>『인성교육, 참! 잘하는 교사』</b><span class="ts">두 저자의 현장 기록을 담은 책</span><span class="ta" aria-hidden="true">→</span></a><a class="topic" href="shop.html"><span class="tn">06</span><span class="eyebrow">구매</span><b>한국어판 · 영문판 구매처</b><span class="ts">교보문고 · 예스24 · 알라딘 · 아마존</span><span class="ta" aria-hidden="true">→</span></a></div></section><section class="wrap"><div class="contact-band" id="contact">
+<h2>문의 및 신청</h2>
+<p class="org">발행 및 교육 운영 기관 · 플러스존 에듀솔루션 (PLUSZONE EDU SOLUTION)</p>
+<div class="items">
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>연수 및 컨설팅 문의</small><a href="tel:+821055280079">+82 10-5528-0079</a></div></div>
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><div><small>이메일 상담</small><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div></div>
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span><div><small>공식 웹사이트</small><a href="https://edupluszone.com">www.edupluszone.com</a></div></div>
+</div></div></section><div class="pz-end"></div>
+```

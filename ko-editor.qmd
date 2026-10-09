@@ -1,0 +1,28 @@
+---
+pagetitle: "Pluszone Education | 에디터"
+description: "플러스 교육의 04번째 역할, 에디터. 실제 해 본 것을 가지고 피드백을 해 줍니다."
+image: og-home.jpg
+open-graph:
+  title: "에디터 | 플러스 교육"
+  locale: ko_KR
+twitter-card:
+  title: "에디터 | 플러스 교육"
+lang: ko
+---
+
+```{=html}
+<section class="wrap role-hero">
+  <span class="eyebrow">ROLE 04</span>
+  <h1>에디터</h1>
+  <span class="en-nm">Editor</span>
+  <p class="lead">실제 해 본 것을 가지고 피드백을 해 줍니다.</p>
+</section>
+<section class="wrap role-body">
+<h2>예: F1 경기</h2><div class="two-col"><div><p>F1 경기에서는 실시간으로 주고받는 즉각적인 피드백이 승패를 좌우합니다. 에디터는 여러분이 실제로 해 본 것을 보고 바로 피드백을 줍니다.</p><div class="statement" style="margin-top:24px">탁월함은 피드백 속에서 만들어집니다.</div></div><div class="ph video-ph"><b>[영상이 들어갈 자리]</b><span>YouTube 등의 임베드 코드를 넣어 주세요</span></div></div>
+<nav class="role-nav" aria-label="역할 이동"><a class="prev" href="ko-tutor.html"><span>← 이전 역할</span><b>튜터</b></a><a class="next" href="ko-roommate.html"><span>다음 역할 →</span><b>룸메이트</b></a></nav>
+</section>
+```
+
+::: {#contact .wrap .contact-line}
+문의 [insaengbooks@gmail.com](mailto:insaengbooks@gmail.com)
+:::

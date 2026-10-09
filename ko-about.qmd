@@ -1,0 +1,23 @@
+---
+pagetitle: "플러스존 에듀케이션 | 소개"
+description: "34년, 22년의 교직 현장에서 답을 찾은 두 교사 김경희·김혜진과 플러스존 에듀케이션의 철학을 소개합니다."
+image: og-home.jpg
+open-graph:
+  title: "현장에서 답을 찾은 두 교사 | 플러스존 에듀케이션"
+  locale: ko_KR
+twitter-card:
+  title: "현장에서 답을 찾은 두 교사 | 플러스존 에듀케이션"
+lang: ko
+---
+
+```{=html}
+<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html">홈</a><a href="ko-about.html" aria-current="page">소개</a><a href="ko-approach.html">교육 방법</a><a href="ko-programs.html">프로그램</a><a href="ko-stories.html">현장 사례</a><a href="ko-book.html">책 소개</a><a class="lang" href="index.html">English</a></div></nav>
+<section class="section" style="padding-top:56px"><div class="wrap"><div class="sec-title"><span class="eyebrow">이 교육을 만든 사람들</span><h2>현장에서 답을 찾은 두 교사</h2><p>플러스존 에듀케이션의 뿌리는 이론이 아닌 교실입니다. 두 교사가 <b>34년, 22년의 교직 현장</b>에서 아이들과 부딪히며 찾아낸 답이 이 교육의 출발점이 되었습니다.</p></div><div class="people"><div class="person"><span class="prole">34년 차 보건교사</span><h3>김경희</h3><span class=rom>Kim, Kyeong Hyi</span><div class="badges"><span>보건교사 34년</span><span>간호학</span><span>상담교육 전공</span></div><p>대학에서 간호학을, 대학원에서 상담교육을 전공했다. 보건실을 찾는 아이들의 몸뿐 아니라 마음의 아픔을 돌보며, 생각 하나·마음 하나를 바꾸도록 돕는 인성교육으로 약이 필요 없어질 만큼 아이가 회복되는 변화를 여러 차례 경험했다.</p><p>학생의 인성을 교육하려면 교사부터 올바른 인성을 갖춰야 한다는 믿음으로, 오늘도 자신에게 먼저 적용하며 학생과 함께 성장하는 길을 실천하고 있다.</p></div><div class="person"><span class="prole">22년 차 초등교사</span><h3>김혜진</h3><span class=rom>Kim, Hye-Jin</span><div class="badges"><span>초등교사 22년</span><span>초등교육학</span><span>교육학 박사과정 수료</span></div><p>교육대학교를 졸업하고 교육상담 석사학위를 취득했으며, 교육학 박사과정을 수료한 교육현장 교육자이다. 행복한 교직 생활을 꿈꿨지만 현실은 녹록지 않았다. 교사에게 욕을 하는 아이들, 과잉보호하거나 방임하는 학부모 속에서 ‘지치지 않고’ 인성교육하는 방법을 찾기 위해 노력해 왔다.</p><p>아이들과의 일을 기록하며 교사·학생·학부모 모두의 인성이 바로 서는 길을 탐구하고, ‘나부터 옳은 사람이 되겠다’는 다짐으로 한 걸음씩 나아가고 있다.</p></div></div></div></section><section class="section"><div class="wrap"><div class="bookband"><img src="booke.jpg" alt="영문판 A Teacher's Guide to the Art of Character Education 표지"><div><span class="lbl">두 저자의 현장 기록을 담은 책</span><h3>『인성교육, 참! 잘하는 교사』</h3><span class="en">영문판 A Teacher’s Guide to the Art of Character Education — Higher Rapport</span><p class="by">김경희 · 김혜진 저 &nbsp;|&nbsp; 인생북스 &nbsp;·&nbsp; <a href="ko-book.html">책 소개 보기 →</a></p><blockquote>“우리의 교육에 실수는 있어도 실패가 없는 것이다”<small>— 『인성교육, 참! 잘하는 교사』 중에서</small></blockquote></div></div></div></section><section class="section"><div class="wrap"><div class="sec-title"><span class="eyebrow">운영 철학</span><h2>PLUS(+)를 선택하는 성장의 즐거움</h2><p>누구나 행복하게 살기를 원합니다. 플러스존 에듀케이션은 바라는 나와 지금의 나 사이, 그 간극을 만드는 <b>마이너스를 발견</b>하고 <b>스스로 플러스를 선택하는 즐거움</b>을 경험하도록 돕습니다.</p></div><div class="note-box"><b>(+,+), 의식의 성장</b> — 모든 사고나 생활 방법을 능동적, 적극적, 긍정적으로 대처해 나가면 나의 삶이 어떻게 플러스(+)로 이루어지게 되는지를 알게 되는 교육입니다.</div></div></section><section class="section"><div class="wrap"><div class="sec-title"><span class="eyebrow">A SINGLE THOUGHT</span><h2>한 생각</h2></div><div class="thought">지금 나는 어떤 생각을 품고, 어떤 말을 하며, 어떤 행동을 하고 있는가?<br>지금 품은 한 생각이 나의 미래와 역사를 만듭니다.<small>— <i>A Single Thought</i> 중에서 · 이상대</small></div></div></section><section class="wrap"><div class="contact-band" id="contact">
+<h2>문의 및 신청</h2>
+<p class="org">발행 및 교육 운영 기관 · 플러스존 에듀솔루션 (PLUSZONE EDU SOLUTION)</p>
+<div class="items">
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>연수 및 컨설팅 문의</small><a href="tel:+821055280079">+82 10-5528-0079</a></div></div>
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><div><small>이메일 상담</small><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div></div>
+<div class="it"><span class="ico rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span><div><small>공식 웹사이트</small><a href="https://edupluszone.com">www.edupluszone.com</a></div></div>
+</div></div></section><div class="pz-end"></div>
+```
