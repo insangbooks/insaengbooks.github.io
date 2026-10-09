@@ -562,3 +562,17 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .plus-graph img{display:block;width:100%;height:auto;border-radius:6px}
 .pz-hero.compact .wrap{grid-template-columns:1fr 400px}
 @media (max-width: 900px){ .pz-hero.compact .wrap{grid-template-columns:1fr} .pz-hero.compact .plus-graph{max-width:360px} }
+
+/* Mobile: teacher-training lecture list (number left, title + description right) */
+@media (max-width: 900px){
+  .lec{grid-template-columns:52px minmax(0,1fr);grid-template-rows:auto auto}
+  .lec .n{grid-column:1;grid-row:1 / 3}
+  .lec b{grid-column:2;grid-row:1;padding:14px 16px 4px}
+  .lec span{grid-column:2;grid-row:2;padding:0 16px 14px}
+}
+
+/* Mobile: show the full site name in the top bar */
+@media (max-width: 600px){
+  .navbar .navbar-brand,.navbar .navbar-title{font-size:19px;white-space:nowrap;overflow:visible;text-overflow:clip;max-width:none}
+  .navbar .navbar-brand-container{max-width:none;overflow:visible}
+}
