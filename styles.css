@@ -1,4 +1,4 @@
-/* Pluszone Education — shared styles */
+/* PLUSZONE Education — shared styles */
 :root{
   --paper:#F5F8FC; --paper-2:#E8F1F9; --sand:#D3E2EF; --line:#DCE6F0;
   --ink:#1F3A5F; --text:#34465C; --muted:#5A6879;
@@ -290,7 +290,7 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 }
 
 /* =====================================================
-   PlusZone Education — brochure-based pages
+   PLUSZONE Education — brochure-based pages
    ===================================================== */
 .ko-subnav{background:#fff;border-bottom:1px solid var(--line)}
 .ko-subnav .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;padding-top:12px;padding-bottom:12px;font-size:15px}
@@ -557,3 +557,8 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 #quarto-content > *{padding-top:0}
 #quarto-content > .section{padding-top:112px}
 @media (max-width: 900px){ #quarto-content > .section{padding-top:56px} }
+
+/* Home graph: original image */
+.plus-graph img{display:block;width:100%;height:auto;border-radius:6px}
+.pz-hero.compact .wrap{grid-template-columns:1fr 400px}
+@media (max-width: 900px){ .pz-hero.compact .wrap{grid-template-columns:1fr} .pz-hero.compact .plus-graph{max-width:360px} }
