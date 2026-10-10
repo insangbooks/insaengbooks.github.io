@@ -4,8 +4,8 @@
   --ink:#2B221D; --text:#3A302A; --muted:#6A5C52;
   --accent:#A84A0D; --accent-dark:#7F370A; --accent-soft:#F39A2B; --label:#8A4A12;
   --blue:#B5530E; --rose:#9A3F1F; --navy:#3E2A1E;
-  --serif:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
-  --sans:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --serif:'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --sans:'Noto Sans KR','Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
 }
 html{scroll-behavior:smooth}
 body{word-break:keep-all;overflow-wrap:break-word;margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.8}
@@ -709,4 +709,19 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 @media (max-width: 900px){
   #quarto-content > section:not(.section){padding-top:52px}
   .inside{padding:28px 22px}
+}
+.eyebrow.lg{font-size:17px;letter-spacing:2px}
+@media (max-width: 900px){ .eyebrow.lg{font-size:15px} }
+/* Partners: story card illustration (replaces QR on the website) */
+.qr-card{grid-template-columns:minmax(0,1fr) minmax(0,360px)}
+.qr-card img.illus{width:100%;height:auto;border:0;border-radius:0;mix-blend-mode:multiply}
+@media (max-width: 900px){ .qr-card{grid-template-columns:1fr} .qr-card img.illus{width:100%;height:auto;max-width:380px;margin:0 auto} }
+/* Higher Growth flow (drawn like the brochure) */
+.hg-flow{margin:28px 0 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 28px}
+.hg-flow svg{display:block;width:100%;height:auto;font-family:var(--sans)}
+.hg-tall{display:none!important}
+@media (max-width: 700px){
+  .hg-flow{padding:16px}
+  .hg-wide{display:none!important}
+  .hg-tall{display:block!important;max-width:360px;margin:0 auto}
 }
