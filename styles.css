@@ -730,3 +730,24 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 @media (max-width: 900px){ .shop-head{padding:28px 20px 0} }
 #quarto-content > .shop-head{padding-top:56px}
 @media (max-width: 900px){ #quarto-content > .shop-head{padding-top:28px} }
+
+/* Stories: student story videos (YouTube, loaded on click) */
+.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.vplay,.vframe{display:block;width:100%;aspect-ratio:16/9;border:0;margin:0;padding:0}
+.vplay{position:relative;cursor:pointer;background:var(--sand) center/cover no-repeat}
+.vplay::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(62,42,30,0) 50%,rgba(62,42,30,.35))}
+.vicon{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:rgba(168,74,13,.92);box-shadow:0 8px 24px rgba(62,42,30,.3);z-index:1;transition:transform .15s}
+.vicon::before{content:"";position:absolute;left:29px;top:22px;border-left:22px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.vplay:hover .vicon,.vplay:focus-visible .vicon{transform:scale(1.08)}
+.vplay:focus-visible{outline:3px solid var(--label);outline-offset:-3px}
+.vsoon{display:none}
+.vcard.soon .vplay{cursor:default}
+.vcard.soon .vicon{background:rgba(106,92,82,.55)}
+.vcard.soon .vsoon{display:block;position:absolute;left:50%;top:calc(50% + 50px);transform:translateX(-50%);z-index:1;background:rgba(255,255,255,.92);color:var(--ink);font-size:14px;font-weight:700;border-radius:999px;padding:4px 14px;white-space:nowrap}
+.vtxt{padding:20px 24px 24px;display:flex;flex-direction:column;gap:6px}
+.vno{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--label)}
+.vtxt b{font-size:19px;color:var(--ink);line-height:1.4}
+.vtxt p{font-size:15px;color:var(--text);line-height:1.7;margin:0}
+@media (max-width: 900px){ .vgrid{grid-template-columns:1fr;gap:16px} .vicon{width:60px;height:60px;margin:-30px 0 0 -30px} .vicon::before{left:24px;top:18px;border-left-width:18px;border-top-width:12px;border-bottom-width:12px} }
+@media (prefers-reduced-motion: reduce){ .vicon{transition:none} }
