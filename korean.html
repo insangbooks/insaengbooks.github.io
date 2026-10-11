@@ -61,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/korean.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/">
@@ -124,6 +125,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./korean.html" aria-current="page"> 
 <span class="menu-text">Korean</span></a>
@@ -224,15 +229,25 @@ body{background:#fff}
 .fz-book p{margin:0 0 16px;font-size:15px;color:var(--fz-mute)}
 .fz-card h3.t{font-size:24px;font-weight:800;color:var(--fz-ink);margin:0 0 6px}
 /* partners */
-.fz-partner{background:var(--fz-br);border-radius:18px;padding:56px;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.fz-partner .fz-tag{background:rgba(255,255,255,.12);color:#FFC58A}
-.fz-partner h2,.fz .contact-band h2{color:#fff}
-.fz-partner p{color:#E9DCCF;font-size:17px;line-height:1.8;margin:0 0 28px}
+.fz-partner{background:linear-gradient(135deg,#FFF6EC 0%,#FDEBD8 100%);border:1px solid #F4DCC4;border-radius:18px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.fz-partner .fz-tag{background:#fff}
+.fz-partner p{color:var(--fz-text);font-size:17px;line-height:1.8;margin:0 0 28px}
 .fz-areas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fz-areas div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px;font-weight:800;font-size:17px}
-.fz-areas div i{display:block;font-style:normal;color:#FFB36B;font-size:13px;letter-spacing:1px;margin-bottom:6px}
-.fz-partner .fz-btn{background:var(--fz-or);color:#1E120A}
-.fz-partner .fz-btn:hover{background:#fff}
+.fz-areas div{background:#fff;border:1px solid #F1DECB;border-radius:16px;padding:22px;font-weight:800;font-size:17px;color:var(--fz-ink);box-shadow:0 6px 16px rgba(160,80,10,.06)}
+.fz-areas div i{display:block;font-style:normal;color:var(--fz-or-d);font-size:13px;letter-spacing:1px;margin-bottom:6px}
+/* expo + contact: light cards */
+.fz .expo{background:#fff;border:1px solid var(--fz-line);color:var(--fz-text);box-shadow:0 10px 30px rgba(40,25,10,.05)}
+.fz .expo-logo{background:var(--fz-soft);border:1px solid var(--fz-line)}
+.fz .expo .lbl,.fz .expo dt{color:var(--fz-or-d)}
+.fz .expo h3,.fz .expo dd{color:var(--fz-ink)}
+.fz .expo i{color:var(--fz-mute);border-bottom-color:var(--fz-line)}
+.fz .contact-band{background:var(--fz-soft);border:1px solid var(--fz-line);color:var(--fz-text)}
+.fz .contact-band h2{color:var(--fz-ink)!important;font-size:28px;margin-bottom:0}
+.fz .contact-band .org{color:var(--fz-or-d)}
+.fz .contact-band .it small{color:var(--fz-mute)}
+.fz .contact-band .it a{color:var(--fz-ink)}
+.fz .contact-band .it a:hover{color:var(--fz-or-d)}
+.fz .contact-band .ico{background:var(--fz-or-d)}
 .fz #partners{padding-bottom:0}
 .fz .expo,.fz .contact-band{margin-top:32px;margin-bottom:0}
 @media (max-width:900px){.fz .expo,.fz .contact-band{margin-top:20px}}
@@ -270,7 +285,7 @@ body{background:#fff}
 .pz-hero.v6.after .more{font-weight:700;color:var(--accent);text-decoration:none}
 @media (max-width:700px){#quarto-content > .pz-intro,.pz-intro{height:auto;min-height:0;padding:64px 0 76px}.pz-intro h1{font-size:26px;letter-spacing:-.6px}.pz-intro .eyebrow{font-size:12px;letter-spacing:2px}.pz-intro .imath{font-size:15px}.pz-hero.v6.after h2{font-size:28px}.pz-hero.v6.after .lead{font-size:15px}}
 @media (prefers-reduced-motion:reduce){.pz-intro .iscroll{animation:none}}
-</style><nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html" aria-current="page">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a class="lang" href="index.html">English</a></div></nav><div class="fz"><section class="pz-intro"><video muted="" loop="" playsinline="" autoplay="" preload="none" poster="intro-poster.jpg" data-src="intro-loop.mp4" aria-hidden="true"></video><div class="ishade"></div><div class="icontent"><span class="eyebrow">THE FOUNDATION OF AI CONSCIOUSNESS</span><h1>“순간의 선택을 <span class="nw">미분(dy/dx)하고,</span><br><em>플러스존의 가치기준을 <span class="nw">적분(∫)하라”</span></em></h1><p class="imath">The Mathematics of Character Education</p><div class="cta"><a class="buy-btn primary" href="ko-approach.html">교육 방법 보기</a><a class="buy-btn" href="ko-stories.html#videos">학생 지도 영상 보기</a></div></div><button class="ipause" type="button" aria-label="배경 영상 일시정지" data-pause="배경 영상 일시정지" data-play="배경 영상 재생">❚❚</button><a class="iscroll" href="#plane" aria-label="아래로 이동">↓</a></section><section class="fz-sec" id="plane"><div class="wrap"><div class="fz-plane">
+</style><nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html" aria-current="page">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="index.html">English</a></div></nav><div class="fz"><section class="pz-intro"><video muted="" loop="" playsinline="" autoplay="" preload="none" poster="intro-poster.jpg" data-src="intro-loop.mp4" aria-hidden="true"></video><div class="ishade"></div><div class="icontent"><span class="eyebrow">THE FOUNDATION OF AI CONSCIOUSNESS</span><h1>“순간의 선택을 <span class="nw">미분(dy/dx)하고,</span><br><em>플러스존의 가치기준을 <span class="nw">적분(∫)하라”</span></em></h1><p class="imath">The Mathematics of Character Education</p><div class="cta"><a class="buy-btn primary" href="ko-approach.html">교육 방법 보기</a><a class="buy-btn" href="ko-stories.html#videos">학생 지도 영상 보기</a></div></div><button class="ipause" type="button" aria-label="배경 영상 일시정지" data-pause="배경 영상 일시정지" data-play="배경 영상 재생">❚❚</button><a class="iscroll" href="#plane" aria-label="아래로 이동">↓</a></section><section class="fz-sec" id="plane"><div class="wrap"><div class="fz-plane">
 <div class="rv"><span class="fz-tag">의식의 좌표평면</span><h2>무엇을 선택하느냐에 따라<br><em>의식은 오르거나 내려갑니다</em></h2>
 <div class="fz-head" style="margin:0"><p>x축은 선한 생각이 이끌어낸 ‘행동’, y축은 그 행동으로 자라나는 ‘의식’입니다. 삶에서 부딪칠 때마다 무엇을 선택(+, −)하느냐에 따라, 의식은 플러스존으로 오르거나 마이너스존으로 내려갑니다.</p></div>
 <p class="fz-formula">인생 미적분 공식 — <span>매 순간의 선택(dy/dx)이 쌓여(∫)</span>, 인생 전체의 궤적을 결정합니다.</p></div>
@@ -724,6 +739,19 @@ body{background:#fff}
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 PLUSZONE EDU SOLUTION · 플러스존 에듀솔루션</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="tel:+821055280079">+82 10-5528-0079</a> · <a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a> · <a href="./contact.html">Contact · 문의하기</a></p>
+</div>
+  </div>
+</footer>
 
 
 
