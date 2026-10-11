@@ -756,3 +756,10 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 #quarto-content > .quote-band{padding:56px 32px}
 .quote-band p{margin:0 auto}
 @media (max-width:700px){#quarto-content > .quote-band{padding:40px 24px}}
+
+/* 저자 사진 */
+.person .phead{display:flex;align-items:center;gap:20px}
+.person .pname{display:flex;flex-direction:column;gap:6px;min-width:0}
+.person .pname .rom{margin-top:0}
+.pphoto{width:120px;height:120px;flex:none;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 1px var(--line),0 8px 20px rgba(90,45,10,.12);-webkit-user-drag:none;user-select:none}
+@media (max-width:700px){.pphoto{width:96px;height:96px}.person .phead{gap:16px}}
