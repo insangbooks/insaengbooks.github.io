@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
-<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/korean.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/">
@@ -122,6 +122,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./shop.html"> 
 <span class="menu-text">Shop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">3S Practice</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -249,6 +253,13 @@ body{background:#fff}
 .fz .contact-band .it a:hover{color:var(--fz-or-d)}
 .fz .contact-band .ico{background:var(--fz-or-d)}
 .fz #partners{padding-bottom:0}
+.fz-prac-sec{padding:72px 0 0}
+.fz-prac{display:flex;align-items:center;justify-content:space-between;gap:32px;background:linear-gradient(135deg,#FFF6EC 0%,#FDEBD8 100%);border:1px solid #F4DCC4;border-radius:18px;padding:44px 48px}
+.fz-prac .fz-tag{background:#fff}
+.fz-prac h2{font-size:32px;margin:0 0 10px}
+.fz-prac p{margin:0;font-size:16.5px;line-height:1.8;color:var(--fz-text);max-width:640px;word-break:keep-all}
+.fz-prac .fz-btn{flex:none}
+@media (max-width:900px){.fz-prac{flex-direction:column;align-items:flex-start;padding:28px 22px}.fz-prac h2{font-size:24px}.fz-prac-sec{padding:48px 0 0}}
 .fz .expo,.fz .contact-band{margin-top:32px;margin-bottom:0}
 @media (max-width:900px){.fz .expo,.fz .contact-band{margin-top:20px}}
 /* reveal on scroll */
@@ -304,7 +315,7 @@ body{background:#fff}
 <div class="fz-step"><span class="n">S2</span><div><b>Setting Plus (+) Standards</b><q>Are these thoughts and words of mine Plus or Minus?</q><small>Choosing for yourself the values to practice</small></div></div>
 <div class="fz-step"><span class="n">S3</span><div><b>Standards into Action</b><q>Then what should I do now, and how?</q><small>Turning the standards you judge right into action</small></div></div>
 </div></div>
-</div></section><section class="fz-sec" id="videos"><div class="wrap">
+</div></section><section class="fz-sec fz-prac-sec"><div class="wrap"><div class="fz-prac rv"><div><span class="fz-tag">3S PRACTICE ROOM · FREE</span><h2>Try the 3-Step Questioning Method<br><em>for yourself</em></h2><p>Practice the three questions with situation cards and get feedback, or work through your own classroom concerns from the same perspective. No sign-up needed.</p></div><a class="fz-btn" href="practice.html">Open the Practice Room →</a></div></div></section><section class="fz-sec" id="videos"><div class="wrap">
 <div class="fz-head c rv"><span class="fz-tag">STUDENT STORIES</span><h2>Student transformation<br><em>on video</em></h2><p>Short videos of real student guidance cases from the classroom.</p></div>
 <div class="rv"><div class="vgrid">
 <!-- 영상 1: data-yt="" 안에 유튜브 주소(또는 영상 ID)를 넣으세요 -->

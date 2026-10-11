@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
-<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/stories.html">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/ko-stories.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/stories.html">
@@ -122,6 +122,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./shop.html"> 
 <span class="menu-text">Shop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">3S Practice</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">

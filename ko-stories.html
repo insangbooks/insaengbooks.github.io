@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
-<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/stories.html">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/ko-stories.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/stories.html">
@@ -123,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./shop.html"> 
 <span class="menu-text">Shop</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">3S Practice</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -149,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html" aria-current="page">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="stories.html">English</a></div></nav>
+<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html" aria-current="page">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a href="ko-practice.html">3S 연습실</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="stories.html">English</a></div></nav>
 <section class="section" id="videos" style="padding-top:56px"><div class="wrap"><div class="sec-title"><span class="eyebrow">학생 지도 사례 영상</span><h2>영상으로 보는 학생의 변화</h2><p>교실에서 실제로 있었던 학생 지도 사례를 짧은 영상으로 만나 보세요.</p><p class="pseudo">※ 학생 이름은 모두 가명입니다.</p></div><div class="vgrid">
 <!-- 영상 1: data-yt="" 안에 유튜브 주소(또는 영상 ID)를 넣으세요 -->
 <article class="vcard" data-yt=""><button class="vplay" type="button" style="background-image:url(video1-poster.jpg)" aria-label="영상 재생: 사례 1"><span class="vicon" aria-hidden="true"></span><span class="vsoon">영상 준비 중</span></button><div class="vtxt"><span class="vno">사례 1</span><b>[영상 1 제목]</b><p>[한 줄 설명]</p></div></article>

@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
-<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/book.html">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/ko-book.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/book.html">
@@ -123,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./shop.html"> 
 <span class="menu-text">Shop</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">3S Practice</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -149,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html" aria-current="page">책 소개</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="book.html">English</a></div></nav>
+<nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html" aria-current="page">책 소개</a><a href="ko-practice.html">3S 연습실</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="book.html">English</a></div></nav>
 <!-- ============================================================
   인생북스 홈페이지 — 「인성교육 참 잘하는 교사」
   대괄호 [ ] 로 표시된 곳을 실제 내용으로 바꿔 주세요.

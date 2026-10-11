@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&amp;family=Noto+Sans+KR:wght@400;500;700;800;900&amp;display=swap">
-<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;document.querySelectorAll('a[href$="contact.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf("ko-contact")<0)a.setAttribute("href","ko-contact.html")})});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})})});</script>
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/korean.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/">
@@ -122,6 +122,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./shop.html"> 
 <span class="menu-text">Shop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">3S Practice</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -249,6 +253,13 @@ body{background:#fff}
 .fz .contact-band .it a:hover{color:var(--fz-or-d)}
 .fz .contact-band .ico{background:var(--fz-or-d)}
 .fz #partners{padding-bottom:0}
+.fz-prac-sec{padding:72px 0 0}
+.fz-prac{display:flex;align-items:center;justify-content:space-between;gap:32px;background:linear-gradient(135deg,#FFF6EC 0%,#FDEBD8 100%);border:1px solid #F4DCC4;border-radius:18px;padding:44px 48px}
+.fz-prac .fz-tag{background:#fff}
+.fz-prac h2{font-size:32px;margin:0 0 10px}
+.fz-prac p{margin:0;font-size:16.5px;line-height:1.8;color:var(--fz-text);max-width:640px;word-break:keep-all}
+.fz-prac .fz-btn{flex:none}
+@media (max-width:900px){.fz-prac{flex-direction:column;align-items:flex-start;padding:28px 22px}.fz-prac h2{font-size:24px}.fz-prac-sec{padding:48px 0 0}}
 .fz .expo,.fz .contact-band{margin-top:32px;margin-bottom:0}
 @media (max-width:900px){.fz .expo,.fz .contact-band{margin-top:20px}}
 /* reveal on scroll */
@@ -285,7 +296,7 @@ body{background:#fff}
 .pz-hero.v6.after .more{font-weight:700;color:var(--accent);text-decoration:none}
 @media (max-width:700px){#quarto-content > .pz-intro,.pz-intro{height:auto;min-height:0;padding:64px 0 76px}.pz-intro h1{font-size:26px;letter-spacing:-.6px}.pz-intro .eyebrow{font-size:12px;letter-spacing:2px}.pz-intro .imath{font-size:15px}.pz-hero.v6.after h2{font-size:28px}.pz-hero.v6.after .lead{font-size:15px}}
 @media (prefers-reduced-motion:reduce){.pz-intro .iscroll{animation:none}}
-</style><nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html" aria-current="page">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="index.html">English</a></div></nav><div class="fz"><section class="pz-intro"><video muted="" loop="" playsinline="" autoplay="" preload="none" poster="intro-poster.jpg" data-src="intro-loop.mp4" aria-hidden="true"></video><div class="ishade"></div><div class="icontent"><span class="eyebrow">THE FOUNDATION OF AI CONSCIOUSNESS</span><h1>“순간의 선택을 <span class="nw">미분(dy/dx)하고,</span><br><em>플러스존의 가치기준을 <span class="nw">적분(∫)하라”</span></em></h1><p class="imath">The Mathematics of Character Education</p><div class="cta"><a class="buy-btn primary" href="ko-approach.html">교육 방법 보기</a><a class="buy-btn" href="ko-stories.html#videos">학생 지도 영상 보기</a></div></div><button class="ipause" type="button" aria-label="배경 영상 일시정지" data-pause="배경 영상 일시정지" data-play="배경 영상 재생">❚❚</button><a class="iscroll" href="#plane" aria-label="아래로 이동">↓</a></section><section class="fz-sec" id="plane"><div class="wrap"><div class="fz-plane">
+</style><nav class="ko-subnav" aria-label="한국어 메뉴"><div class="wrap"><a href="korean.html" aria-current="page">홈</a><a href="ko-approach.html">교육 방법</a><a href="ko-about.html">소개</a><a href="ko-stories.html">현장 사례</a><a href="ko-partners.html">파트너십</a><a href="ko-book.html">책 소개</a><a href="ko-practice.html">3S 연습실</a><a class="cta" href="ko-contact.html">문의하기</a><a class="lang" href="index.html">English</a></div></nav><div class="fz"><section class="pz-intro"><video muted="" loop="" playsinline="" autoplay="" preload="none" poster="intro-poster.jpg" data-src="intro-loop.mp4" aria-hidden="true"></video><div class="ishade"></div><div class="icontent"><span class="eyebrow">THE FOUNDATION OF AI CONSCIOUSNESS</span><h1>“순간의 선택을 <span class="nw">미분(dy/dx)하고,</span><br><em>플러스존의 가치기준을 <span class="nw">적분(∫)하라”</span></em></h1><p class="imath">The Mathematics of Character Education</p><div class="cta"><a class="buy-btn primary" href="ko-approach.html">교육 방법 보기</a><a class="buy-btn" href="ko-stories.html#videos">학생 지도 영상 보기</a></div></div><button class="ipause" type="button" aria-label="배경 영상 일시정지" data-pause="배경 영상 일시정지" data-play="배경 영상 재생">❚❚</button><a class="iscroll" href="#plane" aria-label="아래로 이동">↓</a></section><section class="fz-sec" id="plane"><div class="wrap"><div class="fz-plane">
 <div class="rv"><span class="fz-tag">의식의 좌표평면</span><h2>무엇을 선택하느냐에 따라<br><em>의식은 오르거나 내려갑니다</em></h2>
 <div class="fz-head" style="margin:0"><p>x축은 선한 생각이 이끌어낸 ‘행동’, y축은 그 행동으로 자라나는 ‘의식’입니다. 삶에서 부딪칠 때마다 무엇을 선택(+, −)하느냐에 따라, 의식은 플러스존으로 오르거나 마이너스존으로 내려갑니다.</p></div>
 <p class="fz-formula">인생 미적분 공식 — <span>매 순간의 선택(dy/dx)이 쌓여(∫)</span>, 인생 전체의 궤적을 결정합니다.</p></div>
@@ -304,7 +315,7 @@ body{background:#fff}
 <div class="fz-step"><span class="n">S2</span><div><b>Setting Plus (+) Standards</b><q>나의 이 생각과 말은 플러스일까 마이너스일까?</q><small>실천할 가치를 주체적으로 선택</small></div></div>
 <div class="fz-step"><span class="n">S3</span><div><b>Standards into Action</b><q>그럼 이제 나는 무엇을 어떻게 해야 할까?</q><small>옳다고 판단한 기준을 행동으로 옮김</small></div></div>
 </div></div>
-</div></section><section class="fz-sec" id="videos"><div class="wrap">
+</div></section><section class="fz-sec fz-prac-sec"><div class="wrap"><div class="fz-prac rv"><div><span class="fz-tag">3S 연습실 · 무료 체험</span><h2>3단계 질문법,<br><em>지금 직접 연습해 보세요</em></h2><p>상황 카드로 세 단계 질문을 연습하고 피드백을 받거나, 나의 교실 고민을 같은 관점으로 정리해 볼 수 있습니다. 가입 없이 바로 시작할 수 있습니다.</p></div><a class="fz-btn" href="ko-practice.html">3S 연습실 가기 →</a></div></div></section><section class="fz-sec" id="videos"><div class="wrap">
 <div class="fz-head c rv"><span class="fz-tag">현장 사례</span><h2>영상으로 보는<br><em>학생의 변화</em></h2><p>교실에서 실제로 있었던 학생 지도 사례를 짧은 영상으로 만나 보세요.</p></div>
 <div class="rv"><div class="vgrid">
 <!-- 영상 1: data-yt="" 안에 유튜브 주소(또는 영상 ID)를 넣으세요 -->
