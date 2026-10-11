@@ -778,3 +778,11 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .ct-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#FFF6EC;border:1px solid #F4DCC4;border-radius:18px;padding:28px 32px;margin:56px 0 0}
 .ct-cta b{display:block;font-size:20px;color:var(--ink)}
 .ct-cta span{display:block;font-size:15px;color:var(--muted);margin-top:4px}
+
+/* 가명 안내 */
+.pseudo{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+.fz .pseudo{text-align:center;margin-top:20px}
+
+/* 존 안내 문구 */
+.zone-note{margin:16px 0 0;padding:16px 20px;background:#FFF6EC;border-left:4px solid #EF7A12;border-radius:10px;font-size:15.5px;line-height:1.8;color:var(--text);word-break:keep-all}
+.fz .zone-note{margin:4px 0 0}
