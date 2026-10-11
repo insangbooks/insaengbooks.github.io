@@ -751,3 +751,8 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .vtxt p{font-size:15px;color:var(--text);line-height:1.7;margin:0}
 @media (max-width: 900px){ .vgrid{grid-template-columns:1fr;gap:16px} .vicon{width:60px;height:60px;margin:-30px 0 0 -30px} .vicon::before{left:24px;top:18px;border-left-width:18px;border-top-width:12px;border-bottom-width:12px} }
 @media (prefers-reduced-motion: reduce){ .vicon{transition:none} }
+
+/* 인용 띠: 문장을 띠 가운데에 */
+#quarto-content > .quote-band{padding:56px 32px}
+.quote-band p{margin:0 auto}
+@media (max-width:700px){#quarto-content > .quote-band{padding:40px 24px}}
