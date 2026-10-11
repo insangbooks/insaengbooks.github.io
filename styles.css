@@ -703,11 +703,11 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 }
 
 /* Book pages: Quarto turns "::: section" into <section> without the class, so give those sections their spacing back */
-#quarto-content > section:not(.section){padding-top:88px}
+#quarto-content > section:not([class]),#quarto-content > section.intro,#quarto-content > section.author{padding-top:88px}
 .inside{padding:40px 56px}
 .inside .cols{margin-top:20px}
 @media (max-width: 900px){
-  #quarto-content > section:not(.section){padding-top:52px}
+  #quarto-content > section:not([class]),#quarto-content > section.intro,#quarto-content > section.author{padding-top:52px}
   .inside{padding:28px 22px}
 }
 .eyebrow.lg{font-size:17px;letter-spacing:2px}
@@ -725,3 +725,8 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
   .hg-wide{display:none!important}
   .hg-tall{display:block!important;max-width:360px;margin:0 auto}
 }
+/* Shop / Board header: same top spacing as other pages, aligned with content */
+.shop-head{padding:56px 32px 0}
+@media (max-width: 900px){ .shop-head{padding:28px 20px 0} }
+#quarto-content > .shop-head{padding-top:56px}
+@media (max-width: 900px){ #quarto-content > .shop-head{padding-top:28px} }
