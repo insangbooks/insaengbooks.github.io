@@ -282,6 +282,24 @@ body{background:#fff}
 .fz .contact-band .it a:hover{color:var(--fz-or-d)}
 .fz .contact-band .ico{background:var(--fz-or-d)}
 .fz #partners{padding-bottom:0}
+.fz-track{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fz-tk{background:#fff;border:1px solid var(--fz-line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 30px rgba(40,25,10,.05)}
+.fz-tk.b{background:#FFFAF4;border-color:#F4DCC4}
+.fz-tk .who{display:flex;align-items:center;gap:12px}
+.fz-tk .who .ic{width:46px;height:46px;border-radius:14px;background:var(--fz-tint);color:var(--fz-or-d);display:flex;align-items:center;justify-content:center;flex:none}
+.fz-tk .who .ic svg{width:24px;height:24px}
+.fz-tk .who b{display:block;font-size:15px;color:var(--fz-ink)}
+.fz-tk .who small{display:block;font-size:13px;color:var(--fz-mute)}
+.fz-tk h3{font-size:23px;font-weight:800;color:var(--fz-ink);margin:8px 0 0;letter-spacing:-.4px;word-break:keep-all}
+.fz-tk p{margin:0;font-size:15.5px;line-height:1.75;word-break:keep-all}
+.fz-path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0 8px;padding:0;list-style:none}
+.fz-path li{display:flex;align-items:center;gap:6px}
+.fz-path li+li::before{content:"→";color:#C9B9AA;font-weight:800}
+.fz-path a{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:800;color:var(--fz-ink);text-decoration:none;background:var(--fz-soft);border:1px solid var(--fz-line);border-radius:999px;padding:6px 12px}
+.fz-path a i{font-style:normal;color:var(--fz-or-d)}
+.fz-path a:hover{border-color:var(--fz-or-d);color:var(--fz-or-d)}
+.fz-tk .fz-btn{align-self:flex-start;margin-top:auto}
+@media (max-width:900px){.fz-track{grid-template-columns:1fr}.fz-tk{padding:24px}.fz-tk h3{font-size:20px}}
 .fz-tag .stp{font-weight:900;color:#fff;background:#C24E00;border-radius:999px;padding:3px 9px;margin:-3px 8px -3px -8px;letter-spacing:1px}
 .fz-sol-acts{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
 .fz-prac-acts{display:flex;flex-direction:column;align-items:flex-end;gap:12px;flex:none}
@@ -367,7 +385,7 @@ body{background:#fff}
 <div class="fz-q"><b>A child who brightened by helping others</b><p>A class president who only did his own work began helping classmates clean, and they chose him as their leader.</p><span>The value of love</span></div>
 </div>
 <p class="pseudo">※ All student names are pseudonyms.</p><div class="fz-center"><a class="fz-btn ghost" href="stories.html">More stories →</a></div>
-</div></section><section class="fz-sec alt" id="people"><div class="wrap">
+</div></section><section class="fz-sec" id="paths"><div class="wrap"><div class="fz-head c rv"><span class="fz-tag">FIND YOUR PATH</span><h2>The right next step<br><em>for what you need</em></h2></div><div class="fz-track"><article class="fz-tk rv"><div class="who"><span class="ic"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 2 9 2 12 0v-5"></path></svg></span><div><b>Classroom teachers</b><small>For your lessons and classroom</small></div></div><h3>Want to apply it in your classroom right away?</h3><p>Understand the philosophy, practice the questions in the 3S Practice Room, then go deeper with the book.</p><ol class="fz-path"><li><a href="approach.html"><i>1</i>Approach</a></li><li><a href="practice.html"><i>2</i>3S Practice</a></li><li><a href="book.html"><i>3</i>Book</a></li></ol><a class="fz-btn" href="practice.html">Go to the Practice Room →</a></article><article class="fz-tk b rv"><div class="who"><span class="ic"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"></path></svg></span><div><b>School leaders · Program coordinators</b><small>For adoption and training</small></div></div><h3>Looking for school-wide training or a program?</h3><p>See proven classroom stories, learn about the authors’ expertise, then ask about pilot programs and teacher training.</p><ol class="fz-path"><li><a href="stories.html"><i>1</i>Stories</a></li><li><a href="about.html"><i>2</i>About</a></li><li><a href="partners.html"><i>3</i>Partners</a></li></ol><a class="fz-btn" href="partners.html">Ask about partnerships →</a></article></div></div></section><section class="fz-sec alt" id="people"><div class="wrap">
 <div class="fz-head c rv"><span class="fz-tag">THE PEOPLE BEHIND IT</span><h2>Two teachers who found answers <em>in the classroom</em></h2></div>
 <div class="fz-pb">
 <div class="fz-card rv"><div class="fz-people">

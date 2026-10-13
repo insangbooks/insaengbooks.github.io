@@ -282,6 +282,24 @@ body{background:#fff}
 .fz .contact-band .it a:hover{color:var(--fz-or-d)}
 .fz .contact-band .ico{background:var(--fz-or-d)}
 .fz #partners{padding-bottom:0}
+.fz-track{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fz-tk{background:#fff;border:1px solid var(--fz-line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 30px rgba(40,25,10,.05)}
+.fz-tk.b{background:#FFFAF4;border-color:#F4DCC4}
+.fz-tk .who{display:flex;align-items:center;gap:12px}
+.fz-tk .who .ic{width:46px;height:46px;border-radius:14px;background:var(--fz-tint);color:var(--fz-or-d);display:flex;align-items:center;justify-content:center;flex:none}
+.fz-tk .who .ic svg{width:24px;height:24px}
+.fz-tk .who b{display:block;font-size:15px;color:var(--fz-ink)}
+.fz-tk .who small{display:block;font-size:13px;color:var(--fz-mute)}
+.fz-tk h3{font-size:23px;font-weight:800;color:var(--fz-ink);margin:8px 0 0;letter-spacing:-.4px;word-break:keep-all}
+.fz-tk p{margin:0;font-size:15.5px;line-height:1.75;word-break:keep-all}
+.fz-path{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0 8px;padding:0;list-style:none}
+.fz-path li{display:flex;align-items:center;gap:6px}
+.fz-path li+li::before{content:"→";color:#C9B9AA;font-weight:800}
+.fz-path a{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:800;color:var(--fz-ink);text-decoration:none;background:var(--fz-soft);border:1px solid var(--fz-line);border-radius:999px;padding:6px 12px}
+.fz-path a i{font-style:normal;color:var(--fz-or-d)}
+.fz-path a:hover{border-color:var(--fz-or-d);color:var(--fz-or-d)}
+.fz-tk .fz-btn{align-self:flex-start;margin-top:auto}
+@media (max-width:900px){.fz-track{grid-template-columns:1fr}.fz-tk{padding:24px}.fz-tk h3{font-size:20px}}
 .fz-tag .stp{font-weight:900;color:#fff;background:#C24E00;border-radius:999px;padding:3px 9px;margin:-3px 8px -3px -8px;letter-spacing:1px}
 .fz-sol-acts{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
 .fz-prac-acts{display:flex;flex-direction:column;align-items:flex-end;gap:12px;flex:none}
@@ -367,7 +385,7 @@ body{background:#fff}
 <div class="fz-q"><b>남을 도우며 밝아진 아이</b><p>자기 일만 하던 반장이 친구들의 청소를 돕기 시작했고, 친구들은 그를 리더로 추천했습니다.</p><span>사랑의 가치기준</span></div>
 </div>
 <p class="pseudo">※ 학생 이름은 모두 가명입니다.</p><div class="fz-center"><a class="fz-btn ghost" href="ko-stories.html">현장 사례 더 보기 →</a></div>
-</div></section><section class="fz-sec alt" id="people"><div class="wrap">
+</div></section><section class="fz-sec" id="paths"><div class="wrap"><div class="fz-head c rv"><span class="fz-tag">방문 목적별 안내</span><h2>필요에 맞는<br><em>다음 단계를 안내해 드립니다</em></h2></div><div class="fz-track"><article class="fz-tk rv"><div class="who"><span class="ic"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 2 9 2 12 0v-5"></path></svg></span><div><b>개인 교사</b><small>수업·학급경영에 적용</small></div></div><h3>학급에 바로 적용해 보고 싶으신가요?</h3><p>교육 철학을 이해하고, 3S 연습실에서 질문법을 연습한 뒤, 책으로 더 깊이 배워 보세요.</p><ol class="fz-path"><li><a href="ko-approach.html"><i>1</i>교육 방법</a></li><li><a href="ko-practice.html"><i>2</i>3S 연습실</a></li><li><a href="ko-book.html"><i>3</i>책 소개</a></li></ol><a class="fz-btn" href="ko-practice.html">3S 연습실로 가기 →</a></article><article class="fz-tk b rv"><div class="who"><span class="ic"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"></path></svg></span><div><b>학교 관리자 · 기관 담당자</b><small>도입·연수 문의</small></div></div><h3>학교 단위 연수나 프로그램을 찾으시나요?</h3><p>현장 사례로 변화를 확인하고, 두 교사의 전문성을 살펴본 뒤, 시범 운영과 교사 연수를 문의해 주세요.</p><ol class="fz-path"><li><a href="ko-stories.html"><i>1</i>현장 사례</a></li><li><a href="ko-about.html"><i>2</i>저자 소개</a></li><li><a href="ko-partners.html"><i>3</i>파트너십</a></li></ol><a class="fz-btn" href="ko-partners.html">파트너십 문의 →</a></article></div></div></section><section class="fz-sec alt" id="people"><div class="wrap">
 <div class="fz-head c rv"><span class="fz-tag">이 교육을 만든 사람들</span><h2>현장에서 답을 찾은 <em>두 교사</em></h2></div>
 <div class="fz-pb">
 <div class="fz-card rv"><div class="fz-people">
