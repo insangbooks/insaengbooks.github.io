@@ -791,3 +791,8 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .pz-intro .itime{display:flex;align-items:center;justify-content:center;gap:7px;margin:-8px 0 0;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.88);text-shadow:0 1px 8px rgba(0,0,0,.35)}
 .fz-time{display:flex;align-items:center;gap:7px;margin:-4px 0 6px;font-size:14px;font-weight:600;color:#8A5A2B}
 .itime .clk,.fz-time .clk,.pr-meta .clk{width:16px;height:16px;flex:none}
+
+/* 3D book mockups (transparent) — no box frame, soft shadow follows the book shape */
+img[src$="-3d.webp"]{box-shadow:none!important;border-radius:0!important;background:none!important;filter:drop-shadow(0 14px 18px rgba(40,25,10,.22))}
+.cover:has(img[src$="-3d.webp"]),.hero.en .cover:has(img[src$="-3d.webp"]){aspect-ratio:380/540;background:none;box-shadow:none;border-radius:0;overflow:visible}
+.cover img[src$="-3d.webp"]{object-fit:contain}
