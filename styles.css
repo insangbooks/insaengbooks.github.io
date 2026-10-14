@@ -786,3 +786,8 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 /* 존 안내 문구 */
 .zone-note{margin:16px 0 0;padding:16px 20px;background:#FFF6EC;border-left:4px solid #EF7A12;border-radius:10px;font-size:15.5px;line-height:1.8;color:var(--text);word-break:keep-all}
 .fz .zone-note{margin:4px 0 0}
+
+/* time-to-complete hints (3S Practice) */
+.pz-intro .itime{display:flex;align-items:center;justify-content:center;gap:7px;margin:-8px 0 0;font-size:14.5px;font-weight:600;color:rgba(255,255,255,.88);text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.fz-time{display:flex;align-items:center;gap:7px;margin:-4px 0 6px;font-size:14px;font-weight:600;color:#8A5A2B}
+.itime .clk,.fz-time .clk,.pr-meta .clk{width:16px;height:16px;flex:none}
