@@ -933,3 +933,6 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 .pv .ss b{font-size:12px!important}
 .pv .ask small{font-size:12.5px!important}
 .pv .pn{font-size:13px!important}
+
+.ct-box{box-sizing:border-box;max-width:100%;min-width:0}
+.ct-info>*{min-width:0}
