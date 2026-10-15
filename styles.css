@@ -898,3 +898,22 @@ body,.quarto-container,#quarto-content{background:var(--cr)!important}
   .fz-zone{margin-top:8px!important}
   .pz-intro .eyebrow::before,.pz-intro .eyebrow::after{display:none}
 }
+
+/* ---- feedback 2026-10-15 (2): one colour for every "go to 3S Practice" button, more readable small text, lighter hero veil ---- */
+a.fz-btn[href$="practice.html"],a.buy-btn[href$="practice.html"],.pr-btn,.ct-cta a[href$="practice.html"]{background:var(--gd-l)!important;border:1px solid #D9B25F!important;color:#1B1408!important;box-shadow:0 6px 16px rgba(142,100,32,.18)!important}
+a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr-btn:hover,.ct-cta a[href$="practice.html"]:hover{background:#F3D79A!important;color:#1B1408!important}
+.pz-intro .itime{font-size:15.5px!important;font-weight:700!important;color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 14px rgba(0,0,0,.45)!important}
+.pz-intro .ishade{background:linear-gradient(180deg,rgba(30,20,12,.30) 0%,rgba(30,20,12,.40) 55%,rgba(30,20,12,.56) 100%)!important}
+.pz-intro h1{text-shadow:0 2px 4px rgba(0,0,0,.35),0 4px 26px rgba(0,0,0,.45)!important}
+.pz-intro .eyebrow,.pz-intro .imath{text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 12px rgba(0,0,0,.4)}
+.pz-intro .buy-btn:not(.primary){background:rgba(20,16,12,.38)!important;backdrop-filter:blur(2px)}
+.fz{--fz-mute:#4F5664!important}
+.lc-steps li{font-size:14px!important}
+.fz-zone p{font-size:14.5px!important;color:#3A404C!important}
+.fz-time{font-size:15px!important;color:#7A5418!important}
+.pr-meta{font-size:15px!important;color:#4F5664!important}
+.pv .pn,.fz .pseudo{font-size:13.5px!important;color:#5A606C!important}
+@media (max-width:900px){.pz-intro .itime{font-size:14px!important}}
+
+.pr,.ct{--mu:#4F5664!important}
+.pr-hero p{color:#3F4552!important}
