@@ -936,3 +936,8 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 
 .ct-box{box-sizing:border-box;max-width:100%;min-width:0}
 .ct-info>*{min-width:0}
+
+@media (max-width:640px){.spiral figure,.fz-sol .vis{padding:6px!important}}
+
+/* final step of the Higher Rapport ladder = achievement (gold), not Minus coral */
+.spiral-steps li:last-child{background:var(--gd-d)!important;color:#fff!important}
