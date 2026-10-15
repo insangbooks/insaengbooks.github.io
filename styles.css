@@ -1026,3 +1026,14 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 /* practice page: partnership card button centred */
 .pr-n:not(.bk) > div{flex:1;min-width:0}
 .pr-n:not(.bk) .pr-btn{display:flex;width:max-content;max-width:100%;margin:0 auto}
+/* practice page: both next-step buttons sit on the same baseline (card bottom) */
+@media (min-width:768px){
+  .pr-nx .pr-n{align-items:stretch}
+  .pr-nx .pr-n img{align-self:flex-start}
+  .pr-nx .pr-n > div{display:flex;flex-direction:column;flex:1;min-width:0}
+  .pr-nx .pr-n .pr-btn{margin-top:auto!important}
+  .pr-nx .pr-n .pr-tag{align-self:flex-start}
+  .pr-nx .pr-n.bk .pr-btn{align-self:flex-start}
+  .pr-nx .pr-n:not(.bk) .pr-btn{align-self:center;margin-left:0;margin-right:0}
+}
+.expo h3 .nw{white-space:nowrap}
