@@ -99,12 +99,12 @@
 
   var css =
     ".pz-ko-bar{position:fixed;left:50%;bottom:20px;z-index:2000;display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100vw - 32px);box-sizing:border-box;" +
-    "padding:12px 14px 12px 18px;border-radius:14px;background:#2B1F17;color:#fff;box-shadow:0 14px 34px rgba(0,0,0,.28);" +
+    "padding:12px 14px 12px 18px;border-radius:14px;background:#14284A;color:#fff;box-shadow:0 14px 34px rgba(0,0,0,.28);" +
     "font:500 15px/1.45 'Noto Sans KR',system-ui,sans-serif;word-break:keep-all;transform:translate(-50%,140%);opacity:0;transition:transform .35s ease,opacity .35s ease}" +
     ".pz-ko-bar.on{transform:translate(-50%,0);opacity:1}" +
     ".pz-ko-flag{font-size:18px;line-height:1}" +
-    ".pz-ko-go{flex:none;padding:8px 14px;border-radius:10px;background:#F29A2E;color:#2B1F17!important;font-weight:800;text-decoration:none!important;white-space:nowrap}" +
-    ".pz-ko-go:hover{background:#FFB24D}" +
+    ".pz-ko-go{flex:none;padding:8px 14px;border-radius:10px;background:#E9C77E;color:#14284A!important;font-weight:800;text-decoration:none!important;white-space:nowrap}" +
+    ".pz-ko-go:hover{background:#F3D79A}" +
     ".pz-ko-x{flex:none;width:32px;height:32px;border:0;border-radius:8px;background:transparent;color:#fff;font-size:22px;line-height:1;cursor:pointer;opacity:.75}" +
     ".pz-ko-x:hover{opacity:1;background:rgba(255,255,255,.12)}" +
     "@media (max-width:640px){.pz-ko-bar{left:12px;right:12px;width:auto;max-width:none;transform:translateY(140%);flex-wrap:wrap;bottom:12px;gap:8px 10px;font-size:14px;padding:12px 12px 12px 14px}.pz-ko-bar.on{transform:translateY(0)}" +
