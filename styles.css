@@ -917,3 +917,9 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 
 .pr,.ct{--mu:#4F5664!important}
 .pr-hero p{color:#3F4552!important}
+
+/* approach: larger coordinate-plane figure */
+.plane{grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr)!important;gap:48px!important}
+.plane .plus-graph{max-width:640px!important;width:100%;padding:22px 22px 16px!important}
+.plane .plus-graph figcaption{font-size:15px!important;margin-top:10px!important}
+@media (max-width:900px){.plane{grid-template-columns:1fr!important;gap:24px!important}.plane .plus-graph{max-width:100%!important;padding:14px!important}}
