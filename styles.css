@@ -948,11 +948,11 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 
 /* ===== feedback round 4 (2026-10-16) ===== */
 /* navbar: 3S Practice stands out (gold gradient text + soft shimmer) */
-.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href="ko-practice.html"]{background:linear-gradient(100deg,#8E6420 0%,#C9973A 35%,#F0CF86 50%,#C9973A 65%,#8E6420 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent;font-weight:800;animation:pzShine 4.5s ease-in-out infinite}
+.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href$="ko-practice.html"]{background:linear-gradient(100deg,#8E6420 0%,#C9973A 35%,#F0CF86 50%,#C9973A 65%,#8E6420 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent;font-weight:800;animation:pzShine 4.5s ease-in-out infinite}
 .navbar .nav-link[href$="practice.html"]{position:relative}
 .navbar .nav-link[href$="practice.html"]::after{content:"";position:absolute;left:.5rem;right:.5rem;bottom:2px;height:2px;border-radius:2px;background:linear-gradient(90deg,#C9973A,#F0CF86)}
 @keyframes pzShine{0%,60%{background-position:100% 0}100%{background-position:-120% 0}}
-@media (prefers-reduced-motion:reduce){.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href="ko-practice.html"]{animation:none;background-position:50% 0}}
+@media (prefers-reduced-motion:reduce){.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href$="ko-practice.html"]{animation:none;background-position:50% 0}}
 /* navbar: Contact and Korean on one line */
 .navbar .navbar-nav.ms-auto{align-items:center}
 .navbar .navbar-nav.ms-auto .nav-item{display:flex;align-items:center}
@@ -1010,3 +1010,19 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 @media (max-width:900px){.fz h2 .nw{white-space:normal}.pl2 .pl-text{min-width:0}}
 
 @media (min-width:901px){.pl2 .h-plane{font-size:clamp(30px,2.9vw,40px)!important}}
+
+/* KO subnav: 3S 연습실 highlighted like the English navbar */
+.ko-subnav a[href$="ko-practice.html"]{position:relative;font-weight:800!important}
+.ko-subnav a[href$="ko-practice.html"]::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;border-radius:2px;background:linear-gradient(90deg,#C9973A,#F0CF86)}
+.navbar .nav-link .menu-text{white-space:nowrap}
+
+/* hero secondary buttons: hover = gold outline + gold text + slight lift (not dark text) */
+.pz-intro .buy-btn:not(.primary){color:#fff!important;border-color:rgba(255,255,255,.85)!important;transition:color .2s ease,border-color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease}
+.pz-intro .buy-btn:not(.primary):hover,.pz-intro .buy-btn:not(.primary):focus-visible{color:var(--gd-l)!important;border-color:var(--gd-l)!important;background:rgba(20,16,12,.58)!important;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.pz-intro .buy-btn.primary{transition:background .2s ease,transform .2s ease,box-shadow .2s ease}
+.pz-intro .buy-btn.primary:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.pz-intro .buy-btn:hover{transform:none!important}}
+
+/* practice page: partnership card button centred */
+.pr-n:not(.bk) > div{flex:1;min-width:0}
+.pr-n:not(.bk) .pr-btn{display:flex;width:max-content;max-width:100%;margin:0 auto}
