@@ -941,3 +941,72 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 
 /* final step of the Higher Rapport ladder = achievement (gold), not Minus coral */
 .spiral-steps li:last-child{background:var(--gd-d)!important;color:#fff!important}
+
+/* approach: keep spiral + its intro in one screen */
+.spiral svg{max-width:min(820px,100%);max-height:58vh;width:auto!important;margin:0 auto}
+@media (max-width:640px){.spiral svg{max-height:none;width:100%!important}}
+
+/* ===== feedback round 4 (2026-10-16) ===== */
+/* navbar: 3S Practice stands out (gold gradient text + soft shimmer) */
+.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href="ko-practice.html"]{background:linear-gradient(100deg,#8E6420 0%,#C9973A 35%,#F0CF86 50%,#C9973A 65%,#8E6420 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent;font-weight:800;animation:pzShine 4.5s ease-in-out infinite}
+.navbar .nav-link[href$="practice.html"]{position:relative}
+.navbar .nav-link[href$="practice.html"]::after{content:"";position:absolute;left:.5rem;right:.5rem;bottom:2px;height:2px;border-radius:2px;background:linear-gradient(90deg,#C9973A,#F0CF86)}
+@keyframes pzShine{0%,60%{background-position:100% 0}100%{background-position:-120% 0}}
+@media (prefers-reduced-motion:reduce){.navbar .nav-link[href$="practice.html"] .menu-text,.ko-subnav a[href="ko-practice.html"]{animation:none;background-position:50% 0}}
+/* navbar: Contact and Korean on one line */
+.navbar .navbar-nav.ms-auto{align-items:center}
+.navbar .navbar-nav.ms-auto .nav-item{display:flex;align-items:center}
+.navbar .nav-link[href$="contact.html"]{padding:7px 16px!important;line-height:1.4!important;margin:0 6px 0 0!important}
+/* EN hero quote: white line / and / gold line */
+.pz-intro h1.h1-3l{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:clamp(24px,3.3vw,46px)!important;line-height:1.25!important}
+.pz-intro h1.h1-3l .l1,.pz-intro h1.h1-3l .l3{white-space:nowrap}
+.pz-intro h1.h1-3l .and{font-size:.62em;font-weight:700;font-style:italic;color:#fff;opacity:.92;letter-spacing:.5px;margin:2px 0}
+@media (max-width:900px){.pz-intro h1.h1-3l .l1,.pz-intro h1.h1-3l .l3{white-space:normal}}
+/* plane section */
+.fz h2 .nw{white-space:nowrap}
+.fz-plane.pl2{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);grid-template-areas:"t f" "m z" "n n";align-items:center;row-gap:20px}
+.pl2 .pl-text{grid-area:t}.pl2 .pl-fig{grid-area:f;margin:0!important}.pl2 .pl-formula{grid-area:m;align-self:stretch;display:flex;align-items:center;margin:0!important;font-size:17px;line-height:1.7}.pl2 .pl-zones{grid-area:z;align-self:stretch;margin:0}.pl2 .zone-note.wide{grid-area:n;margin:0!important}
+.pl2 .pl-text p{font-size:18.5px!important;line-height:1.85!important}
+.pl2 .pl-text p b{color:var(--nv);font-weight:900}
+.pl2 .pl-zones{display:grid!important;grid-template-columns:repeat(3,1fr)}
+.pl2 .pl-zones .fz-zone{height:100%}
+.lc .lc-bar{margin-top:4px}
+/* zones: lift on hover like a light switch */
+.fz-zone{transition:transform .25s ease,box-shadow .25s ease,background .25s ease;cursor:default;position:relative;z-index:0}
+.fz-zone:hover{transform:translateY(-6px);box-shadow:0 14px 26px rgba(20,40,74,.14);z-index:1}
+.fz-zone.plus:hover{background:#E9EFF8!important}
+.fz-zone.minus:hover{background:#FBE9E5!important}
+.fz-zone:not(.plus):not(.minus):hover{background:#F6F5F2!important}
+@media (prefers-reduced-motion:reduce){.fz-zone{transition:none}.fz-zone:hover{transform:none}}
+/* solutions heading: first line navy, second line black */
+#solutions .fz-head h2{color:var(--nv)!important}
+#solutions .fz-head h2 em{color:var(--fz-ink)!important}
+/* home 3S step cards: equal heights */
+.sg-wide .fz-steps{display:grid!important;grid-auto-rows:1fr;gap:12px}
+.sg-wide .fz-step{height:100%;box-sizing:border-box;align-items:center}
+.sg-wide .acts .fz-more{white-space:nowrap}
+/* practice band: more air between title / text / button */
+.fz-prac > div:first-child h2{margin-bottom:22px!important}
+.fz-prac > div:first-child > p{margin-bottom:30px!important}
+.fz-prac > div:first-child .fz-prac-acts{gap:16px!important}
+/* paths: centered steps and button */
+.fz-tk .fz-path{justify-content:center}
+.fz-tk > .fz-btn{align-self:center!important}
+/* people & book: equal widths */
+@media (min-width:901px){.fz-pb{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}}
+/* approach 3S: one-line intro, equal rows, light→navy progression, centered CTA */
+#questioning .sec-title p{max-width:none}
+.s3{display:grid!important;grid-auto-rows:1fr}
+.s3row .st{background:#6F8FC4!important}
+.s3row:nth-child(2) .st{background:#2C4F8A!important}
+.s3row:nth-child(3) .st{background:#14284A!important}
+#questioning + section .ct-cta{justify-content:center;text-align:center;flex-direction:column;gap:14px}
+@media (max-width:900px){
+  .fz-plane.pl2{grid-template-columns:1fr;grid-template-areas:"t" "f" "z" "m" "n"}
+  .pl2 .pl-zones{grid-template-columns:1fr}
+  .pl2 .pl-text p{font-size:16.5px!important}
+  .s3{grid-auto-rows:auto}
+}
+@media (max-width:900px){.fz h2 .nw{white-space:normal}.pl2 .pl-text{min-width:0}}
+
+@media (min-width:901px){.pl2 .h-plane{font-size:clamp(30px,2.9vw,40px)!important}}
