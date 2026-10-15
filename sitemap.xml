@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://edupluszone.com/test-home-v2.html</loc>
+    <lastmod>2026-10-15T11:32:49.184Z</lastmod>
+  </url>
+  <url>
     <loc>https://edupluszone.com/stories.html</loc>
     <lastmod>2026-10-15T11:20:30.201Z</lastmod>
   </url>
@@ -71,5 +75,9 @@
   <url>
     <loc>https://edupluszone.com/shop.html</loc>
     <lastmod>2026-10-15T11:20:30.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://edupluszone.com/test-home-v2-en.html</loc>
+    <lastmod>2026-10-15T11:32:50.589Z</lastmod>
   </url>
 </urlset>
