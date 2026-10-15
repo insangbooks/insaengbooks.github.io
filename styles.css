@@ -923,3 +923,13 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 .plane .plus-graph{max-width:640px!important;width:100%;padding:22px 22px 16px!important}
 .plane .plus-graph figcaption{font-size:15px!important;margin-top:10px!important}
 @media (max-width:900px){.plane{grid-template-columns:1fr!important;gap:24px!important}.plane .plus-graph{max-width:100%!important;padding:14px!important}}
+
+/* feedback 2026-10-15 (3): hide video placeholders until real titles exist; larger text in AI preview card */
+.ph{display:none!important}
+.pv{font-size:15px!important;line-height:1.7!important}
+.pv .pv-tag{font-size:12.5px!important}
+.pv h4{font-size:14px!important;color:#4F5664!important}
+.pv .in dt{font-size:13.5px!important;color:#5A606C!important}
+.pv .ss b{font-size:12px!important}
+.pv .ask small{font-size:12.5px!important}
+.pv .pn{font-size:13px!important}
