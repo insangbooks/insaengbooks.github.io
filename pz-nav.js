@@ -125,6 +125,15 @@
         '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
       "</div>";
     document.body.insertBefore(head, document.body.firstChild);
+    // home pages: the big hero button already invites to the practice room,
+    // so the menu button stays hidden until the visitor scrolls past the hero
+    var hero = document.querySelector(".pz-intro");
+    if (hero && "IntersectionObserver" in window) {
+      head.classList.add("cta-wait");
+      new IntersectionObserver(function (en) {
+        head.classList.toggle("cta-wait", en[0].isIntersecting);
+      }, { rootMargin: "-80px 0px 0px 0px" }).observe(hero);
+    }
     // exhibition bar on the home pages only (disappears after the expo)
     if ((page === M.home || (L === "en" && page === "index.html")) && live(M.expo)) {
       var top = document.createElement("div");
@@ -206,7 +215,7 @@
       sm.className = "pzs";
       sm.setAttribute("aria-label", L === "ko" ? "사이트맵" : "Site map");
       sm.innerHTML = '<div class="pzs-in">' + columns("pzs-col") +
-        '<div class="pzs-col pzs-cta"><a class="pzs-btn" href="' + M.cta.href + '">' + esc(M.cta.title) + " · " + esc(M.cta.tag) + "</a>" +
+        '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li></ul>" +
         '<a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + "</a></div></div>";
       var root = foot.tagName === "FOOTER" ? foot : foot.parentNode;
       root.parentNode.insertBefore(sm, root);

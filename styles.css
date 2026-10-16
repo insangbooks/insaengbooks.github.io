@@ -1213,3 +1213,8 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .pz-top a{color:#fff!important;font-weight:700;text-decoration:underline!important;text-underline-offset:3px}
 .pz-top a:hover{color:#E9C77E!important}
 @media (max-width:640px){.pz-top{gap:4px 10px;font-size:13px}.pz-top .d{order:3;flex-basis:100%}}
+/* home: menu practice button waits until the hero is scrolled past */
+.pzn-cta{transition:background .2s ease,transform .2s ease,opacity .25s ease,visibility .25s ease}
+.pzn.cta-wait .pzn-cta{opacity:0;visibility:hidden;transform:translateY(-4px)}
+.pzs-cta{gap:0}
+.pzs-cta .pzs-lang{display:inline-block;margin-top:18px;padding-top:14px;border-top:1px solid #E0D8C9}
