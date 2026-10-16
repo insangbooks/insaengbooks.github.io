@@ -1039,3 +1039,25 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
 .expo h3 .nw{white-space:nowrap}
 .nav-footer a{white-space:nowrap}
 @media (min-width:992px){.nav-footer .nav-footer-center{flex:0 0 0!important;min-width:0;padding:0}.nav-footer .nav-footer-left{flex:0 1 auto!important}.nav-footer .nav-footer-right{flex:1 1 auto!important}}
+
+/* Book page: purchase section (moved from Shop) */
+.buy-sec{padding:88px 0 24px;scroll-margin-top:80px}
+.buy-sec .buy-head{text-align:center;max-width:720px;margin:0 auto}
+.buy-sec .buy-head .eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--gd-d,#8E6420);font-weight:800;letter-spacing:2.4px;font-size:13px}
+.buy-sec .buy-head .eyebrow::before{content:"";width:28px;height:2px;background:var(--gd,#B8862F)}
+.buy-sec .buy-head h2{font-size:36px;font-weight:800;letter-spacing:-.6px;color:#141A26;margin:12px 0 12px}
+.buy-sec .buy-head p{font-size:16.5px;line-height:1.8;color:#5F6673;margin:0;word-break:keep-all}
+.buy-sec .buy-head a{color:var(--nv,#1F3A68);font-weight:700}
+.buy-sec .editions{margin-top:40px}
+.buy-sec .edition .stores .buy-btn{border-radius:8px}
+.buy-sec .edition .stores .buy-btn.primary{background:var(--nv,#1F3A68);border-color:var(--nv,#1F3A68);color:#fff}
+.buy-sec .edition .stores .buy-btn.primary:hover{background:var(--nv-d,#14284A);color:#fff}
+.buy-sec .edition .stores .buy-btn:not(.primary){border-color:var(--nv,#1F3A68);color:var(--nv,#1F3A68);background:#fff}
+.buy-sec .edition .stores .buy-btn:not(.primary):hover{background:var(--nv,#1F3A68);color:#fff}
+.hero .buy-jump{display:inline-flex;align-items:center;gap:6px;margin-top:22px;height:48px;padding:0 22px;border-radius:8px;background:var(--gd-l,#E9C77E);border:1px solid #D9B25F;color:#1B1408!important;font-weight:800;text-decoration:none!important;box-shadow:0 6px 16px rgba(142,100,32,.18);transition:transform .2s ease,background .2s ease}
+.hero .buy-jump:hover{background:#F3D79A;transform:translateY(-2px)}
+@media (max-width:900px){.buy-sec{padding:56px 0 16px}.buy-sec .buy-head h2{font-size:28px}}
+.buy-sec .edition{grid-template-columns:140px 1fr;gap:28px;padding:32px}
+.buy-sec .edition img{width:140px}
+.buy-sec .edition .stores{gap:8px}
+@media (min-width:901px){.buy-sec .edition .stores .buy-btn{padding:0 18px;min-height:46px;flex:0 0 auto}}
