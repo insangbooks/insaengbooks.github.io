@@ -1037,3 +1037,5 @@ a.fz-btn[href$="practice.html"]:hover,a.buy-btn[href$="practice.html"]:hover,.pr
   .pr-nx .pr-n:not(.bk) .pr-btn{align-self:center;margin-left:0;margin-right:0}
 }
 .expo h3 .nw{white-space:nowrap}
+.nav-footer a{white-space:nowrap}
+@media (min-width:992px){.nav-footer .nav-footer-center{flex:0 0 0!important;min-width:0;padding:0}.nav-footer .nav-footer-left{flex:0 1 auto!important}.nav-footer .nav-footer-right{flex:1 1 auto!important}}
