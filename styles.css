@@ -1218,3 +1218,11 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .pzn.cta-wait .pzn-cta{opacity:0;visibility:hidden;transform:translateY(-4px)}
 .pzs-cta{gap:0}
 .pzs-cta .pzs-lang{display:inline-block;margin-top:18px;padding-top:14px;border-top:1px solid #E0D8C9}
+
+/* hero: calmer background so the motto reads at a glance
+   (a) soft blur + a darker pool behind the text   (b) the video plays once, then rests on its last frame */
+.pz-intro::before{content:"";position:absolute;inset:-12px;background:inherit;filter:blur(2.5px) saturate(.92);z-index:0}
+.pz-intro video{filter:blur(2.5px) saturate(.92);transform:scale(1.04);z-index:0}
+.pz-intro .ishade{z-index:0;background:radial-gradient(ellipse 62% 58% at 50% 48%,rgba(18,12,6,.62) 0%,rgba(18,12,6,.42) 55%,rgba(18,12,6,.26) 100%),linear-gradient(180deg,rgba(18,12,6,.18) 0%,rgba(18,12,6,.38) 100%)!important}
+.pz-intro .icontent{z-index:1}
+@media (max-width:700px){.pz-intro .ishade{background:linear-gradient(180deg,rgba(18,12,6,.50) 0%,rgba(18,12,6,.58) 50%,rgba(18,12,6,.66) 100%)!important}}
