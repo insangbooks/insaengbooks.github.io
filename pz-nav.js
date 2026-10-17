@@ -222,6 +222,29 @@
     }
   }
 
+  // "Share with a colleague": phone share sheet (KakaoTalk, messages…) or copy the link
+  function shares() {
+    document.querySelectorAll(".pz-share-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var box = btn.closest(".pz-share"), url = location.href.split("#")[0];
+        var title = box.getAttribute("data-title") || document.title;
+        function copied() {
+          var n = box.querySelector(".pz-share-done");
+          if (!n) { n = document.createElement("p"); n.className = "pz-share-done"; n.setAttribute("role", "status"); box.appendChild(n); }
+          n.textContent = box.getAttribute("data-done");
+        }
+        if (navigator.share) { navigator.share({ title: title, url: url }).catch(function () {}); return; }
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(url).then(copied, function () { window.prompt(title, url); }); return; }
+        window.prompt(title, url);
+      });
+    });
+    // anything marked data-until disappears after that date (e.g. the expo notice)
+    document.querySelectorAll("[data-until]").forEach(function (el) {
+      if (Date.now() >= Date.parse(el.getAttribute("data-until"))) el.remove();
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", shares); else shares();
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", build);
   else build();
 })();

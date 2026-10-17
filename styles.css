@@ -1227,3 +1227,17 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .pz-intro .icontent{z-index:1}
 @media (max-width:700px){.pz-intro .ishade{background:linear-gradient(180deg,rgba(18,12,6,.50) 0%,rgba(18,12,6,.58) 50%,rgba(18,12,6,.66) 100%)!important}}
 .pr-privacy a{color:#1F3A68;font-weight:700;white-space:nowrap}
+
+/* share with a colleague */
+.pz-share{margin:26px auto 0;max-width:640px;display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 24px;border:1px dashed #D9CFBD;border-radius:16px;background:#FBF9F5;text-align:center}
+.pz-share p{margin:0;font-size:15.5px;color:#5F6673;line-height:1.6;word-break:keep-all}
+.pz-share-btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:999px;border:1.5px solid #1F3A68;background:#fff;color:#1F3A68;font:inherit;font-size:15.5px;font-weight:800;cursor:pointer;transition:background .2s ease,color .2s ease}
+.pz-share-btn svg{width:18px;height:18px}
+.pz-share-btn:hover,.pz-share-btn:focus-visible{background:#1F3A68;color:#fff}
+.pz-share .pz-share-done{font-size:14px;font-weight:700;color:#2C4F8A}
+.pz-share-wrap{padding-bottom:72px}
+/* contact page: expo notice */
+.ct-expo{margin:18px 0 0;max-width:720px;padding:12px 16px;border-radius:12px;background:#14284A;color:#D5DCE8;font-size:15px;line-height:1.6;word-break:keep-all}
+.ct-expo b{color:#E9C77E;margin-right:6px}
+.ct-expo a{color:#fff!important;font-weight:700;white-space:nowrap}
+.ct-hero p.ct-expo{color:#D5DCE8!important;font-size:15px!important;max-width:720px!important;margin-top:18px!important}
