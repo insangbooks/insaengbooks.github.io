@@ -1,0 +1,151 @@
+/* ===================================================================
+   PLUSZONE · "clear & fresh" palette (compromise version, 2026-10)
+   Active only when <html> has the class "clr2".
+   white page · navy #1B2F5B for weight (titles, boxes, footer, logo)
+   clear blue #1D6FE0 for links / emphasis / Plus · yellow #FFD24A only on
+   the 3S Practice Room buttons · red only for Minus · gold kept only for the
+   hero motto's second line and the Higher Rapport spiral
+   =================================================================== */
+html.clr2{
+  --c-ink:#1B2F5B; --c-tx:#44506A; --c-mu:#5A6680;
+  --c-bl:#1D6FE0; --c-bl-h:#1557B3; --c-bl-d:#1A63C9;
+  --c-bl-t:#EEF5FF; --c-bl-t2:#F5F9FF; --c-ln:#DCE8F7; --c-ln2:#EAF0F7;
+  --c-y:#FFD24A; --c-y-h:#FFDD6E; --c-red:#C93A2E; --c-red-d:#B8352A;
+  --nv:#1B2F5B; --nv-d:#14244A; --nv-2:#1D6FE0; --nv-t:#EEF5FF; --nv-t2:#F5F9FF;
+  --gd:#1D6FE0; --gd-d:#1557B3; --gd-t:#F5F9FF; --cr:#FFFFFF; --ln:#DCE8F7; --coral:#C93A2E;
+}
+html.clr2 body,html.clr2 .quarto-container,html.clr2 #quarto-content,html.clr2 main{background:#FFFFFF!important}
+html.clr2 .fz{--fz-or:#1D6FE0!important;--fz-or-d:#1557B3!important;--fz-tint:#EEF5FF!important;--fz-line:#DCE8F7!important;--fz-soft:#F5F9FF!important;--fz-ink:#1B2F5B!important;--fz-text:#44506A!important;--fz-mute:#5A6680!important;--fz-br:#1B2F5B!important}
+html.clr2 .fz .fz-prac-sec,html.clr2 .fz .fz-card{--fz-or:#1D6FE0!important;--fz-or-d:#1557B3!important;--fz-tint:#EEF5FF!important}
+html.clr2 .fz-sec{background:#FFFFFF}
+html.clr2 .fz-sec:nth-of-type(even){background:#F5F9FF!important}
+
+/* ---- menu ---- */
+html.clr2 .pzn{background:#FFFFFF!important;border-bottom-color:#EAF0F7!important}
+html.clr2 .pzn-brand i{background:#1B2F5B}
+html.clr2 .pzn-brand b,html.clr2 .pzn-g{color:#1B2F5B}
+html.clr2 .pzn-g:hover,html.clr2 .pzn-g.is-open,html.clr2 .pzn-g.is-cur{color:#1D6FE0}
+html.clr2 .pzn-g::after{background:#1D6FE0}
+html.clr2 .pzn-cta,html.clr2 .pzd-cta,html.clr2 .pzs-btn{background:#FFD24A!important;border-color:#F2C23A!important;color:#1B2F5B!important;box-shadow:0 6px 16px rgba(27,47,91,.14)}
+html.clr2 .pzn-cta span,html.clr2 .pzd-cta small{color:#1B2F5B!important;opacity:.85}
+html.clr2 .pzn-cta:hover,html.clr2 .pzs-btn:hover{background:#FFDD6E!important}
+html.clr2 .pzn-burger{background:#EEF5FF}
+html.clr2 .pzn-cols{border-color:#DCE8F7}
+html.clr2 .pzn-col.on{background:#F5F9FF}
+html.clr2 .pzn-col .pzm-h{color:#1557B3!important}
+html.clr2 .pzn-col li a:hover,html.clr2 .pzn-col li a:focus-visible,html.clr2 .pzd-g li a:hover{background:#EEF5FF}
+html.clr2 .pzn-col li a:hover .tt,html.clr2 .pzn-col li a .tt{color:#1B2F5B}
+html.clr2 .pzn-col li a:hover .tt{color:#1D6FE0}
+html.clr2 .pzn-drawer{background:#FFFFFF}
+html.clr2 .pzd-g.open > button{color:#1D6FE0}
+html.clr2 .pz-top{background:#1B2F5B}
+html.clr2 .pz-top b{color:#FFE58F}
+
+/* ---- hero: keep the warm picture; yellow practice button; gold stays on the motto's 2nd line ---- */
+html.clr2 .pz-intro .buy-btn.primary,html.clr2 a.buy-btn[href$="practice.html"]{background:#FFD24A!important;border-color:#FFD24A!important;color:#1B2F5B!important}
+html.clr2 .pz-intro .buy-btn.primary:hover{background:#FFDD6E!important}
+
+/* ---- section heads, text, links ---- */
+html.clr2 .fz-tag{color:#1557B3!important}
+html.clr2 .fz-tag::before{background:#1D6FE0}
+html.clr2 .fz-tag .stp{background:#1B2F5B!important}
+html.clr2 .fz h2{color:#1B2F5B}
+html.clr2 .fz h2 em{color:#1D6FE0!important}
+html.clr2 #solutions .fz-head h2{color:#1D6FE0!important}
+html.clr2 #solutions .fz-head h2 em{color:#1B2F5B!important}
+html.clr2 .fz p,html.clr2 .fz li{color:#44506A}
+html.clr2 .fz-more,html.clr2 .fz a.fz-more{color:#1D6FE0!important}
+html.clr2 .fz a:not(.fz-btn):not(.buy-btn):not(.st-card):not(.cs-s):hover{color:#1557B3}
+html.clr2 .fz-btn{background:#1D6FE0!important;color:#FFFFFF!important}
+html.clr2 .fz-btn:hover{background:#1557B3!important}
+html.clr2 a.fz-btn[href$="practice.html"],html.clr2 .fz-prac-sec .fz-btn{background:#FFD24A!important;border-color:#F2C23A!important;color:#1B2F5B!important}
+html.clr2 a.fz-btn[href$="practice.html"]:hover{background:#FFDD6E!important}
+
+/* ---- start cards ---- */
+html.clr2 .st-card{border-color:#DCE8F7!important}
+html.clr2 .st-card:hover{border-color:#1D6FE0!important;box-shadow:0 16px 32px rgba(29,111,224,.12)}
+html.clr2 .st-ic{background:#EEF5FF;color:#1D6FE0}
+html.clr2 .st-card small{color:#1557B3}
+html.clr2 .st-card b{color:#1B2F5B}
+html.clr2 .st-go{color:#1D6FE0}
+
+/* ---- coordinate plane ---- */
+html.clr2 .pl2 .pl-text p b,html.clr2 .fz-plane .pl-text b{color:#1D6FE0!important}
+html.clr2 .lc{border-color:#DCE8F7!important;background:#FFFFFF}
+html.clr2 .lc-replay{background:#FFFFFF!important;border:1.5px solid #1D6FE0!important;color:#1D6FE0!important}
+html.clr2 .lc-replay:hover{background:#1D6FE0!important;color:#FFFFFF!important}
+html.clr2 .lc svg [stroke="#2C4F8A"]{stroke:#1D6FE0}
+html.clr2 .lc svg [fill="#2C4F8A"]{fill:#1D6FE0}
+html.clr2 .lc svg [stroke="#C8463A"]{stroke:#C93A2E}
+html.clr2 .lc svg [fill="#C8463A"]{fill:#C93A2E}
+html.clr2 .lc svg [stroke="#6F665E"]{stroke:#7A869C}
+html.clr2 .lc svg [fill="#6F665E"]{fill:#7A869C}
+html.clr2 .lc svg [fill="#EAF0F9"]{fill:#EAF2FF}
+html.clr2 .lc svg [fill="#FDEDE8"]{fill:#FDEDEB}
+html.clr2 .lc svg [fill="#C9D7EC"]{fill:#CFE0FB}
+html.clr2 .lc svg [fill="#8E6420"]{fill:#1B2F5B}
+html.clr2 .lc svg text[fill="#1F3A68"]{fill:#1D6FE0}
+html.clr2 .lc svg [fill="#14284A"]{fill:#1B2F5B}
+/* zones */
+html.clr2 .fz-zone.plus{background:#EEF5FF!important;border-top-color:#1D6FE0!important}
+html.clr2 .fz-zone.plus .zl{color:#1A63C9!important}
+html.clr2 .fz-zone:not(.plus):not(.minus){background:#F4F6F9!important;border-top-color:#A3AEC2!important}
+html.clr2 .fz-zone:not(.plus):not(.minus) .zl{color:#44506A!important}
+html.clr2 .fz-zone.minus{background:#FDEDEB!important;border-top-color:#C93A2E!important}
+html.clr2 .fz-zone.minus .zl{color:#B8352A!important}
+html.clr2 .fz-zone + .fz-zone{border-left-color:#DCE8F7!important}
+/* calculus-of-life box: navy (weight) + light-yellow title */
+html.clr2 .fz-formula{background:#1B2F5B!important;color:#FFFFFF!important}
+html.clr2 .fz-formula span{color:#FFE58F!important}
+html.clr2 .zone-note{background:#F5F9FF!important;border-left-color:#1D6FE0!important;color:#44506A}
+
+/* ---- solutions / 3S ---- */
+html.clr2 .sg-card,html.clr2 .fz-sol .vis{border-color:#DCE8F7!important}
+html.clr2 .fz-step{background:#F5F9FF!important;border-color:#DCE8F7!important}
+html.clr2 .fz-step .n{color:#1D6FE0!important;border-color:#C9DBF6}
+html.clr2 .fz-step.on{background:#1D6FE0!important;border-color:#1D6FE0!important}
+html.clr2 .fz-step.on small{color:#E3EEFF!important}
+html.clr2 .fz-step.on .n{background:#FFD24A!important;color:#1B2F5B!important;border-color:#FFD24A}
+
+/* ---- practice band + mini demo ---- */
+html.clr2 .fz-prac{background:#F5F9FF!important;border-color:#DCE8F7!important}
+html.clr2 .fz-time{color:#1557B3!important}
+html.clr2 .pv .ss b,html.clr2 .pv .pv-tag{background:#1D6FE0!important}
+
+/* ---- videos, quotes, cases, voices ---- */
+html.clr2 .vno{color:#1557B3}
+html.clr2 .fz-q{border-color:#DCE8F7!important}
+html.clr2 .fz-q span{color:#1557B3}
+html.clr2 .cs-big{background:#F5F9FF;border-color:#DCE8F7}
+html.clr2 .cs-who,html.clr2 .cs-res b{color:#1557B3}
+html.clr2 .cs-dlg .tc b{color:#1D6FE0}
+html.clr2 .cs-s{border-color:#DCE8F7}
+html.clr2 .cs-big h3,html.clr2 .cs-s b{color:#1B2F5B}
+html.clr2 .tv-q{border-color:#DCE8F7;border-left-color:#1D6FE0}
+html.clr2 .tv-t{color:#1557B3}
+html.clr2 .tv-q blockquote{color:#1B2F5B}
+
+/* ---- people, book, partners ---- */
+html.clr2 .fz-card,html.clr2 .fz-person,html.clr2 .fz-book{border-color:#DCE8F7!important}
+html.clr2 .fz-card .fz-btn{background:#1D6FE0!important}
+html.clr2 .fz-card .fz-btn:hover{background:#1557B3!important}
+html.clr2 .fz-partner{background:#F5F9FF!important;border-color:#DCE8F7!important}
+html.clr2 .fz-areas div{border-color:#DCE8F7!important;background:#FFFFFF}
+html.clr2 .fz-areas div i{color:#1D6FE0!important}
+html.clr2 .fz-areas .ai.warm,html.clr2 .fz-areas .ai.navy{background:#EEF5FF!important;color:#1D6FE0!important}
+html.clr2 .expo{background:#1B2F5B}
+html.clr2 .expo .lbl,html.clr2 .expo dt{color:#FFE58F}
+
+/* ---- footer: navy ---- */
+html.clr2 .pzs{background:#1B2F5B;border-top:0}
+html.clr2 .pzs-col .pzm-h{color:#FFFFFF!important}
+html.clr2 .pzs-col li a{color:#C9D6EA!important}
+html.clr2 .pzs-col li a:hover{color:#FFFFFF!important}
+html.clr2 .pzs-cta .pzs-lang{color:#FFE58F!important;border-top-color:rgba(255,255,255,.18)}
+html.clr2 .nav-footer{background:#14244A!important;border-top:1px solid rgba(255,255,255,.08)!important;color:#AEBBD3!important}
+html.clr2 .nav-footer a{color:#E3EAF6!important}
+html.clr2 .nav-footer a:hover{color:#FFFFFF!important}
+html.clr2 .expo h3,html.clr2 .expo dd{color:#FFFFFF!important}
+html.clr2 .expo i{color:#C9D6EA!important;border-bottom-color:rgba(255,255,255,.2)!important}
+html.clr2 .sg-vis,html.clr2 .fz-sol .vis{background:#F8FBFF!important}
+html.clr2 .pz-intro .imath{color:rgba(255,255,255,.92)!important}
