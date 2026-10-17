@@ -149,3 +149,118 @@ html.clr2 .expo h3,html.clr2 .expo dd{color:#FFFFFF!important}
 html.clr2 .expo i{color:#C9D6EA!important;border-bottom-color:rgba(255,255,255,.2)!important}
 html.clr2 .sg-vis,html.clr2 .fz-sol .vis{background:#F8FBFF!important}
 html.clr2 .pz-intro .imath{color:rgba(255,255,255,.92)!important}
+
+/* ---- Higher Growth flow chart: two colours (blue = the way to Plus, grey = the rest)
+        + a small red only for the "0 / −" starting branch (option B) ---- */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#F3F0E8"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#F7F0E1"]{fill:#F4F6F9}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#8A8079"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#8E6420"]{stroke:#98A3B8}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#8A8079"]{fill:#98A3B8}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#4A423C"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#8E6420"]{fill:#44506A}
+/* blue path */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#2C4F8A"]{stroke:#1D6FE0}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#2C4F8A"]{fill:#1D6FE0}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#E6EEF8"]{fill:#EEF5FF}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#14284A"]{fill:#1B2F5B}
+/* "choose Plus" box and the turn toward Plus become blue */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) rect[fill="#FBE3DE"]{fill:#EEF5FF;stroke:#1D6FE0}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#9E2F25"]{fill:#1B2F5B}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) line[stroke="#C8463A"]{stroke:#1D6FE0}
+html.clr2 svg.hg-tall line[stroke="#C8463A"]{marker-end:url(#hgt-g)}
+html.clr2 svg.hg-wide line[stroke="#C8463A"]{marker-end:url(#hgw-g)}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#C8463A"][text-anchor="middle"]{fill:#1D6FE0}
+/* the only red: the 0 / − branch, its arrow and its marks */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) polyline[stroke="#C8463A"]{stroke:#C93A2E}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#C8463A"]:not([text-anchor]){fill:#C93A2E}
+
+/* ===================== site-wide (all pages) ===================== */
+html.clr2{
+  --paper:#FFFFFF; --paper-2:#F5F9FF; --sand:#E3ECF8; --line:#DCE8F7;
+  --ink:#1B2F5B; --text:#44506A; --muted:#5A6680;
+  --accent:#1D6FE0; --accent-dark:#1557B3; --accent-soft:#9CC2F5; --label:#1557B3;
+  --blue:#1D6FE0; --rose:#C93A2E; --navy:#1B2F5B; --gd-t:#F5F9FF;
+}
+html.clr2 .ct,html.clr2 .pr{--ink:#1B2F5B!important;--tx:#44506A!important;--mu:#5A6680!important;--ln:#DCE8F7!important;--soft:#F5F9FF!important;--tint:#EEF5FF!important;--or:#1D6FE0!important}
+html.clr2 .pv-page{--ink:#1B2F5B;--tx:#44506A;--mu:#5A6680;--ln:#DCE8F7;--nv:#1D6FE0;--gd:#1D6FE0}
+html.clr2 body{color:#1B2F5B}
+html.clr2 .eyebrow,html.clr2 .eyebrow.lg,html.clr2 .pv-page .tag{color:#1557B3!important}
+html.clr2 .pv-page .tag::before{background:#1D6FE0}
+html.clr2 .lbl{color:#FFE58F}
+
+/* videos (home + stories) */
+html.clr2 .vcard{border-color:#DCE8F7!important}
+html.clr2 .vplay{background-color:#E3ECF8!important}
+html.clr2 .vicon{background:#1B2F5B!important}
+html.clr2 .sg-vis,html.clr2 .sg-flow{border-color:#DCE8F7!important}
+
+/* approach */
+html.clr2 .s3row,html.clr2 .s3row > div,html.clr2 .zones,html.clr2 .z,html.clr2 figure.hg-flow,html.clr2 figure.spiral{border-color:#DCE8F7!important}
+html.clr2 .s3row small,html.clr2 .s3row b{color:#1557B3}
+html.clr2 .q,html.clr2 p.formula{background:#F5F9FF!important}
+html.clr2 .z{background:#FFFFFF}
+html.clr2 .ct-cta{background:#F5F9FF!important;border-color:#DCE8F7!important}
+
+/* about */
+html.clr2 .person{border-color:#DCE8F7!important}
+html.clr2 .prole,html.clr2 .person span{color:#1557B3}
+html.clr2 .note-box,html.clr2 .thought{background:#F5F9FF!important}
+
+/* stories */
+html.clr2 article.case{border-color:#DCE8F7!important}
+html.clr2 article.case b,html.clr2 p.who,html.clr2 span.s{color:#1557B3}
+html.clr2 .dialog,html.clr2 .afc,html.clr2 figure.rev{background:#F5F9FF!important}
+html.clr2 .pz-share{background:#F5F9FF;border-color:#BCD3F2}
+
+/* practice */
+html.clr2 .pr-tag,html.clr2 .pr-f,html.clr2 .pr-card,html.clr2 .pr-step,html.clr2 .pr-open,html.clr2 .pr-n,html.clr2 .pr-privacy{border-color:#DCE8F7!important}
+html.clr2 .pr-f{background:#F5F9FF!important}
+html.clr2 .pr-n:not(.bk){background:#F5F9FF!important}
+html.clr2 .pr-privacy{border-left-color:#1D6FE0!important}
+html.clr2 .pr-btn,html.clr2 .hero .buy-jump{background:#FFD24A!important;border-color:#F2C23A!important;color:#1B2F5B!important}
+html.clr2 .pr-btn:hover,html.clr2 .hero .buy-jump:hover{background:#FFDD6E!important}
+html.clr2 .tm{color:#1557B3!important}
+
+/* partners */
+html.clr2 .area,html.clr2 .qr-card{border-color:#DCE8F7!important}
+
+/* book */
+html.clr2 .reader,html.clr2 article.edition,html.clr2 .contact-line{border-color:#DCE8F7!important}
+html.clr2 .inside{background:#F5F9FF!important}
+html.clr2 .quote-band{background:#1B2F5B!important;border-color:#1D6FE0!important}
+html.clr2 .quote-band p{color:#FFFFFF!important}
+
+/* contact */
+html.clr2 .ct-box{background:#F5F9FF!important}
+html.clr2 .ct-expo b{color:#FFE58F!important}
+
+/* privacy */
+html.clr2 .pv-page section{border-color:#DCE8F7!important}
+html.clr2 .zrow.zero .z,html.clr2 .signs .z{background:#F4F6F9!important}
+html.clr2 .band-navy .lbl,html.clr2 .shift3 .to,html.clr2 .bookband .lbl,html.clr2 .bookband a{color:#FFE58F!important}
+html.clr2 .band-navy,html.clr2 .bookband{background:#1B2F5B}
+html.clr2 .contact-band .org{color:#1557B3!important}
+html.clr2 .pzn-g:focus-visible{outline-color:#1D6FE0}
+/* red only means Minus: partner numbers and author tags become blue/navy */
+html.clr2 .area .n,html.clr2 .area:nth-child(2) .n,html.clr2 .area:nth-child(4) .n{background:#1D6FE0!important}
+html.clr2 .area:nth-child(3) .n{background:#1B2F5B!important}
+html.clr2 .person .badges span,html.clr2 .person:nth-child(2) .badges span{border-color:#9CC2F5!important;color:#1557B3!important}
+html.clr2 .pr-hero{background:linear-gradient(180deg,#F5F9FF 0%,#FFFFFF 100%)!important}
+/* book: purchase buttons in blue */
+html.clr2 .buy-sec .edition .stores .buy-btn.primary{background:#1D6FE0!important;border-color:#1D6FE0!important}
+html.clr2 .buy-sec .edition .stores .buy-btn.primary:hover{background:#1557B3!important}
+html.clr2 .buy-sec .edition .stores .buy-btn:not(.primary){border-color:#1D6FE0!important;color:#1D6FE0!important}
+html.clr2 .buy-sec .edition .stores .buy-btn:not(.primary):hover{background:#1D6FE0!important;color:#fff!important}
+html.clr2 .buy-sec{border-top:1px solid #EAF0F7;margin-top:56px}
+
+/* contrast fixes */
+html.clr2 .ct-tag{color:#1557B3!important}
+html.clr2 .s3row .st{background:#3E6FBF!important}
+html.clr2 .s3row:nth-child(2) .st{background:#2C4F8A!important}
+html.clr2 .s3row:nth-child(3) .st{background:#1B2F5B!important}
+
+/* Higher Growth flow chart: thinner arrow lines, smaller arrow heads (heads scale with the line) */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4.5"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4"]{stroke-width:2.4}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) rect{stroke-width:2}
