@@ -1226,3 +1226,4 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .pz-intro .ishade{z-index:0;background:radial-gradient(ellipse 62% 58% at 50% 48%,rgba(18,12,6,.62) 0%,rgba(18,12,6,.42) 55%,rgba(18,12,6,.26) 100%),linear-gradient(180deg,rgba(18,12,6,.18) 0%,rgba(18,12,6,.38) 100%)!important}
 .pz-intro .icontent{z-index:1}
 @media (max-width:700px){.pz-intro .ishade{background:linear-gradient(180deg,rgba(18,12,6,.50) 0%,rgba(18,12,6,.58) 50%,rgba(18,12,6,.66) 100%)!important}}
+.pr-privacy a{color:#1F3A68;font-weight:700;white-space:nowrap}
