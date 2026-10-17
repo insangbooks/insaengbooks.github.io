@@ -105,7 +105,7 @@ html.clr2 .fz-step{background:#F5F9FF!important;border-color:#DCE8F7!important}
 html.clr2 .fz-step .n{color:#1D6FE0!important;border-color:#C9DBF6}
 html.clr2 .fz-step.on{background:#1D6FE0!important;border-color:#1D6FE0!important}
 html.clr2 .fz-step.on small{color:#E3EEFF!important}
-html.clr2 .fz-step.on .n{background:#FFD24A!important;color:#1B2F5B!important;border-color:#FFD24A}
+html.clr2 .fz-step.on .n{background:#FFFFFF!important;color:#1D6FE0!important;border-color:#FFFFFF}
 
 /* ---- practice band + mini demo ---- */
 html.clr2 .fz-prac{background:#F5F9FF!important;border-color:#DCE8F7!important}
