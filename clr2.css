@@ -264,3 +264,4 @@ html.clr2 .s3row:nth-child(3) .st{background:#1B2F5B!important}
 html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4.5"],
 html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4"]{stroke-width:2.4}
 html.clr2 :is(svg.hg-tall,svg.hg-wide) rect{stroke-width:2}
+html.clr2 .pz-intro .eyebrow{color:#E9C77E!important}
