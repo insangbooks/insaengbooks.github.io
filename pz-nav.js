@@ -105,7 +105,8 @@
           '<button type="button" class="pzn-burger" aria-expanded="false" aria-controls="pzn-drawer" aria-label="' + M.ui.menu + '"><span></span><span></span><span></span></button>' +
         "</div>" +
       "</div>" +
-      '<div class="pzn-panel" id="pzn-panel" hidden><div class="pzn-cols">' + columns("pzn-col") + "</div></div>" +
+      '<div class="pzn-panel" id="pzn-panel" hidden><div class="pzn-cols">' + columns("pzn-col") +
+        "</div></div>" +
       '<div class="pzn-drawer" id="pzn-drawer" hidden>' +
         '<a class="pzd-cta" href="' + M.cta.href + '"><span><b>' + esc(M.cta.title) + "</b><small>" + esc(M.cta.tag) + " · " + esc(M.cta.sub) + "</small></span>" + ARROW + "</a>" +
         M.groups.map(function (g) {
