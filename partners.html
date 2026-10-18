@@ -67,9 +67,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="pz-nav.js" defer=""></script>
 <script src="pz-lang.js" defer=""></script>
 <script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"],["privacy","ko-privacy"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})});var L={contact:"문의하기",privacy:"개인정보 처리방침"};document.querySelectorAll(".nav-footer a").forEach(function(a){var h=a.getAttribute("href")||"";for(var k in L){if(h.indexOf(k)>=0&&a.textContent.trim().match(/^(Contact|Privacy)$/))a.textContent=L[k]}})});</script>
+<meta name="robots" content="noindex, nofollow">
 <link rel="alternate" hreflang="en" href="https://edupluszone.com/partners.html">
 <link rel="alternate" hreflang="ko" href="https://edupluszone.com/ko-partners.html">
 <link rel="alternate" hreflang="x-default" href="https://edupluszone.com/partners.html">
+<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -88,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -167,25 +169,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="./book.html#buy">
  <span class="dropdown-text">Where to Buy</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-work-with-us" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Work with Us</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-work-with-us">    
-        <li>
-    <a class="dropdown-item" href="./partners.html">
- <span class="dropdown-text">Training &amp; Pilot Programs</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./partners.html#expo">
- <span class="dropdown-text">EDUCATION KOREA 2027</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./contact.html">
- <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
   </li>

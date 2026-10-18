@@ -1168,7 +1168,7 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 
 /* ---------- home round 3: start cards, stats, featured case, teacher voices ---------- */
 .st-sec .fz-head,.cs-sec .fz-head,.tv-sec .fz-head{margin-bottom:0}
-.st-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:32px}
+.st-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
 .st-card{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #E4DED3;border-radius:16px;padding:24px 22px 22px;text-decoration:none!important;color:#2E3440!important;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 .st-card:hover{transform:translateY(-4px);border-color:#C9D7EC;box-shadow:0 16px 32px rgba(20,40,74,.10)}
 .st-ic{width:44px;height:44px;border-radius:12px;background:#E9EFF8;color:#1F3A68;display:inline-flex;align-items:center;justify-content:center;margin-bottom:6px}
@@ -1204,7 +1204,8 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .tv-t{font-size:14px;font-weight:800;color:#8E6420;word-break:keep-all}
 .tv-q blockquote{margin:0;padding:0;border:0;font-size:17px;line-height:1.8;color:#1C2330;word-break:keep-all;flex-grow:1}
 .tv-q cite{font-style:normal;font-size:14.5px;font-weight:700;color:#5F6673}
-@media (max-width:1100px){.st-grid,.st-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1100px){.st-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.st-grid{grid-template-columns:1fr}}
 @media (max-width:900px){.cs-grid,.tv-grid{grid-template-columns:1fr}.cs-side{grid-template-rows:none}.cs-big{padding:24px 20px}.cs-big h3{font-size:21px}.cs-top{flex-direction:column;align-items:flex-start;gap:10px}}
 @media (max-width:560px){.st-grid{grid-template-columns:1fr}.st-stats{gap:18px 14px}.st-stats b{font-size:24px}.tv-q{padding:22px 20px}.tv-q blockquote{font-size:16px}}
 /* exhibition bar above the menu on the home pages */
@@ -1241,3 +1242,6 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .ct-expo b{color:#E9C77E;margin-right:6px}
 .ct-expo a{color:#fff!important;font-weight:700;white-space:nowrap}
 .ct-hero p.ct-expo{color:#D5DCE8!important;font-size:15px!important;max-width:720px!important;margin-top:18px!important}
+
+/* practice page: single "next" card spans the row */
+.pr-nx > .pr-n:only-child{grid-column:1/-1;max-width:820px;width:100%;justify-self:center}

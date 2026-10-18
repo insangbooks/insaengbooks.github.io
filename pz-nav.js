@@ -21,11 +21,7 @@
         { key: "book", label: "Book & Authors", href: "book.html", pages: ["book.html", "about.html", "shop.html"], items: [
           { t: "About the Book", d: "Overview, contents, who it’s for", h: "book.html" },
           { t: "Meet the Authors", d: "Two teachers, 34 + 22 years", h: "about.html" },
-          { t: "Where to Buy", d: "Amazon · Korean bookstores", h: "book.html#buy" } ] },
-        { key: "work", label: "Work with Us", href: "partners.html", pages: ["partners.html", "contact.html"], items: [
-          { t: "Training & Pilot Programs", d: "For schools and institutions", h: "partners.html" },
-          { t: "EDUCATION KOREA 2027", d: "Jan. 27–29 · COEX, Seoul", h: "partners.html#expo", until: "2027-01-30T00:00:00+09:00" },
-          { t: "Contact", d: "pluszoneedu@gmail.com", h: "contact.html" } ] }
+          { t: "Where to Buy", d: "Amazon · Korean bookstores", h: "book.html#buy" } ] }
       ],
       expo: { t: "EDUCATION KOREA 2027", d: "Jan. 27–29 · COEX Halls A & B, Seoul", h: "partners.html#expo", until: "2027-01-30T00:00:00+09:00", go: "Visit our booth →", d2: "Jan. 27–29, 2027 · COEX Halls A & B, Seoul" },
       ui: { menu: "Menu", close: "Close menu", nav: "Main menu" }
@@ -47,11 +43,7 @@
         { key: "book", label: "책·저자", href: "ko-book.html", pages: ["ko-book.html", "ko-about.html"], items: [
           { t: "책 소개", d: "내용 · 목차 · 이런 분께 권합니다", h: "ko-book.html" },
           { t: "저자 소개", d: "현장 교사 두 사람, 34년 + 22년", h: "ko-about.html" },
-          { t: "구매처", d: "교보문고 · 예스24 · 알라딘 · 아마존", h: "ko-book.html#buy" } ] },
-        { key: "work", label: "함께하기", href: "ko-partners.html", pages: ["ko-partners.html", "ko-contact.html"], items: [
-          { t: "연수·시범교육", d: "학교와 기관을 위한 프로그램", h: "ko-partners.html" },
-          { t: "2027 대한민국 교육박람회", d: "1월 27~29일 · 서울 코엑스", h: "ko-partners.html#expo", until: "2027-01-30T00:00:00+09:00" },
-          { t: "문의하기", d: "전화 · 이메일 · 상담 신청서", h: "ko-contact.html" } ] }
+          { t: "구매처", d: "교보문고 · 예스24 · 알라딘 · 아마존", h: "ko-book.html#buy" } ] }
       ],
       expo: { t: "2027 대한민국 교육박람회", d: "1월 27~29일 · 서울 코엑스 A·B홀", h: "ko-partners.html#expo", until: "2027-01-30T00:00:00+09:00", go: "부스 안내 →", d2: "2027년 1월 27~29일 · 서울 코엑스 A·B홀" },
       ui: { menu: "메뉴", close: "메뉴 닫기", nav: "주 메뉴" }
@@ -121,7 +113,7 @@
             '<li><a href="' + g.href + '">' + esc(g.label) + (L === "ko" ? " 전체 보기" : " — overview") + "</a></li>" +
             g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '">' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
         }).join("") +
-        (live(M.expo) ? '<a class="pzd-expo" href="' + M.expo.h + '"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></a>" : "") +
+        (live(M.expo) ? '<div class="pzd-expo"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></div>" : "") +
         '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
       "</div>";
     document.body.insertBefore(head, document.body.firstChild);
@@ -139,7 +131,7 @@
       var top = document.createElement("div");
       top.className = "pz-top";
       top.setAttribute("lang", L);
-      top.innerHTML = "<b>" + esc(M.expo.t) + '</b><span class="d">' + esc(M.expo.d2) + '</span><a href="' + M.expo.h + '">' + esc(M.expo.go) + "</a>";
+      top.innerHTML = "<b>" + esc(M.expo.t) + '</b><span class="d">' + esc(M.expo.d2) + "</span>";
       document.body.insertBefore(top, head);
     }
     html.classList.add("pz-nav-ready");
