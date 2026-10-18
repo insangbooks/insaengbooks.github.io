@@ -244,7 +244,7 @@ html.clr2 .contact-band .org{color:#1557B3!important}
 html.clr2 .pzn-g:focus-visible{outline-color:#1D6FE0}
 /* red only means Minus: partner numbers and author tags become blue/navy */
 html.clr2 .area .n,html.clr2 .area:nth-child(2) .n,html.clr2 .area:nth-child(4) .n{background:#1D6FE0!important}
-html.clr2 .area:nth-child(3) .n{background:#1B2F5B!important}
+html.clr2 .area:nth-child(3) .n{background:#1D6FE0!important}
 html.clr2 .person .badges span,html.clr2 .person:nth-child(2) .badges span{border-color:#9CC2F5!important;color:#1557B3!important}
 html.clr2 .pr-hero{background:linear-gradient(180deg,#F5F9FF 0%,#FFFFFF 100%)!important}
 /* book: purchase buttons in blue */

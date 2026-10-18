@@ -586,10 +586,10 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .sol-chips span{background:#fff;border:1px solid var(--line);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700}
 
 /* Expo invitation (auto-hidden after the expo) */
-.expo{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:center;background:var(--navy);border-radius:18px;padding:36px 44px;color:#fff;margin-top:56px}
-.expo-logo{background:#fff;border-radius:12px;padding:22px 24px 16px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.expo-logo img{width:100%;max-width:200px;height:auto;aspect-ratio:359/160;display:block}
-.expo-logo span{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:.5px}
+.expo{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:center;background:var(--navy);border-radius:18px;padding:36px 44px;color:#fff;margin-top:56px}
+.expo-logo{background:#fff;border-radius:12px;padding:16px 18px 12px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.expo-logo img{width:100%;max-width:150px;height:auto;aspect-ratio:359/160;display:block}
+.expo-logo span{font-size:12.5px;font-weight:800;color:var(--ink);letter-spacing:.3px;white-space:nowrap}
 .expo .lbl{font-size:13px;font-weight:700;letter-spacing:3px;color:#E9C77E}
 .expo h3{color:#fff;font-size:26px;font-weight:700;line-height:1.4;margin:8px 0 6px}
 .expo i{display:block;font-size:14px;color:#C3CCDB;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2);margin-bottom:14px}
@@ -654,9 +654,9 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
 .s3row .eff small,.s3row .q small{display:block;font-size:12px;font-weight:700;color:var(--label);letter-spacing:1px;margin-bottom:4px}
 
 /* Partners */
-.areas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.area{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:10px}
-.area .n{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.area{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;display:flex;flex-direction:row;align-items:center;gap:14px}
+.area .n{flex:none;width:32px;height:32px;font-size:15px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
 .area:nth-child(2) .n{background:var(--accent)} .area:nth-child(3) .n{background:var(--navy)} .area:nth-child(4) .n{background:var(--rose)}
 .area b{font-size:18px;color:var(--ink);line-height:1.4}
 .qr-card{display:grid;grid-template-columns:1fr 180px;gap:32px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 36px}
@@ -669,12 +669,12 @@ a:focus-visible,.buy-btn:focus-visible{outline:3px solid var(--label);outline-of
   .flow{grid-template-columns:1fr;gap:18px}
   .flow li{min-height:0}
   .flow li:not(:last-child)::after{right:auto;left:50%;top:auto;bottom:-14px;transform:translateX(-50%) rotate(135deg)}
-  .areas{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .areas{grid-template-columns:1fr}
 }
 @media (max-width: 900px){
   .pz-hero.v6 h1{font-size:28px}
   .expo{grid-template-columns:1fr;gap:20px;padding:26px 22px;margin-top:36px}
-  .expo-logo{max-width:240px}
+  .expo-logo{max-width:200px}
   .expo h3{font-size:21px}
   .sol3,.plane{grid-template-columns:1fr}
   .zrow{grid-template-columns:1fr}
