@@ -1245,3 +1245,7 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 
 /* practice page: single "next" card spans the row */
 .pr-nx > .pr-n:only-child{grid-column:1/-1;max-width:820px;width:100%;justify-self:center}
+
+/* home: life-calculus formula box (3 lines, a little larger) */
+.fz-formula.pl-formula{font-size:19px!important;line-height:1.65}
+@media (max-width:640px){.fz-formula.pl-formula{font-size:17px!important}}
