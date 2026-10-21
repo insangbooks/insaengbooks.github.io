@@ -7,7 +7,7 @@
     en: {
       home: "index.html",
       other: { label: "한국어", lang: "ko" },
-      cta: { title: "3S Practice Room", tag: "Free", sub: "About 3 min · no sign-up", href: "practice.html" },
+      cta: { title: "3S Practice Room", tag: "Free", sub: "About 3 min · no sign-up", href: "https://pluszone-edusolution.app/?lang=en" },
       groups: [
         { key: "method", label: "The Method", href: "approach.html", pages: ["approach.html"], items: [
           { t: "Coordinate Plane of Consciousness", d: "Plus · Zero · Minus Zones", h: "approach.html#plane" },
@@ -29,7 +29,7 @@
     ko: {
       home: "korean.html",
       other: { label: "English", lang: "en" },
-      cta: { title: "3S 연습실", tag: "무료", sub: "약 3분 · 가입 없이", href: "ko-practice.html" },
+      cta: { title: "3S 연습실", tag: "무료", sub: "약 3분 · 가입 없이", href: "https://pluszone-edusolution.app/?lang=ko" },
       groups: [
         { key: "method", label: "교육 방법", href: "ko-approach.html", pages: ["ko-approach.html"], items: [
           { t: "의식의 좌표평면", d: "플러스·제로·마이너스 존", h: "ko-approach.html#plane" },
@@ -135,6 +135,8 @@
       top.innerHTML = "<b>" + esc(M.expo.t) + '</b><span class="d">' + esc(M.expo.d2) + "</span>";
       document.body.insertBefore(top, head);
     }
+    // the 3S Practice Room web app opens in its own tab
+    Array.prototype.forEach.call(document.querySelectorAll('a[href^="https://pluszone-edusolution.app"]'), function (a) { a.target = "_blank"; a.rel = "noopener"; });
     html.classList.add("pz-nav-ready");
 
     // mark current item
@@ -208,7 +210,7 @@
       sm.className = "pzs";
       sm.setAttribute("aria-label", L === "ko" ? "사이트맵" : "Site map");
       sm.innerHTML = '<div class="pzs-in">' + columns("pzs-col") +
-        '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li></ul>" +
+        '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '" target="_blank" rel="noopener">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\" target=\"_blank\" rel=\"noopener\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li></ul>" +
         '<a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + "</a></div></div>";
       var root = foot.tagName === "FOOTER" ? foot : foot.parentNode;
       root.parentNode.insertBefore(sm, root);
