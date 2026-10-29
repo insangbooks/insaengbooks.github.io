@@ -5,6 +5,7 @@
 (function () {
   var html = document.documentElement;
   if ((html.getAttribute("lang") || "").toLowerCase().indexOf("ko") === 0) return; // Korean pages: nothing to do
+  if ((html.getAttribute("lang") || "").toLowerCase().indexOf("ar") === 0) return; // Arabic page: nothing to do
 
   var TERMS = [
     "PLUSZONE EDUSOLUTION", "PLUSZONE Education", "PLUSZONE",
@@ -91,6 +92,23 @@
     requestAnimationFrame(function () { bar && bar.classList.add("on"); });
   }
 
+
+  // Arabic-language browser → one-time suggestion of the Arabic home page
+  function showArBar() {
+    var b = document.createElement("div");
+    b.className = "pz-ko-bar pz-ar-bar notranslate";
+    b.setAttribute("translate", "no"); b.setAttribute("lang", "ar"); b.setAttribute("dir", "rtl");
+    b.setAttribute("role", "region"); b.setAttribute("aria-label", "الصفحة العربية");
+    b.innerHTML =
+      '<span class="pz-ko-msg">يتوفّر هذا الموقع بصفحة عربية.</span>' +
+      '<a class="pz-ko-go" href="ar.html" hreflang="ar">العربية ←</a>' +
+      '<button class="pz-ko-x" type="button" aria-label="إغلاق">×</button>';
+    b.querySelector(".pz-ko-x").addEventListener("click", function () { b.remove(); });
+    document.body.appendChild(b);
+    store("pz-ar-hint", "shown");
+    requestAnimationFrame(function () { b.classList.add("on"); });
+  }
+
   function isTranslated() {
     var c = html.className || "", l = (html.getAttribute("lang") || "").toLowerCase();
     return /\btranslated-(ltr|rtl)\b/.test(c) || l.indexOf("ko") === 0 ||
@@ -107,6 +125,7 @@
     ".pz-ko-go:hover{background:#F3D79A}" +
     ".pz-ko-x{flex:none;width:32px;height:32px;border:0;border-radius:8px;background:transparent;color:#fff;font-size:22px;line-height:1;cursor:pointer;opacity:.75}" +
     ".pz-ko-x:hover{opacity:1;background:rgba(255,255,255,.12)}" +
+    ".pz-ar-bar{font-family:'Noto Sans Arabic','Noto Kufi Arabic',Tahoma,sans-serif;padding:12px 18px 12px 14px}" +
     "@media (max-width:640px){.pz-ko-bar{left:12px;right:12px;width:auto;max-width:none;transform:translateY(140%);flex-wrap:wrap;bottom:12px;gap:8px 10px;font-size:14px;padding:12px 12px 12px 14px}.pz-ko-bar.on{transform:translateY(0)}" +
     ".pz-ko-msg{flex:1 1 calc(100% - 70px)}.pz-ko-go{order:3;flex:1;text-align:center}.pz-ko-x{order:2}}" +
     "@media (prefers-reduced-motion:reduce){.pz-ko-bar{transition:none}}";
@@ -134,6 +153,10 @@
     var prefersKo = String(langs[0] || "").toLowerCase().indexOf("ko") === 0;
     if (prefersKo && store("pz-ko-hint") !== "closed") {
       setTimeout(function () { if (!mode) showBar("suggest"); }, 1200);
+    }
+    var prefersAr = String(langs[0] || "").toLowerCase().indexOf("ar") === 0;
+    if (prefersAr && !store("pz-ar-hint")) {
+      setTimeout(function () { if (!mode) showArBar(); }, 1200);
     }
   }
 

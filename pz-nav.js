@@ -51,6 +51,7 @@
   };
 
   var html = document.documentElement;
+  if ((html.getAttribute("lang") || "").toLowerCase().indexOf("ar") === 0) return; // Arabic page has its own header
   var L = (html.getAttribute("lang") || "en").toLowerCase().indexOf("ko") === 0 ? "ko" : "en";
   var M = MENU[L];
   var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
@@ -115,7 +116,7 @@
             g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '">' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
         }).join("") +
         (live(M.expo) ? '<div class="pzd-expo"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></div>" : "") +
-        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
+        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
       "</div>";
     document.body.insertBefore(head, document.body.firstChild);
     // home pages: the big hero button already invites to the practice room,
@@ -211,7 +212,7 @@
       sm.setAttribute("aria-label", L === "ko" ? "사이트맵" : "Site map");
       sm.innerHTML = '<div class="pzs-in">' + columns("pzs-col") +
         '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '" target="_blank" rel="noopener">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\" target=\"_blank\" rel=\"noopener\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li></ul>" +
-        '<a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + "</a></div></div>";
+        '<a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a class="pzs-lang" href="ar.html" lang="ar" dir="rtl">العربية</a></div></div>';
       var root = foot.tagName === "FOOTER" ? foot : foot.parentNode;
       root.parentNode.insertBefore(sm, root);
     }
