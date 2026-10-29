@@ -102,6 +102,7 @@
         "</nav>" +
         '<div class="pzn-right">' +
           '<a class="pzn-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '" hreflang="' + M.other.lang + '">' + M.other.label + "</a>" +
+          '<a class="pzn-lang pzn-ar" href="ar.html" lang="ar" hreflang="ar" dir="rtl">العربية</a>' +
           '<a class="pzn-cta" href="' + M.cta.href + '">' + esc(M.cta.title) + ' <span>· ' + esc(M.cta.tag) + "</span></a>" +
           '<button type="button" class="pzn-burger" aria-expanded="false" aria-controls="pzn-drawer" aria-label="' + M.ui.menu + '"><span></span><span></span><span></span></button>' +
         "</div>" +

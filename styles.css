@@ -1088,6 +1088,7 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 .pzn-right{margin-left:auto;display:flex;align-items:center;gap:18px;flex:none}
 .pzn-lang{font-size:15.5px;font-weight:600;color:#5F6673!important;text-decoration:none!important;white-space:nowrap}
 .pzn-lang:hover{color:#1F3A68!important}
+.pzn-ar{font-family:'Noto Sans Arabic','Noto Kufi Arabic',Tahoma,sans-serif;font-size:15px}
 .pzn-cta{display:inline-flex;align-items:center;gap:6px;height:46px;padding:0 22px;border-radius:999px;background:#E9C77E;border:1px solid #D9B25F;color:#1B1408!important;font-weight:800;font-size:16px;text-decoration:none!important;white-space:nowrap;box-shadow:0 6px 16px rgba(142,100,32,.2);transition:background .2s ease,transform .2s ease}
 .pzn-cta span{font-weight:700;color:#5A4410}
 .pzn-cta:hover{background:#F3D79A;transform:translateY(-1px)}
