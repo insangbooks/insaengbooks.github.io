@@ -1251,3 +1251,13 @@ html.pzn-lock,html.pzn-lock body{overflow:hidden}
 /* home: life-calculus formula box (3 lines, a little larger) */
 .fz-formula.pl-formula{font-size:19px!important;line-height:1.65}
 @media (max-width:640px){.fz-formula.pl-formula{font-size:17px!important}}
+
+/* brochure download link in the top menu */
+.pzn-dl{height:100%;display:inline-flex;align-items:center;gap:6px;padding:0 14px;font-size:16.5px;font-weight:600;color:#1B2F5B!important;text-decoration:none!important;white-space:nowrap}
+.pzn-dl .dl{width:15px;height:15px;opacity:.75}
+.pzn-dl:hover{color:#1D6FE0!important}
+.pzn-dl:focus-visible{outline:3px solid #1D6FE0;outline-offset:-6px;border-radius:8px}
+@media (max-width:1360px){.pzn-dl{padding:0 9px;font-size:15.5px}}
+.pzn-bar{gap:22px}.pzn-right{gap:14px}
+@media (max-width:1310px){.pzn-bar{gap:12px}.pzn-right{gap:10px}}
+@media (max-width:1180px){.pzn-dl .dl{display:none}}

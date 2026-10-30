@@ -24,6 +24,7 @@
           { t: "Where to Buy", d: "Amazon · Korean bookstores", h: "book.html#buy" } ] }
       ],
       expo: { t: "EDUCATION KOREA 2027", d: "Jan. 27–29 · COEX Halls A & B, Seoul", h: "partners.html#expo", until: "2027-01-30T00:00:00+09:00", go: "Visit our booth →", d2: "Jan. 27–29, 2027 · COEX Halls A & B, Seoul" },
+      bro: { label: "Brochure", t: "Brochure (PDF)", d: "Download · English, 2 pages" },
       ui: { menu: "Menu", close: "Close menu", nav: "Main menu" }
     },
     ko: {
@@ -46,6 +47,7 @@
           { t: "구매처", d: "교보문고 · 예스24 · 알라딘 · 아마존", h: "ko-book.html#buy" } ] }
       ],
       expo: { t: "2027 대한민국 교육박람회", d: "1월 27~29일 · 서울 코엑스 A·B홀", h: "ko-partners.html#expo", until: "2027-01-30T00:00:00+09:00", go: "부스 안내 →", d2: "2027년 1월 27~29일 · 서울 코엑스 A·B홀" },
+      bro: { label: "브로슈어", t: "브로슈어 (영문 PDF)", d: "다운로드 · 영문 2쪽" },
       ui: { menu: "메뉴", close: "메뉴 닫기", nav: "주 메뉴" }
     }
   };
@@ -54,6 +56,9 @@
   if ((html.getAttribute("lang") || "").toLowerCase().indexOf("ar") === 0) return; // Arabic page has its own header
   var L = (html.getAttribute("lang") || "en").toLowerCase().indexOf("ko") === 0 ? "ko" : "en";
   var M = MENU[L];
+  var BRO = "PLUSZONE-Edusolution-Brochure.pdf", BROA = ' href="' + BRO + '" download="PLUSZONE-Edusolution-Brochure.pdf"';
+  // brochure: last item of the Book & Authors group (mega menu, drawer, footer sitemap)
+  M.groups[2].items.push({ t: M.bro.t, d: M.bro.d, h: BRO, dl: 1 });
   var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   if (page === "") page = "index.html";
   var now = Date.now();
@@ -81,7 +86,7 @@
     return M.groups.map(function (g) {
       return '<div class="' + cls + '" data-col="' + g.key + '"><a class="pzm-h" href="' + g.href + '">' + esc(g.label) + "</a><ul>" +
         g.items.filter(live).map(function (it) {
-          return '<li><a href="' + it.h + '"><b class="tt">' + esc(it.t) + '</b><span class="ds">' + esc(it.d) + "</span></a></li>";
+          return '<li><a href="' + it.h + '"' + (it.dl ? ' download="PLUSZONE-Edusolution-Brochure.pdf"' : '') + '><b class="tt">' + esc(it.t) + '</b><span class="ds">' + esc(it.d) + "</span></a></li>";
         }).join("") + "</ul></div>";
     }).join("");
   }
@@ -99,6 +104,7 @@
           M.groups.map(function (g) {
             return '<button type="button" class="pzn-g' + (g.key === ACT ? " is-cur" : "") + '" data-key="' + g.key + '" aria-expanded="false" aria-controls="pzn-panel">' + esc(g.label) + CARET + "</button>";
           }).join("") +
+          '<a class="pzn-dl"' + BROA + '>' + esc(M.bro.label) + '<svg class="dl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>' +
         "</nav>" +
         '<div class="pzn-right">' +
           '<a class="pzn-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '" hreflang="' + M.other.lang + '">' + M.other.label + "</a>" +
@@ -114,7 +120,7 @@
         M.groups.map(function (g) {
           return '<div class="pzd-g' + (g.key === ACT ? " open" : "") + '"><button type="button" aria-expanded="' + (g.key === ACT) + '">' + esc(g.label) + '<i aria-hidden="true"></i></button><ul>' +
             '<li><a href="' + g.href + '">' + esc(g.label) + (L === "ko" ? " 전체 보기" : " — overview") + "</a></li>" +
-            g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '">' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
+            g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '"' + (it.dl ? ' download="PLUSZONE-Edusolution-Brochure.pdf"' : '') + '>' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
         }).join("") +
         (live(M.expo) ? '<div class="pzd-expo"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></div>" : "") +
         '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
@@ -147,7 +153,7 @@
       if (h === page) a.setAttribute("aria-current", "page");
     });
 
-    var panel = head.querySelector(".pzn-panel"), groups = head.querySelectorAll(".pzn-g"), timer = null;
+    var panel = head.querySelector(".pzn-panel"), groups = head.querySelectorAll("button.pzn-g"), timer = null;
     function openPanel(key) {
       clearTimeout(timer);
       panel.hidden = false;
@@ -173,6 +179,7 @@
     });
     if (hoverOK) {
       head.querySelector(".pzn-groups").addEventListener("mouseleave", later);
+      head.querySelector(".pzn-dl").addEventListener("mouseenter", closePanel);
       panel.addEventListener("mouseenter", function () { clearTimeout(timer); });
       panel.addEventListener("mouseleave", later);
       panel.querySelectorAll(".pzn-col").forEach(function (c) {
