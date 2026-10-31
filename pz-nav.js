@@ -123,7 +123,7 @@
             g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '"' + (it.dl ? ' download="PLUSZONE-Edusolution-Brochure.pdf"' : '') + '>' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
         }).join("") +
         (live(M.expo) ? '<div class="pzd-expo"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></div>" : "") +
-        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mailto:pluszoneedu@gmail.com">pluszoneedu@gmail.com</a></div>' +
+        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mailto:info@edupluszone.com">info@edupluszone.com</a></div>' +
       "</div>";
     document.body.insertBefore(head, document.body.firstChild);
     // home pages: the big hero button already invites to the practice room,
