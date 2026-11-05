@@ -1,0 +1,19 @@
+---
+pagetitle: "Where to Buy"
+lang: en
+draft: true
+include-in-header:
+  - text: |
+      <meta name="robots" content="noindex, follow">
+      <link rel="canonical" href="https://edupluszone.com/book.html#buy">
+      <meta http-equiv="refresh" content="0; url=book.html#buy">
+---
+
+<!-- 구매처는 Book / 책 소개 페이지의 '구매처 안내'(#buy)로 옮겼습니다. 이 페이지는 예전 링크용 안내입니다. -->
+
+```{=html}
+<section class="wrap shop-head">
+  <h1>Where to Buy</h1>
+  <p>Purchase links have moved to the <a href="book.html#buy">Book page</a>. · 구매처는 <a href="ko-book.html#buy">책 소개 페이지</a>로 옮겼습니다.</p>
+</section>
+```

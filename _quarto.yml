@@ -1,0 +1,90 @@
+project:
+  type: website
+  resources:
+    - "CNAME"
+    - "favicon.png"
+    - "video*-poster.jpg"
+    - "intro-loop.mp4"
+    - "intro-loop.webm"
+    - "intro-poster.jpg"
+    - "pz-lang.js"
+    - "pz-nav.js"
+    - "pz-hero.js"
+    - "3s-motion-*.mp4"
+    - "3s-motion-*.webm"
+    - "3s-motion-*-poster.webp"
+    - "card-method-*.webp"
+    - "PLUSZONE-Edusolution-Brochure.pdf"
+    - "google78ce0029a5a5a50e.html"
+
+website:
+  title: "PLUSZONE Education"
+  favicon: favicon.png
+  site-url: https://edupluszone.com
+  open-graph:
+    site-name: "PLUSZONE Education"
+  twitter-card: true
+  search: false
+  draft-mode: unlinked
+  navbar:
+    left:
+      - text: "The Method"
+        menu:
+          - text: "The Method — overview"
+            href: approach.qmd
+          - text: "Coordinate Plane of Consciousness"
+            href: approach.qmd#plane
+          - text: "Three Solutions"
+            href: approach.qmd#higher-growth
+          - text: "3S Questioning Method"
+            href: approach.qmd#questioning
+      - text: "Classroom Cases"
+        menu:
+          - text: "Classroom Cases — overview"
+            href: stories.qmd
+          - text: "Student Videos"
+            href: stories.qmd#videos
+          - text: "How Students Changed"
+            href: stories.qmd#growth
+          - text: "Classroom Dialogues"
+            href: stories.qmd#dialogues
+          - text: "Teacher Voices"
+            href: stories.qmd#voices
+      - text: "Book & Authors"
+        menu:
+          - text: "About the Book"
+            href: book.qmd
+          - text: "Meet the Authors"
+            href: about.qmd
+          - text: "Where to Buy"
+            href: book.qmd#buy
+    right:
+      - text: "3S Practice Room"
+        href: "https://pluszone-edusolution.app/?lang=en"
+      - text: "Korean"
+        href: korean.qmd
+  page-footer:
+    border: false
+    left: "© 2026 PLUSZONE EDUSOLUTION · 플러스존 에듀솔루션"
+    right: "[+82 10-5528-0079](tel:+821055280079) · [info@edupluszone.com](mailto:info@edupluszone.com) · [YouTube](https://www.youtube.com/@pluszoneedu) · [Contact](contact.qmd) · [Privacy](privacy.qmd)"
+
+format:
+  html:
+    lang: en
+    css:
+      - styles.css
+      - clr2.css
+    page-layout: custom
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
+        <!-- Google Analytics: Measurement ID G-94BTH13ZJ6 (edupluszone.com) -->
+        <script>(function(){var ID="G-94BTH13ZJ6";if(/X{6}/.test(ID)||/^(localhost|127\.)/.test(location.hostname))return;var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",ID);})();</script>
+        <script>document.documentElement.classList.add("pz-js","clr2");setTimeout(function(){if(!document.getElementById("pz-nav"))document.documentElement.classList.remove("pz-js")},4000);</script>
+        <script src="pz-nav.js" defer></script>
+        <script src="pz-lang.js" defer></script>
+        <script>document.addEventListener("DOMContentLoaded",function(){if(document.documentElement.lang!=="ko")return;[["contact","ko-contact"],["practice","ko-practice"],["privacy","ko-privacy"]].forEach(function(p){document.querySelectorAll('a[href$="'+p[0]+'.html"]:not(.lang)').forEach(function(a){if(a.getAttribute("href").indexOf(p[1])<0)a.setAttribute("href",p[1]+".html")})});var L={contact:"문의하기",privacy:"개인정보 처리방침"};document.querySelectorAll(".nav-footer a").forEach(function(a){var h=a.getAttribute("href")||"";for(var k in L){if(h.indexOf(k)>=0&&a.textContent.trim().match(/^(Contact|Privacy)$/))a.textContent=L[k]}})});</script>

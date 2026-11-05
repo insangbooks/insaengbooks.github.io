@@ -1,0 +1,19 @@
+---
+pagetitle: "3S Practice Room"
+lang: en
+draft: true
+include-in-header:
+  - text: |
+      <meta name="robots" content="noindex, follow">
+      <link rel="canonical" href="https://pluszone-edusolution.app/?lang=en">
+      <meta http-equiv="refresh" content="0; url=https://pluszone-edusolution.app/?lang=en">
+---
+
+<!-- 3S 연습실 소개 페이지는 없애고, 메뉴에서 바로 웹앱으로 연결합니다. 이 페이지는 예전 링크용 안내입니다. -->
+
+```{=html}
+<section class="wrap shop-head">
+  <h1>3S Practice Room</h1>
+  <p>The 3S Practice Room now opens directly: <a href="https://pluszone-edusolution.app/?lang=en">open the web app →</a></p>
+</section>
+```

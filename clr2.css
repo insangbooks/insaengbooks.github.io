@@ -1,0 +1,302 @@
+/* ===================================================================
+   PLUSZONE colour system (2026-11): blue tone-on-tone + purple accent.
+   Navy #1E2A5A · Deep #2945BE · Primary #375CE5 · Mid #7D95EE · Pale #C9D6FF · Light #EEF2FD
+   Purple #5D4FC4 (points, gradient end) · Lavender #F1EFFC
+   Zones: Plus #375CE5/#EEF2FD · Zero #6B7590/#F3F5F9 · Minus #D9655A/#FBEFED (Minus only)
+   No orange / yellow / red, no pure black, no large dark-navy areas.
+   Active only when <html> has the class "clr2".
+   =================================================================== */
+html.clr2{
+  --c-ink:#1E2A5A; --c-tx:#4A4F5C; --c-mu:#5C6273;
+  --c-bl:#375CE5; --c-bl-h:#2945BE; --c-bl-d:#2945BE;
+  --c-bl-t:#EEF2FD; --c-bl-t2:#F5F7FE; --c-ln:#E6E9F0; --c-ln2:#E6E9F0;
+  --c-y:#375CE5; --c-y-h:#2945BE; --c-red:#D9655A; --c-red-d:#B8483E;
+  --nv:#1E2A5A; --nv-d:#1A2450; --nv-2:#375CE5; --nv-t:#EEF2FD; --nv-t2:#F5F7FE;
+  --gd:#375CE5; --gd-d:#2945BE; --gd-t:#F5F7FE; --cr:#FFFFFF; --ln:#E6E9F0; --coral:#D9655A;
+}
+html.clr2 body,html.clr2 .quarto-container,html.clr2 #quarto-content,html.clr2 main{background:#FFFFFF!important}
+html.clr2 .fz{--fz-or:#375CE5!important;--fz-or-d:#2945BE!important;--fz-tint:#EEF2FD!important;--fz-line:#E6E9F0!important;--fz-soft:#F5F7FE!important;--fz-ink:#1E2A5A!important;--fz-text:#4A4F5C!important;--fz-mute:#5C6273!important;--fz-br:#1E2A5A!important}
+html.clr2 .fz .fz-prac-sec,html.clr2 .fz .fz-card{--fz-or:#375CE5!important;--fz-or-d:#2945BE!important;--fz-tint:#EEF2FD!important}
+html.clr2 .fz-sec{background:#FFFFFF}
+html.clr2 .fz-sec:nth-of-type(even){background:#F5F7FE!important}
+
+/* ---- menu ---- */
+html.clr2 .pzn{background:#FFFFFF!important;border-bottom-color:#E6E9F0!important}
+html.clr2 .pzn-brand i{background:#1E2A5A}
+html.clr2 .pzn-brand b,html.clr2 .pzn-g{color:#1E2A5A}
+html.clr2 .pzn-g:hover,html.clr2 .pzn-g.is-open,html.clr2 .pzn-g.is-cur{color:#375CE5}
+html.clr2 .pzn-g::after{background:#375CE5}
+html.clr2 .pzn-cta,html.clr2 .pzd-cta,html.clr2 .pzs-btn{background:#375CE5!important;border-color:#375CE5!important;color:#FFFFFF!important;box-shadow:0 6px 16px rgba(30,42,90,.14)}
+html.clr2 .pzn-cta span,html.clr2 .pzd-cta small{color:#FFFFFF!important;opacity:.85}
+html.clr2 .pzn-cta:hover,html.clr2 .pzs-btn:hover{background:#2945BE!important}
+html.clr2 .pzn-burger{background:#EEF2FD}
+html.clr2 .pzn-cols{border-color:#E6E9F0}
+html.clr2 .pzn-col.on{background:#F5F7FE}
+html.clr2 .pzn-col .pzm-h{color:#2945BE!important}
+html.clr2 .pzn-col li a:hover,html.clr2 .pzn-col li a:focus-visible,html.clr2 .pzd-g li a:hover{background:#EEF2FD}
+html.clr2 .pzn-col li a:hover .tt,html.clr2 .pzn-col li a .tt{color:#1E2A5A}
+html.clr2 .pzn-col li a:hover .tt{color:#375CE5}
+html.clr2 .pzn-drawer{background:#FFFFFF}
+html.clr2 .pzd-g.open > button{color:#375CE5}
+html.clr2 .pz-top{background:#1E2A5A}
+html.clr2 .pz-top b{color:#C9D6FF}
+
+/* ---- hero: keep the warm picture; yellow practice button; gold stays on the motto's 2nd line ---- */
+html.clr2 .pz-intro .buy-btn.primary,html.clr2 a.buy-btn[href$="practice.html"]{background:#375CE5!important;border-color:#375CE5!important;color:#FFFFFF!important}
+html.clr2 .pz-intro .buy-btn.primary:hover{background:#2945BE!important}
+
+/* ---- section heads, text, links ---- */
+html.clr2 .fz-tag{color:#2945BE!important}
+html.clr2 .fz-tag::before{background:#375CE5}
+html.clr2 .fz-tag .stp{background:#1E2A5A!important}
+html.clr2 .fz h2{color:#1E2A5A}
+html.clr2 .fz h2 em{color:#375CE5!important}
+html.clr2 #solutions .fz-head h2{color:#375CE5!important}
+html.clr2 #solutions .fz-head h2 em{color:#1E2A5A!important}
+html.clr2 .fz p,html.clr2 .fz li{color:#4A4F5C}
+html.clr2 .fz-more,html.clr2 .fz a.fz-more{color:#375CE5!important}
+html.clr2 .fz a:not(.fz-btn):not(.buy-btn):not(.st-card):not(.cs-s):hover{color:#2945BE}
+html.clr2 .fz-btn{background:#375CE5!important;color:#FFFFFF!important}
+html.clr2 .fz-btn:hover{background:#2945BE!important}
+html.clr2 a.fz-btn[href$="practice.html"],html.clr2 .fz-prac-sec .fz-btn{background:#375CE5!important;border-color:#375CE5!important;color:#FFFFFF!important}
+html.clr2 a.fz-btn[href$="practice.html"]:hover{background:#2945BE!important}
+
+/* ---- start cards ---- */
+html.clr2 .st-card{border-color:#E6E9F0!important}
+html.clr2 .st-card:hover{border-color:#375CE5!important;box-shadow:0 16px 32px rgba(55,92,229,.12)}
+html.clr2 .st-ic{background:#EEF2FD;color:#375CE5}
+html.clr2 .st-card small{color:#2945BE}
+html.clr2 .st-card b{color:#1E2A5A}
+html.clr2 .st-go{color:#375CE5}
+
+/* ---- coordinate plane ---- */
+html.clr2 .pl2 .pl-text p b,html.clr2 .fz-plane .pl-text b{color:#375CE5!important}
+html.clr2 .lc{border-color:#E6E9F0!important;background:#FFFFFF}
+html.clr2 .lc-replay{background:#FFFFFF!important;border:1.5px solid #375CE5!important;color:#375CE5!important}
+html.clr2 .lc-replay:hover{background:#375CE5!important;color:#FFFFFF!important}
+html.clr2 .lc svg [stroke="#2945BE"]{stroke:#375CE5}
+html.clr2 .lc svg [fill="#2945BE"]{fill:#375CE5}
+html.clr2 .lc svg [stroke="#D9655A"]{stroke:#D9655A}
+html.clr2 .lc svg [fill="#D9655A"]{fill:#D9655A}
+html.clr2 .lc svg [stroke="#5B6172"]{stroke:#7A839C}
+html.clr2 .lc svg [fill="#5B6172"]{fill:#7A839C}
+html.clr2 .lc svg [fill="#E6ECFD"]{fill:#ECF0FD}
+html.clr2 .lc svg [fill="#FAEDEB"]{fill:#FBEFED}
+html.clr2 .lc svg [fill="#B9C9FC"]{fill:#CBD8FF}
+html.clr2 .lc svg [fill="#5D4FC4"]{fill:#1E2A5A}
+html.clr2 .lc svg text[fill="#1E2A5A"]{fill:#375CE5}
+html.clr2 .lc svg [fill="#1E2A5A"]{fill:#1E2A5A}
+/* zones */
+html.clr2 .fz-zone.plus{background:#EEF2FD!important;border-top-color:#375CE5!important}
+html.clr2 .fz-zone.plus .zl{color:#2945BE!important}
+html.clr2 .fz-zone:not(.plus):not(.minus){background:#F3F5F9!important;border-top-color:#6B7590!important}
+html.clr2 .fz-zone:not(.plus):not(.minus) .zl{color:#4A4F5C!important}
+html.clr2 .fz-zone.minus{background:#FBEFED!important;border-top-color:#D9655A!important}
+html.clr2 .fz-zone.minus .zl{color:#B8483E!important}
+html.clr2 .fz-zone + .fz-zone{border-left-color:#E6E9F0!important}
+/* calculus-of-life box: navy (weight) + light-yellow title */
+html.clr2 .fz-formula{background:#1E2A5A!important;color:#FFFFFF!important}
+html.clr2 .fz-formula span{color:#C9D6FF!important}
+html.clr2 .zone-note{background:#F5F7FE!important;border-left-color:#375CE5!important;color:#4A4F5C}
+
+/* ---- solutions / 3S ---- */
+html.clr2 .sg-card,html.clr2 .fz-sol .vis{border-color:#E6E9F0!important}
+html.clr2 .fz-step{background:#F5F7FE!important;border-color:#E6E9F0!important}
+html.clr2 .fz-step .n{color:#375CE5!important;border-color:#C2D0FD}
+html.clr2 .fz-step.on{background:#375CE5!important;border-color:#375CE5!important}
+html.clr2 .fz-step.on small{color:#E4EBFE!important}
+html.clr2 .fz-step.on .n{background:#FFFFFF!important;color:#375CE5!important;border-color:#FFFFFF}
+
+/* ---- practice band + mini demo ---- */
+html.clr2 .fz-prac{background:#F5F7FE!important;border-color:#E6E9F0!important}
+html.clr2 .fz-time{color:#2945BE!important}
+html.clr2 .pv .ss b,html.clr2 .pv .pv-tag{background:#375CE5!important}
+
+/* ---- videos, quotes, cases, voices ---- */
+html.clr2 .vno{color:#2945BE}
+html.clr2 .fz-q{border-color:#E6E9F0!important}
+html.clr2 .fz-q span{color:#2945BE}
+html.clr2 .cs-big{background:#F5F7FE;border-color:#E6E9F0}
+html.clr2 .cs-who,html.clr2 .cs-res b{color:#2945BE}
+html.clr2 .cs-dlg .tc b{color:#375CE5}
+html.clr2 .cs-s{border-color:#E6E9F0}
+html.clr2 .cs-big h3,html.clr2 .cs-s b{color:#1E2A5A}
+html.clr2 .tv-q{border-color:#E6E9F0;border-left-color:#375CE5}
+html.clr2 .tv-t{color:#2945BE}
+html.clr2 .tv-q blockquote{color:#1E2A5A}
+
+/* ---- people, book, partners ---- */
+html.clr2 .fz-card,html.clr2 .fz-person,html.clr2 .fz-book{border-color:#E6E9F0!important}
+html.clr2 .fz-card .fz-btn{background:#375CE5!important}
+html.clr2 .fz-card .fz-btn:hover{background:#2945BE!important}
+html.clr2 .fz-partner{background:#F5F7FE!important;border-color:#E6E9F0!important}
+html.clr2 .fz-areas div{border-color:#E6E9F0!important;background:#FFFFFF}
+html.clr2 .fz-areas div i{color:#375CE5!important}
+html.clr2 .fz-areas .ai.warm,html.clr2 .fz-areas .ai.navy{background:#EEF2FD!important;color:#375CE5!important}
+html.clr2 .expo{background:#1E2A5A}
+html.clr2 .expo .lbl,html.clr2 .expo dt{color:#C9D6FF}
+
+/* ---- footer: navy ---- */
+html.clr2 .pzs{background:#1E2A5A;border-top:0}
+html.clr2 .pzs-col .pzm-h{color:#FFFFFF!important}
+html.clr2 .pzs-col li a{color:#B8C7FB!important}
+html.clr2 .pzs-col li a:hover{color:#FFFFFF!important}
+html.clr2 .pzs-cta .pzs-lang{color:#C9D6FF!important;border-top-color:rgba(255,255,255,.18)}
+html.clr2 .nav-footer{background:#1A2450!important;border-top:1px solid rgba(255,255,255,.08)!important;color:#8FA4F2!important}
+html.clr2 .nav-footer a{color:#DBE4FE!important}
+html.clr2 .nav-footer a:hover{color:#FFFFFF!important}
+html.clr2 .expo h3,html.clr2 .expo dd{color:#FFFFFF!important}
+html.clr2 .expo i{color:#B8C7FB!important;border-bottom-color:rgba(255,255,255,.2)!important}
+html.clr2 .sg-vis,html.clr2 .fz-sol .vis{background:#F9FAFE!important}
+html.clr2 .pz-intro .imath{color:rgba(255,255,255,.92)!important}
+
+/* ---- Higher Growth flow chart: two colours (blue = the way to Plus, grey = the rest)
+        + a small red only for the "0 / −" starting branch (option B) ---- */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#E9ECF2"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#E7EAF1"]{fill:#F0F3FD}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#6F7994"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#5D4FC4"]{stroke:#6582EB}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#6F7994"]{fill:#6582EB}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#3A3F4C"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#5D4FC4"]{fill:#4A4F5C}
+/* blue path */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [stroke="#2945BE"]{stroke:#375CE5}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#2945BE"]{fill:#375CE5}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) [fill="#E6E9F0"]{fill:#EEF2FD}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#1E2A5A"]{fill:#1E2A5A}
+/* "choose Plus" box and the turn toward Plus become blue */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) rect[fill="#FBEFED"]{fill:#EEF2FD;stroke:#375CE5}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#B8483E"]{fill:#1E2A5A}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) line[stroke="#D9655A"]{stroke:#375CE5}
+html.clr2 svg.hg-tall line[stroke="#D9655A"]{marker-end:url(#hgt-g)}
+html.clr2 svg.hg-wide line[stroke="#D9655A"]{marker-end:url(#hgw-g)}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#D9655A"][text-anchor="middle"]{fill:#375CE5}
+/* the only red: the 0 / − branch, its arrow and its marks */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) polyline[stroke="#D9655A"]{stroke:#D9655A}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) text[fill="#D9655A"]:not([text-anchor]){fill:#D9655A}
+
+/* ===================== site-wide (all pages) ===================== */
+html.clr2{
+  --paper:#FFFFFF; --paper-2:#F5F7FE; --sand:#DDE5FE; --line:#E6E9F0;
+  --ink:#1E2A5A; --text:#4A4F5C; --muted:#5C6273;
+  --accent:#375CE5; --accent-dark:#2945BE; --accent-soft:#C9D6FF; --label:#2945BE;
+  --blue:#375CE5; --rose:#D9655A; --navy:#1E2A5A; --gd-t:#F5F7FE;
+}
+html.clr2 .ct,html.clr2 .pr{--ink:#1E2A5A!important;--tx:#4A4F5C!important;--mu:#5C6273!important;--ln:#E6E9F0!important;--soft:#F5F7FE!important;--tint:#EEF2FD!important;--or:#375CE5!important}
+html.clr2 .pv-page{--ink:#1E2A5A;--tx:#4A4F5C;--mu:#5C6273;--ln:#E6E9F0;--nv:#375CE5;--gd:#375CE5}
+html.clr2 body{color:#1E2A5A}
+html.clr2 .eyebrow,html.clr2 .eyebrow.lg,html.clr2 .pv-page .tag{color:#2945BE!important}
+html.clr2 .pv-page .tag::before{background:#375CE5}
+html.clr2 .lbl{color:#C9D6FF}
+
+/* videos (home + stories) */
+html.clr2 .vcard{border-color:#E6E9F0!important}
+html.clr2 .vplay{background-color:#DDE5FE!important}
+html.clr2 .vicon{background:#1E2A5A!important}
+html.clr2 .sg-vis,html.clr2 .sg-flow{border-color:#E6E9F0!important}
+
+/* approach */
+html.clr2 .s3row,html.clr2 .s3row > div,html.clr2 .zones,html.clr2 .z,html.clr2 figure.hg-flow,html.clr2 figure.spiral{border-color:#E6E9F0!important}
+html.clr2 .s3row small,html.clr2 .s3row b{color:#2945BE}
+html.clr2 .q,html.clr2 p.formula{background:#F5F7FE!important}
+html.clr2 .z{background:#FFFFFF}
+html.clr2 .ct-cta{background:#F5F7FE!important;border-color:#E6E9F0!important}
+
+/* about */
+html.clr2 .person{border-color:#E6E9F0!important}
+html.clr2 .prole,html.clr2 .person span{color:#2945BE}
+html.clr2 .note-box,html.clr2 .thought{background:#F5F7FE!important}
+
+/* stories */
+html.clr2 article.case{border-color:#E6E9F0!important}
+html.clr2 article.case b,html.clr2 p.who,html.clr2 span.s{color:#2945BE}
+html.clr2 .dialog,html.clr2 .afc,html.clr2 figure.rev{background:#F5F7FE!important}
+html.clr2 .pz-share{background:#F5F7FE;border-color:#C9D6FF}
+
+/* practice */
+html.clr2 .pr-tag,html.clr2 .pr-f,html.clr2 .pr-card,html.clr2 .pr-step,html.clr2 .pr-open,html.clr2 .pr-n,html.clr2 .pr-privacy{border-color:#E6E9F0!important}
+html.clr2 .pr-f{background:#F5F7FE!important}
+html.clr2 .pr-n:not(.bk){background:#F5F7FE!important}
+html.clr2 .pr-privacy{border-left-color:#375CE5!important}
+html.clr2 .pr-btn,html.clr2 .hero .buy-jump{background:#375CE5!important;border-color:#375CE5!important;color:#FFFFFF!important}
+html.clr2 .pr-btn:hover,html.clr2 .hero .buy-jump:hover{background:#2945BE!important}
+html.clr2 .tm{color:#2945BE!important}
+
+/* partners */
+html.clr2 .area,html.clr2 .qr-card{border-color:#E6E9F0!important}
+
+/* book */
+html.clr2 .reader,html.clr2 article.edition,html.clr2 .contact-line{border-color:#E6E9F0!important}
+html.clr2 .inside{background:#F5F7FE!important}
+html.clr2 .quote-band{background:#1E2A5A!important;border-color:#375CE5!important}
+html.clr2 .quote-band p{color:#FFFFFF!important}
+
+/* contact */
+html.clr2 .ct-box{background:#F5F7FE!important}
+html.clr2 .ct-expo b{color:#C9D6FF!important}
+
+/* privacy */
+html.clr2 .pv-page section{border-color:#E6E9F0!important}
+html.clr2 .zrow.zero .z,html.clr2 .signs .z{background:#F0F3FD!important}
+html.clr2 .band-navy .lbl,html.clr2 .shift3 .to,html.clr2 .bookband .lbl,html.clr2 .bookband a{color:#C9D6FF!important}
+html.clr2 .band-navy,html.clr2 .bookband{background:#1E2A5A}
+html.clr2 .contact-band .org{color:#2945BE!important}
+html.clr2 .pzn-g:focus-visible{outline-color:#375CE5}
+/* red only means Minus: partner numbers and author tags become blue/navy */
+html.clr2 .area .n,html.clr2 .area:nth-child(2) .n,html.clr2 .area:nth-child(4) .n{background:#375CE5!important}
+html.clr2 .area:nth-child(3) .n{background:#375CE5!important}
+html.clr2 .person .badges span,html.clr2 .person:nth-child(2) .badges span{border-color:#C9D6FF!important;color:#2945BE!important}
+html.clr2 .pr-hero{background:linear-gradient(180deg,#F5F7FE 0%,#FFFFFF 100%)!important}
+/* book: purchase buttons in blue */
+html.clr2 .buy-sec .edition .stores .buy-btn.primary{background:#375CE5!important;border-color:#375CE5!important}
+html.clr2 .buy-sec .edition .stores .buy-btn.primary:hover{background:#2945BE!important}
+html.clr2 .buy-sec .edition .stores .buy-btn:not(.primary){border-color:#375CE5!important;color:#375CE5!important}
+html.clr2 .buy-sec .edition .stores .buy-btn:not(.primary):hover{background:#375CE5!important;color:#FFFFFF!important}
+html.clr2 .buy-sec{border-top:1px solid #E6E9F0;margin-top:56px}
+
+/* contrast fixes */
+html.clr2 .ct-tag{color:#2945BE!important}
+html.clr2 .s3row .st{background:#2F4FCE!important}
+html.clr2 .s3row:nth-child(2) .st{background:#2945BE!important}
+html.clr2 .s3row:nth-child(3) .st{background:#1E2A5A!important}
+
+/* Higher Growth flow chart: thinner arrow lines, smaller arrow heads (heads scale with the line) */
+html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4.5"],
+html.clr2 :is(svg.hg-tall,svg.hg-wide) :is(line,polyline)[stroke-width="4"]{stroke-width:2.4}
+html.clr2 :is(svg.hg-tall,svg.hg-wide) rect{stroke-width:2}
+html.clr2 .pz-intro .eyebrow{color:#C9D6FF!important}
+
+/* ===== 2026-11 colour system: no large dark-navy areas ===== */
+/* top notice band → lavender */
+html.clr2 .pz-top{background:#F1EFFC!important;color:#4A4F5C!important}
+html.clr2 .pz-top b{color:#5D4FC4!important}
+/* footer sitemap + footer → light blue, navy text */
+html.clr2 .pzs{background:#EEF2FD!important;border-top:1px solid #E6E9F0!important}
+html.clr2 .pzs-col .pzm-h{color:#1E2A5A!important}
+html.clr2 .pzs-col li a{color:#4A4F5C!important}
+html.clr2 .pzs-col li a:hover{color:#375CE5!important}
+html.clr2 .pzs-cta .pzs-lang{color:#375CE5!important}
+html.clr2 .nav-footer{background:#FFFFFF!important;border-top:1px solid #E6E9F0!important;color:#5C6273!important}
+html.clr2 .nav-footer a{color:#375CE5!important}
+html.clr2 .nav-footer a:hover{color:#2945BE!important}
+/* the one gradient: Blue → Purple on the formula cards */
+html.clr2 .fz-formula,html.clr2 .quote-band{position:relative;overflow:hidden;background:linear-gradient(120deg,#375CE5 0%,#5D4FC4 100%)!important;color:#FFFFFF!important;border:0!important}
+html.clr2 .fz-formula span,html.clr2 .quote-band p{color:#FFFFFF!important}
+/* expo / book bands → light blue with navy text */
+html.clr2 .expo,html.clr2 .band-navy,html.clr2 .bookband{background:#EEF2FD!important;border:1px solid #E6E9F0}
+html.clr2 .expo h3,html.clr2 .expo dd,html.clr2 .band-navy,html.clr2 .bookband{color:#1E2A5A!important}
+html.clr2 .expo .lbl,html.clr2 .expo dt,html.clr2 .band-navy .lbl,html.clr2 .bookband .lbl{color:#375CE5!important}
+html.clr2 .expo i{color:#5C6273!important;border-bottom-color:#E6E9F0!important}
+html.clr2 .bookband a,html.clr2 .shift3 .to{color:#375CE5!important}
+html.clr2 .ct-expo{background:#EEF2FD!important;color:#4A4F5C!important}
+html.clr2 .ct-expo b{color:#1E2A5A!important}
+html.clr2 .pzd-expo{background:#EEF2FD!important;color:#1E2A5A!important}
+html.clr2 .band-navy h3,html.clr2 .bookband h3,html.clr2 .bookband blockquote{color:#1E2A5A!important}
+html.clr2 .shift3 .from,html.clr2 .bookband .en,html.clr2 .bookband blockquote small{color:#5C6273!important}
+html.clr2 .shift3 p,html.clr2 .bookband .by{color:#4A4F5C!important}
+html.clr2 .bookband .by{border-bottom-color:#E6E9F0!important}
+/* zone table (approach pages): header light, zone colour set */
+html.clr2 .zrow.hd > div{background:#EEF2FD!important;color:#1E2A5A!important}
+html.clr2 .zrow.plus .z{background:#EEF2FD!important;color:#375CE5!important}
+html.clr2 .zrow.zero .z{background:#F3F5F9!important;color:#6B7590!important}
+html.clr2 .zrow.minus .z{background:#FBEFED!important;color:#D9655A!important}
