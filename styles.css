@@ -1380,3 +1380,5 @@ html.clr2 .pl2 .pl-zones .fz-zone:not(.plus):not(.minus){background:#F3F5F9!impo
 .hx2-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);transition:background .3s ease,width .3s ease}
 .hx2-dots i.on{width:18px;border-radius:4px;background:#FFFFFF}
 @media (prefers-reduced-motion:reduce){.hx2-shuffle img{transition:none;transform:none}}
+/* motto: break right before the coloured second half on wider screens */
+@media (min-width:761px){.hx2-band h1{text-wrap:wrap}.hx2-band h1 em{display:block}}
