@@ -26,6 +26,14 @@
       c.setAttribute("aria-hidden", pos === 0 ? "false" : "true");
       c.inert = pos !== 0;
     });
+    // card 3: cycle the four case pictures while it is in front
+    shuffle(cards[i].querySelector(".hx2-shuffle"));
+    // replay the life-calculus drawing when its card comes to the front
+    root.querySelectorAll(".lc-card").forEach(function (g) {
+      var front = g.closest(".hx2-card").getAttribute("data-pos") === "0";
+      g.classList.remove("play");
+      if (front && !RM) { void g.offsetWidth; g.classList.add("play"); }
+    });
     if (cur) cur.textContent = pad(i);
     if (nextName) nextName.textContent = slides[(i + 1) % n].getAttribute("data-name");
     if (vid) {
@@ -33,6 +41,20 @@
       else vid.pause();
     }
     start(durOf(i));
+  }
+  var shT = null, shBox = null, shK = 0;
+  function shSet(box, k) {
+    var im = box.querySelectorAll("img"), d = box.querySelectorAll(".hx2-dots i");
+    im.forEach(function (x, j) { x.classList.toggle("on", j === k); });
+    d.forEach(function (x, j) { x.classList.toggle("on", j === k); });
+  }
+  function shuffle(box) {
+    clearInterval(shT); shT = null;
+    if (shBox && shBox !== box) { shK = 0; shSet(shBox, 0); }
+    shBox = box;
+    if (!box) return;
+    shK = 0; shSet(box, 0);
+    if (!RM && playing) shT = setInterval(function () { shK = (shK + 1) % 4; shSet(box, shK); }, 2100);
   }
   function tick() {
     var p = (Date.now() - t0) / dur;
@@ -52,11 +74,13 @@
     if (on) {
       t0 = Date.now() - left * dur;
       if (vid && i === 0) { var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+      if (shBox && !shT && !RM) shT = setInterval(function () { shK = (shK + 1) % 4; shSet(shBox, shK); }, 2100);
       timer = requestAnimationFrame(tick);
     } else {
       left = Math.min(1, (Date.now() - t0) / dur);
       cancelAnimationFrame(timer);
       if (vid) vid.pause();
+      clearInterval(shT); shT = null;
     }
   }
   root.querySelector(".hx2-prev").addEventListener("click", function () { show(i - 1); });

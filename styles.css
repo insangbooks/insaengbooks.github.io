@@ -1369,3 +1369,14 @@ html.clr2 .pl2 .pl-zones .fz-zone{border-top:0!important;border-radius:16px!impo
 html.clr2 .pl2 .pl-zones .fz-zone:not(.plus):not(.minus){background:#F3F5F9!important}
 .pl2 .pl-formula .fm{max-width:88%}
 .pl2 .pl-formula .fw{color:rgba(255,255,255,.12);font-size:130px;right:18px}
+/* card 2: the life-calculus graph, animated each time the card comes to the front */
+.hx2-media .lc-card{position:absolute;inset:0;margin:0;padding:8px 10px;border:0!important;border-radius:0!important;background:#FFFFFF;display:flex;align-items:center;justify-content:center}
+.hx2-media .lc-card svg{width:auto!important;height:100%!important;max-width:100%}
+/* card 3: the four case-video pictures cross-fade */
+.hx2-shuffle{position:absolute;inset:0}
+.hx2-shuffle img{opacity:0;transform:scale(1.06);transition:opacity .9s ease,transform 3.2s ease-out}
+.hx2-shuffle img.on{opacity:1;transform:scale(1)}
+.hx2-dots{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);display:flex;gap:6px;padding:5px 8px;border-radius:999px;background:rgba(30,42,90,.35)}
+.hx2-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);transition:background .3s ease,width .3s ease}
+.hx2-dots i.on{width:18px;border-radius:4px;background:#FFFFFF}
+@media (prefers-reduced-motion:reduce){.hx2-shuffle img{transition:none;transform:none}}
