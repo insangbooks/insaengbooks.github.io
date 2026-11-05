@@ -128,7 +128,7 @@
     document.body.insertBefore(head, document.body.firstChild);
     // home pages: the big hero button already invites to the practice room,
     // so the menu button stays hidden until the visitor scrolls past the hero
-    var hero = document.querySelector(".pz-intro");
+    var hero = document.querySelector(".pz-intro, .hx2");
     if (hero && "IntersectionObserver" in window) {
       head.classList.add("cta-wait");
       new IntersectionObserver(function (en) {
