@@ -4,6 +4,7 @@
    Purple #5D4FC4 (points, gradient end) · Lavender #F1EFFC
    Zones: Plus #375CE5/#EEF2FD · Zero #6B7590/#F3F5F9 · Minus #D9655A/#FBEFED (Minus only)
    No orange / yellow / red, no pure black, no large dark-navy areas.
+   Exception (2026-11-06): the 3S motion video on the home card stays green/mint/yellow as the one accent.
    Active only when <html> has the class "clr2".
    =================================================================== */
 html.clr2{
