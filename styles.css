@@ -1392,3 +1392,6 @@ html.clr2 .pl2 .pl-zones .fz-zone:not(.plus):not(.minus){background:#F3F5F9!impo
 @media (max-width:700px){.sec-title h1.pg-h1{font-size:26px}}
 /* hero ring: never push the page sideways (older Safari lacks overflow:clip) */
 .hx2{overflow-x:hidden;overflow-x:clip}
+/* when the motto cannot fit on one line, break right after "and" / "하고," */
+@media (max-width:979.98px){html[lang^="en"] .hx2-band h1 em{display:block}}
+@media (max-width:739.98px){html[lang^="ko"] .hx2-band h1 em{display:block}}
