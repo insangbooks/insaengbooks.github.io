@@ -53,7 +53,6 @@
   };
 
   var html = document.documentElement;
-  if ((html.getAttribute("lang") || "").toLowerCase().indexOf("ar") === 0) return; // Arabic page has its own header
   var L = (html.getAttribute("lang") || "en").toLowerCase().indexOf("ko") === 0 ? "ko" : "en";
   var M = MENU[L];
   var BRO = "PLUSZONE-Edusolution-Brochure.pdf", BROA = ' href="' + BRO + '" download="PLUSZONE-Edusolution-Brochure.pdf"';
@@ -108,7 +107,6 @@
         "</nav>" +
         '<div class="pzn-right">' +
           '<a class="pzn-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '" hreflang="' + M.other.lang + '">' + M.other.label + "</a>" +
-          '<a class="pzn-lang pzn-ar" href="ar.html" lang="ar" hreflang="ar" dir="rtl">العربية</a>' +
           '<a class="pzn-cta" href="' + M.cta.href + '">' + esc(M.cta.title) + ' <span>· ' + esc(M.cta.tag) + "</span></a>" +
           '<button type="button" class="pzn-burger" aria-expanded="false" aria-controls="pzn-drawer" aria-label="' + M.ui.menu + '"><span></span><span></span><span></span></button>' +
         "</div>" +
@@ -123,7 +121,7 @@
             g.items.filter(live).map(function (it) { return '<li><a href="' + it.h + '"' + (it.dl ? ' download="PLUSZONE-Edusolution-Brochure.pdf"' : '') + '>' + esc(it.t) + "</a></li>"; }).join("") + "</ul></div>";
         }).join("") +
         (live(M.expo) ? '<div class="pzd-expo"><b>' + esc(M.expo.t) + "</b><span>" + esc(M.expo.d) + "</span></div>" : "") +
-        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mailto:info@edupluszone.com">info@edupluszone.com</a></div>' +
+        '<div class="pzd-foot"><a href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a><a href="mailto:info@edupluszone.com">info@edupluszone.com</a></div>' +
       "</div>";
     document.body.insertBefore(head, document.body.firstChild);
     // home pages: the big hero button already invites to the practice room,
@@ -220,7 +218,7 @@
       sm.setAttribute("aria-label", L === "ko" ? "사이트맵" : "Site map");
       sm.innerHTML = '<div class="pzs-in">' + columns("pzs-col") +
         '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '" target="_blank" rel="noopener">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\" target=\"_blank\" rel=\"noopener\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li>" +
-        '<li><a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a></li><li><a class="pzs-lang pzs-ar" href="ar.html" lang="ar" dir="rtl">العربية</a></li></ul></div></div>';
+        '<li><a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a></li></ul></div></div>';
       var root = foot.tagName === "FOOTER" ? foot : foot.parentNode;
       root.parentNode.insertBefore(sm, root);
     }
