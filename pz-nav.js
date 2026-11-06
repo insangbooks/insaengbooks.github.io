@@ -218,7 +218,8 @@
       sm.setAttribute("aria-label", L === "ko" ? "사이트맵" : "Site map");
       sm.innerHTML = '<div class="pzs-in">' + columns("pzs-col") +
         '<div class="pzs-col pzs-cta"><a class="pzm-h" href="' + M.cta.href + '" target="_blank" rel="noopener">' + esc(M.cta.title) + "</a><ul><li><a href=\"" + M.cta.href + "\" target=\"_blank\" rel=\"noopener\"><b class=\"tt\">" + esc(M.cta.sub) + "</b></a></li>" +
-        '<li><a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a></li></ul></div></div>';
+        '</ul></div>' +
+        '<div class="pzs-col pzs-lng"><span class="pzm-h">' + (L === "ko" ? "언어" : "Language") + '</span><ul><li><a class="pzs-lang" href="' + otherLangUrl() + '" lang="' + M.other.lang + '">' + M.other.label + '</a></li></ul></div></div>';
       var root = foot.tagName === "FOOTER" ? foot : foot.parentNode;
       root.parentNode.insertBefore(sm, root);
     }
