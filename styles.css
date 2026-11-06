@@ -1379,4 +1379,7 @@ html.clr2 .pl2 .pl-zones .fz-zone:not(.plus):not(.minus){background:#F3F5F9!impo
 .hx2-dots i.on{width:18px;border-radius:4px;background:#FFFFFF}
 @media (prefers-reduced-motion:reduce){.hx2-shuffle img{transition:none;transform:none}}
 /* motto: break right before the coloured second half on wider screens */
-@media (min-width:761px){.hx2-band h1{text-wrap:wrap}.hx2-band h1 em{display:block}}
+/* motto on ONE line: font scales with the screen so the whole sentence fits (EN ≈ 41×size wide, KO ≈ 30×size) */
+@media (min-width:980px){html[lang^="en"] .hx2-band h1{white-space:nowrap;max-width:none;font-size:min(30px,calc((100vw - 64px) / 41.5))}}
+@media (min-width:740px){html[lang^="ko"] .hx2-band h1{white-space:nowrap;max-width:none;font-size:min(32px,calc((100vw - 64px) / 30.8))}}
+@media (min-width:740px){.hx2-band{padding:18px 20px 16px}.hx2-band .eb{margin-bottom:4px}.hx2-band .imath{margin-top:2px}}
